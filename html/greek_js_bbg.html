@@ -1,0 +1,1026 @@
+<html>
+<head>
+	<title>busysteve.com</title>
+	<link rel="stylesheet" type="text/css" href="./busysteve.css">
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="Content-type: text/html; charset=utf-8">
+	<META name="keywords" content="greek, flashcards, ntgreek, biblical, busysteve, elements">
+	<META name="description" content="Biblical Greek flash cards, inspired by: Basics of Biblical Greek">
+
+</head>
+<body onLoad="checkCookies(); buildRandomList(); showAnswer(); checkSelectionsF();">
+
+
+<script type="text/javascript" charset="utf-8">
+
+
+
+
+var ch4=[
+['Adjective','4.0','egw.wav','ejgwv','I'],
+['Adjective','4.0','escato.wav','e[scatoV, -h, -on','last'],
+['Noun','4.0','abraam.wav',' jAbraavm, oJ','Abraham'],
+['Noun','4.0','aggelo.wav','a[ggeloV, -ou, oJ','angel, messenger'],
+['Noun','4.0','anqrwp.wav','a[nqrwpoV, -ou, oJ','man, mankind, person, people, humankind, human being'],
+['Noun','4.0','aposto.wav','ajpovstoloV, -ou, oJ','apostle, envoy, messenger'],
+['Noun','4.0','cristo.wav','CristovV, -ou:, oJ','Christ, Messiah, Anointed One'],
+['Noun','4.0','dauid.wav','Dauivd, oJ','David'],
+['Noun','4.0','doxa.wav','dovxa, -hV, hJ','glory, majesty, fame'],
+['Noun','4.0','fwnh.wav','fwnhv, -h:V, hJ','sound, noise, voice'],
+['Noun','4.0','galila.wav','Galilaiva, -aV, hJ','Galilee'],
+['Noun','4.0','grafh.wav','grafhv, -h:V, hJ','Scripture, writing'],
+['Noun','4.0','kardia.wav','kardiva, -aV, hJ','heart, inner self'],
+['Noun','4.0','kosmos.wav','kovsmoV, -ou, oJ','world, universe, humankind'],
+['Noun','4.0','logos.wav','lovgoV, -ou, oJ','word, Word, statement, message'],
+['Noun','4.0','paulos.wav','Pau:loV, -ou, oJ','Paul'],
+['Noun','4.0','petros.wav','PevtroV, -ou, oJ','Peter'],
+['Noun','4.0','pilato.wav','Pila:toV, -ou, oJ','Pilate'],
+['Noun','4.0','pneuma.wav','pneu:ma, -matoV, tov','spirit, Spirit, wind, breath, inner life'],
+['Noun','4.0','profht.wav','profhvthV, -ou, oJ','prophet'],
+['Noun','4.0','qeos.wav','qeovV, -ou:, oJ','God, god'],
+['Noun','4.0','sabbat.wav','savbbaton, -ou, tov','Sabbath, week'],
+['Noun','4.0','simwn.wav','Sivmwn, -wnoV, oJ','Simon'],
+['Noun','4.0','zwh.wav','zwhv, -h:V, hJ','life'],
+['Other','4.0','amhn.wav','ajmhvn','verily, truly, amen, so let it be'],
+['Other','4.0','kai.wav','kaiv','and, even, also, namely']
+];
+
+var ch6=[
+['Adjective','6.0','allos.wav','a[lloV, -h, -o','other, another'],
+['Adjective','6.0','autos.wav','aujtovV, -hv, -ov','he, she, it (him/her/itself); plural: they (them)'],
+['Adjective','6.0','ho.wav','oJ, hJ, tov','the'],
+['Noun','6.0','','basileiva, -aV, hJ','kingdom'],
+['Noun','6.0','agaph.wav','ajgavph, -hV, hJ','love'],
+['Noun','6.0','ergon.wav','e[rgon, -ou, tov','work, deed, action'],
+['Noun','6.0','hwra.wav','w{ra, -aV, hJ','hour, occasion, moment'],
+['Noun','6.0','kairos.wav','kairovV, -ou:, oJ','(appointed) time, season'],
+['Other','6.0','de.wav','dev','but, and'],
+['Other','6.0','hoti.wav','o{ti','that,  since, because'],
+['Other','6.0','nun.wav','nu:n','adverb: now noun: the present'],
+['Other','6.0','ou.wav','ouj, oujk, oujc','not'],
+['Preposition','6.0','en.wav','ejn','dat.: in, on, among']
+];
+
+var ch7=[
+['Adjective','7.0','houtos.wav','ou|toV, au{th, tou:to','sg: this pl: these'],
+['Adjective','7.0','su.wav','suv','you (sg)'],
+['Noun','7.0','','eujaggevlion, -ou, tov','good news, Gospel'],
+['Noun','7.0','arch.wav','ajrchv, -h:V, hJ','beginning, ruler'],
+['Noun','7.0','exousi.wav','ejxousiva, -aV, hJ','authority, power'],
+['Noun','7.0','hamart.wav','aJmartiva, -aV, hJ','sin'],
+['Noun','7.0','huios.wav','uiJovV, -ou:, oJ','son, descendant'],
+['Noun','7.0','ihsous.wav','=Ihsou:V, -ou:, oJ','Jesus, Joshua'],
+['Noun','7.0','kurios.wav','kuvrioV, -ou, oJ','Lord, lord, master, sir'],
+['Noun','7.0','ourano.wav','oujranovV, -ou:, oJ','heaven, sky'],
+['Other','7.0','gar.wav','gavr','for, then'],
+['Other','7.0','hwste.wav','w{ste','therefore, so that'],
+['Other','7.0','mh.wav','mhv','not, lest'],
+['Preposition','7.0','eis.wav','eijV','acc.: into, in, among'],
+['Verb','7.0','eipen.wav','ei\\pen','he/she/it said']
+];
+
+var ch8=[
+['Noun','8.0','hhmera.wav','hJmevra, -aV, hJ','day'],
+['Noun','8.0','iwannh.wav','jIwavnnhV, -ou, oJ','John'],
+['Noun','8.0','oclos.wav','o[cloV, -ou, oJ','crowd, multitude'],
+['Noun','8.0','oikia.wav','oijkiva, -aV, hJ','house, home'],
+['Noun','8.0','oikos.wav','oi\\koV, -ou, oJ','house, home'],
+['Noun','8.0','parabo.wav','parabolhv, -h:V, hJ','parable'],
+['Noun','8.0','qalass.wav','qavlassa, -hV, hJ','sea, lake'],
+['Noun','8.0','qanato.wav','qavnatoV, -ou, oJ','death'],
+['Other','8.0','alla.wav','ajllav','but, yet, except'],
+['Other','8.0','hina.wav','i{na','in order that, that'],
+['Preposition','8.0','apo.wav','ajpov','gen: (away) from'],
+['Preposition','8.0','dia.wav','diav','gen: through acc: because of, on account of'],
+['Preposition','8.0','ek.wav','ejk, ejx','gen: from, out of'],
+['Preposition','8.0','hypo.wav','uJpov','gen: by acc: under'],
+['Preposition','8.0','meta.wav','metav','gen: with acc: after'],
+['Preposition','8.0','para.wav','parav','gen: from dat: beside, in the presence of acc: alongside of'],
+['Preposition','8.0','pros.wav','provV','acc: to, towards, with'],
+['Verb','8.0','','eijmiv','I am, exist, live, am present'],
+['Verb','8.0','hn.wav','h\\n','he/she/it was'],
+['Verb','8.0','legw.wav','levgw','I say, speak']
+];
+
+var ch9=[
+['Adjective','9.0','agapht.wav','ajgaphtovV, -hv, -ovn','beloved'],
+['Adjective','9.0','agaqos.wav','ajgaqovV, -hv, -ovn','good, useful'],
+['Adjective','9.0','aiwnio.wav','aijwvnioV, -on','eternal'],
+['Adjective','9.0','allhlw.wav','ajllhvlwn','one another'],
+['Adjective','9.0','emos.wav','ejmovV, ejmhv, ejmovn','my, mine'],
+['Adjective','9.0','kakos.wav','kakovV, -hv, -ovn','bad, evil'],
+['Adjective','9.0','mou.wav','mou','my'],
+['Adjective','9.0','nekros.wav','nekrovV, -av, -ovn','adj: dead noun: dead body, corpse'],
+['Adjective','9.0','pistos.wav','pistovV, -hv, -ovn','faithful, believing'],
+['Adjective','9.0','ponhro.wav','ponhrovV, -av, -ovn','evil, bad'],
+['Adjective','9.0','prwtos.wav','prw:toV, -h, -on','first, earlier'],
+['Adjective','9.0','tritos.wav','trivtoV, -h, -on','third'],
+['Idiom','9.0','','ejk tou:to','idiom: by this'],
+['Noun','9.0','doulos.wav','dou:loV, -ou, oJ','slave, servant'],
+['Noun','9.0','entolh.wav','ejntolhv, -h:V, hJ','commandment'],
+['Other','9.0','ean.wav','ejavn','if, when, -ever (if associated with a relative pronoun)'],
+['Other','9.0','kaqws.wav','kaqwvV','as, even as'],
+['Verb','9.0','apekri.wav','ajpekrivqh','he/she/it answered']
+];
+
+var ch10=[
+['Adjective','10.0','hagios.wav','a{gioV, -iva, -ion','adj: holy plural noun: saints'],
+['Adjective','10.0','heis.wav','ei|V, miva, e{n','one'],
+['Adjective','10.0','oudeis.wav','oujdeivV, oujdemiva, oujdevn','no one, none, nothing'],
+['Adjective','10.0','pas.wav','pa:V, pa:sa, pa:n','sg: each, every pl: all'],
+['Adjective','10.0','tis.wav','tiV, ti','certain one/thing;  anyone/thing;  someone/thing'],
+['Adjective','10.0','tivs.wav','tivV, tiv','who? what? which? why?'],
+['Noun','10.0','onoma.wav','o[[noma, -matoV,  tov','name, reputation'],
+['Noun','10.0','sarx.wav','savrx, sarkovV, hJ','flesh, body'],
+['Noun','10.0','swma.wav','sw:ma, -matoV, tov','body'],
+['Noun','10.0','teknon.wav','tevknon, -ou, tov','child, descendant'],
+['Other','10.0','ei.wav','eij','if'],
+['Other','10.0','eimh.wav','eij mhv','except, if not'],
+['Other','10.0','hdh.wav','h[dh','now, already'],
+['Preposition','10.0','peri.wav','periv','gen:  concerning, about acc: around'],
+['Preposition','10.0','syn.wav','suvn','dat: with']
+];
+
+var ch11=[
+['Adjective','11.0','hhmeis.wav','hJmei:V','we'],
+['Adjective','11.0','humeis.wav','uJmei:V','you (pl)'],
+['Adjective','11.0','kalos.wav','kalovV, -hv, -ovn','beautiful, good'],
+['Noun','11.0','adelfo.wav','ajdelfovV, -ou:, oJ','brother'],
+['Noun','11.0','anhr.wav','ajnhvr, ajndrovV, oJ','man, male, husband'],
+['Noun','11.0','caris.wav','cavriV, -itoV, hJ','grace, favor, kindness'],
+['Noun','11.0','ekklhs.wav','ejkklhsiva, -aV, hJ','a church, the Church, assembly, congregation'],
+['Noun','11.0','elpis.wav','ejlpivV, -ivdoV, hJ','hope, expectation'],
+['Noun','11.0','fws.wav','fw:V, fwtovV, tov','light'],
+['Noun','11.0','hudwr.wav','u{dwr, u{datoV, tov','water'],
+['Noun','11.0','mhthr.wav','mhvthr, mhtrovV, hJ','mother'],
+['Noun','11.0','pathr.wav','pathvr, patrovV,  oJ','father'],
+['Noun','11.0','pistis.wav','pivstiV, pivstewV,  hJ','faith, belief'],
+['Noun','11.0','qelhma.wav','qevlhma, -matoV, tov','will, desire'],
+['Other','11.0','an.wav','a[n','an untranslatable, uninflected  word, used to make a definite word indefinite - When used in conjunction with a relative pronoun it makes the pronoun indefinite (e.g. who becomes whoever).'],
+['Other','11.0','exw.wav','e[xw','adverb: without prep (gen): outside'],
+['Other','11.0','hwde.wav','w|de','here'],
+['Other','11.0','idou.wav','ijdouv','See! Behold!'],
+['Other','11.0','oude.wav','oujdev','and not, not even, neither, nor'],
+['Preposition','11.0','epi.wav','ejpiv','gen: on, over, when dat: on the basis of, at acc: on, to, against'],
+['Verb','11.0','ide.wav','i[de','See! Behold!']
+];
+
+var ch12=[
+['Adjective','12.0','hosos.wav','o{soV, -h, -on','as great as, as many as'],
+['Adjective','12.0','mhdeis.wav','mhdeivV, mhdemiva, mhdevn','no one/thing'],
+['Adjective','12.0','monos.wav','movnoV, -h, -on','alone, only'],
+['Noun','12.0','aiwn.wav','aijwvn, -w:noV, oJ','age, eternity'],
+['Noun','12.0','didaskalos.wav','didavskaloV, -ou, oJ','teacher'],
+['Noun','12.0','maqhth.wav','maqhthvV, -ou:, oJ','disciple'],
+['Noun','12.0','ofqalm.wav','ojfqalmovV, -ou:, oJ','eye, sight'],
+['Noun','12.0','pous.wav','pouvV, podovV, oJ','foot'],
+['Other','12.0','euqus.wav','eujquvV','immediately'],
+['Other','12.0','hews.wav','e{wV','conj: until prep (gen): as far as'],
+['Other','12.0','hopws.wav','o{pwV','that, in order that, how'],
+['Other','12.0','men.wav','mevn','on the one hand, indeed'],
+['Other','12.0','oun.wav','ou\\n','therefore, then, accordingly'],
+['Other','12.0','palin.wav','pavlin','again'],
+['Preposition','12.0','huper.wav','uJpevr','gen: in behalf of acc: above']
+];
+
+var ch13=[
+['Adjective','13.0','ekeino.wav','ejkei:noV, -h, -o','sg: that (man/woman/thing) pl: those (men/women/things)'],
+['Adjective','13.0','heauto.wav','eJautou:, -h:V','sg: of himself, herself, itself pl: of themselves'],
+['Adjective','13.0','kagw.wav','kajgwv','and I, but I'],
+['Adjective','13.0','makari.wav','makavrioV, -ia, -ion','blessed, happy'],
+['Adjective','13.0','megas.wav','mevgaV, megavlh, mevga','large, great'],
+['Adjective','13.0','polus.wav','poluvV, pollhv, poluv','sg: much pl: many adverb: often'],
+['Idiom','13.0','','dia; tou:to','idiom: for this reason, on account of this'],
+['Idiom','13.0','','ejn poiva/','idiom: by what?'],
+['Noun','13.0','dikaiosu.wav','dikaiosuvnh, -hV, hJ','righteousness'],
+['Noun','13.0','dwdeka.wav','dwvdeka','twelve'],
+['Noun','13.0','gunh.wav','gunhv, gunaikovV,  hJ','woman, wife'],
+['Noun','13.0','polis.wav','povliV, -ewV, hJ','city'],
+['Noun','13.0','shmeio.wav','shmei:on, -ou, tov','sign, miracle'],
+['Other','13.0','h.wav','h[','or, than'],
+['Other','13.0','pws.wav','pw:V','how?']
+];
+
+var ch14=[
+['Adjective','14.0','hos.wav','o{V, h{, o{','who, whom'],
+['Noun','14.0','','=Ierousalhvm, hJ','Jerusalem'],
+['Noun','14.0','alhqei.wav','ajlhvqeia, -aV, hJ','truth'],
+['Noun','14.0','ceir.wav','ceivr, ceirovV, hJ','hand, arm, finger'],
+['Noun','14.0','eirhnh.wav','eijrhvnh, -hV, hJ','peace'],
+['Noun','14.0','epagge.wav','ejpaggeliva, -aV, hJ','promise'],
+['Noun','14.0','hepta.wav','eJptav','seven'],
+['Noun','14.0','hodos.wav','oJdovV, -ou:, hJ','way, road, journey, conduct'],
+['Noun','14.0','hrhma.wav','rJh:ma, -atoV, tov','word, saying'],
+['Noun','14.0','kefalh.wav','kefalhv, -h:V, hJ','head'],
+['Noun','14.0','ploion.wav','ploi:on, -ou, tov','ship, boat'],
+['Noun','14.0','qronos.wav','qrovnoV, -ou, oJ','throne'],
+['Noun','14.0','yuch.wav','yuchv, -h:V, hJ','soul, life, self'],
+['Other','14.0','hote.wav','o{te','when'],
+['Other','14.0','houtws.wav','ou{twV','thus, so, in this manner'],
+['Other','14.0','te.wav','te','and (so), so'],
+['Preposition','14.0','enwpio.wav','ejnwvpion','gen: before'],
+['Preposition','14.0','kata.wav','katav','gen:  down from, against acc: according to, throughout, during']
+];
+
+var ch16=[
+['Adjective','16.0','tuflos.wav','tuflovV, -hv, -ovn','blind'],
+['Idiom','16.0','','dia; pantovV','Idiom: always'],
+['Noun','16.0','cara.wav','carav, -a:V, hJ','joy, delight'],
+['Noun','16.0','nomos.wav','novmoV, -ou, oJ','law, principle'],
+['Noun','16.0','proswp.wav','provswpon, -ou, tov','face, appearance'],
+['Other','16.0','hopou.wav','o{pou','where'],
+['Other','16.0','tote.wav','tovte','then, thereafter'],
+['Verb','16.0','akouw.wav','ajkouvw','I hear, learn, obey, understand'],
+['Verb','16.0','blepw.wav','blevpw','I see, look at'],
+['Verb','16.0','ecw.wav','e[cw','I have, hold'],
+['Verb','16.0','luw.wav','luvw','I loose, untie, destroy'],
+['Verb','16.0','pisteu.wav','pisteuvw','I believe, have faith (in), trust']
+];
+
+var ch17=[
+['Adjective','17.0','pleiwn.wav','pleivwn, plei:on','larger, more'],
+['Idiom','17.0','','dia; tiv','Idiom: Why?'],
+['Idiom','17.0','','eijV to;n aijw:na','Idiom: forever'],
+['Noun','17.0','','basileuvV, -evwV, oJ','king'],
+['Noun','17.0','daimon.wav','daimovnion, -ou, tov','demon'],
+['Other','17.0','hotan.wav','o{tan','whenever'],
+['Verb','17.0','','ajgapavw','I love'],
+['Verb','17.0','kalew.wav','kalevw','I call, name, invite'],
+['Verb','17.0','lalew.wav','lalevw','I speak, say'],
+['Verb','17.0','oida.wav','oi\\da','I know, understand'],
+['Verb','17.0','plhrow.wav','plhrovw','I fill, complete, fulfill'],
+['Verb','17.0','poiew.wav','poievw','I do, make'],
+['Verb','17.0','threw.wav','threvw','I keep, guard, observe'],
+['Verb','17.0','zhtew.wav','zhtevw','I seek, desire, try to obtain']
+];
+
+var ch18=[
+['Adjective','18.0','hostis.wav','o{stiV, h{tiV, o{ti','whoever, whichever, whatever'],
+['Idiom','18.0','','eja;n mh;','unless'],
+['Noun','18.0','nux.wav','nuvx, nuktovV, hJ','night'],
+['Noun','18.0','topos.wav','tovpoV, -ou, oJ','place, location'],
+['Other','18.0','hws.wav','wJV','as, like, when, that, how, about'],
+['Verb','18.0','','sunavgw','I gather together, invite'],
+['Verb','18.0','apokri.wav','ajpokrivnomai','I answer'],
+['Verb','18.0','dei.wav','dei:','it is necessary'],
+['Verb','18.0','dunama.wav','duvnamai','I am able, am powerful'],
+['Verb','18.0','ercoma.wav','e[rcomai','I come, go'],
+['Verb','18.0','poreuo.wav','poreuvomai','I go, proceed, live']
+];
+
+var ch19=[
+['Adjective','19.0','holos.wav','o{loV, -h, -on','adj: whole, complete adv: entirely'],
+['Adjective','19.0','iouda2.wav','=Ioudai:oV, -aiva, -ai:on','adj: Jewish noun: Jew'],
+['Adjective','19.0','meizwn.wav','meivzwn','greater'],
+['Noun','19.0','basile.wav','basileuvV, -evwV, oJ','king'],
+['Noun','19.0','iouda1.wav','=Ioudaiva, -aV, hJ','Judea'],
+['Noun','19.0','israhl.wav','jIsrahvl, oJ','Israel'],
+['Noun','19.0','karpos.wav','karpovV, -ou:, oJ','fruit, result, crop'],
+['Verb','19.0','gennaw.wav','gennavw','I beget, give birth to, produce'],
+['Verb','19.0','prosku.wav','proskunevw','I worship'],
+['Verb','19.0','zaw.wav','zavw','I live']
+];
+
+var ch20=[
+['Noun','20.0','glwssa.wav','glw:ssa, -hV, hJ','tongue, language'],
+['Noun','20.0','laos.wav','laovV, -ou:, oJ','people, crowd'],
+['Noun','20.0','sofia.wav','sofiva, -aV, hJ','wisdom'],
+['Noun','20.0','stoma.wav','stovma, -atoV, tov','mouth'],
+['Other','20.0','ekei.wav','ejkei:','there, in that place'],
+['Verb','20.0','airw.wav','ai[rw','I raise, take up, take away'],
+['Verb','20.0','apokte.wav','ajpokteivnw','I kill'],
+['Verb','20.0','aposte.wav','ajpostevllw','I send (away)'],
+['Verb','20.0','baptiz.wav','baptivzw','I baptize, dip, immerse'],
+['Verb','20.0','egeirw.wav','ejgeivrw','I raise up, wake'],
+['Verb','20.0','ekball.wav','ejkbavllw','I cast out, send out'],
+['Verb','20.0','ginwsk.wav','ginwvskw','I know, come to know, realize, learn'],
+['Verb','20.0','horaw.wav','oJravw','I see, notice, experience'],
+['Verb','20.0','krinw.wav','krivnw','I judge, decide, prefer'],
+['Verb','20.0','menw.wav','mevnw','I remain, live'],
+['Verb','20.0','swzw.wav','sw/vzw','I save, deliver, rescue']
+];
+
+var ch21=[
+['Noun','21.0','cronos.wav','crovnoV, -ou, oJ','time'],
+['Noun','21.0','farisa.wav','Farisai:oV, -ou, oJ','Pharisee'],
+['Noun','21.0','sunagw.wav','sunagwghv, -h:V, hJ','synagogue, meeting'],
+['Verb','21.0','akolou.wav','ajkolouqevw','I follow, accompany'],
+['Verb','21.0','didask.wav','didavskw','I teach'],
+['Verb','21.0','eperwt.wav','ejperwtavw','I ask (for), question, demand of'],
+['Verb','21.0','erwtaw.wav','ejrwtavw','I ask, request, entreat'],
+['Verb','21.0','peripa.wav','peripatevw','I walk (around), live'],
+['Verb','21.0','qelw.wav','qevlw','I will, wish, desire, enjoy']
+];
+
+var ch22=[
+['Noun','22.0','artos.wav','a[rtoV, -ou, oJ','bread, loaf, food'],
+['Noun','22.0','gh.wav','gh:, gh:V,  hJ','earth, land, region, humanity'],
+['Noun','22.0','pur.wav','pu:r, purovV, tov','fire'],
+['Other','22.0','eti.wav','e[ti','still, yet, even'],
+['Other','22.0','oute.wav','ou[te','and not, neither, nor'],
+['Verb','22.0','apoqnh.wav','ajpoqnh/vskw','I die, am about to die, am freed from'],
+['Verb','22.0','ballw.wav','bavllw','I throw'],
+['Verb','22.0','eiserc.wav','eijsevrcomai','I go in(to), come in(to), enter'],
+['Verb','22.0','exerco.wav','ejxevrcomai','I go out'],
+['Verb','22.0','ginoma.wav','givnomai','I become, am, exist, am born, am created'],
+['Verb','22.0','heuris.wav','euJrivskw','I find'],
+['Verb','22.0','lamban.wav','lambavnw','I take, receive'],
+['Verb','22.0','proser.wav','prosevrcomai','I come/go to'],
+['Verb','22.0','proseu.wav','proseuvcomai','I pray']
+];
+
+var ch23=[
+['Noun','23.0','dunami.wav','duvnamiV, -ewV,hJ','power, miracle'],
+['Other','23.0','dio.wav','diov','therefore, for this reason'],
+['Verb','23.0','aperco.wav','ajpevrcomai','I depart'],
+['Verb','23.0','arcw.wav','a[rcw','active: I rule middle: I begin'],
+['Verb','23.0','doxazw.wav','doxavzw','I glorify, praise, honor'],
+['Verb','23.0','grafw.wav','gravfw','I write'],
+['Verb','23.0','khruss.wav','khruvssw','I proclaim, preach'],
+['Verb','23.0','pinw.wav','pivnw','I drink']
+];
+
+var ch24=[
+['Adjective','24.0','hekast.wav','e{kastoV, -h, -on','each, every'],
+['Noun','24.0','','o[roV, o[rouV, tov','mountain, hill'],
+['Noun','24.0','haima.wav','ai|ma, -matoV, tov','blood'],
+['Noun','24.0','himati.wav','iJmavtion, -ou, tov','garment'],
+['Verb','24.0','agw.wav','a[gw','I lead, bring, go'],
+['Verb','24.0','cairw.wav','caivrw','I rejoice'],
+['Verb','24.0','fobeom.wav','fobevomai','I fear'],
+['Verb','24.0','hupagw.wav','uJpavgw','I depart']
+];
+
+var ch25=[
+['Other','25.0','mallon.wav','ma:llon','more, rather'],
+['Verb','25.0','aitew.wav','aijtevw','I ask, demand'],
+['Verb','25.0','martur.wav','marturevw','I bear witness, testify']
+];
+
+var ch27=[
+['Adjective','27.0','dexios.wav','dexiovV, -iav, -iovn','right'],
+['Adjective','27.0','duo.wav','duvo','two'],
+['Adjective','27.0','hetero.wav','e{teroV, -a, -on','other, another, different'],
+['Adjective','27.0','treis.wav','trei:V, triva','three'],
+['Noun','27.0','','+Ierosovluma','Jerusalem'],
+['Noun','27.0','arcier.wav','ajrciereuvV, -evwV, oJ','chief priest, high priest'],
+['Other','27.0','hou.wav','ou|','where'],
+['Verb','27.0','anabai.wav','ajnabaivnw','I go up, come up'],
+['Verb','27.0','euagge.wav','eujaggelivzw','I bring good news, preach'],
+['Verb','27.0','kaqhma.wav','kavqhmai','I sit (down), live'],
+['Verb','27.0','kataba.wav','katabaivnw','I go down, come down'],
+['Verb','27.0','paraka.wav','parakalevw','I call, urge, exhort, comfort'],
+['Verb','27.0','peiqw.wav','peivqw','I persuade'],
+['Verb','27.0','qewrew.wav','qewrevw','I look at, behold']
+];
+
+var ch28=[
+['Noun','28.0','gramma.wav','grammateuvV, -evwV, oJ','scribe'],
+['Noun','28.0','hieron.wav','iJerovn, -ou:, tov','temple'],
+['Noun','28.0','paidio.wav','paidivon, -ou, tov','child, infant'],
+['Other','28.0','ouci.wav','oujciv','not'],
+['Verb','28.0','aspazo.wav','ajspavzomai','I greet, salute'],
+['Verb','28.0','efh.wav','e[fh','he/she/it was saying; he/she/it said'],
+['Verb','28.0','krazw.wav','kravzw','I cry out, call out'],
+['Verb','28.0','speirw.wav','speivrw','I sow']
+];
+
+var ch29=[
+['Verb','29.0','decoma.wav','devcomai','I take, receive'],
+['Verb','29.0','dokew.wav','dokevw','I think, seem'],
+['Verb','29.0','esqiw.wav','ejsqivw','I eat'],
+['Verb','29.0','ferw.wav','fevrw','I carry, bear, lead'],
+['Verb','29.0','pempw.wav','pevmpw','I send']
+];
+
+var ch30=[
+['Adjective','30.0','presby.wav','presbuvteroV, -a, -on','elder'],
+['Other','30.0','mhde.wav','mhdev','but not, nor, not even']
+];
+
+var ch31=[
+['Adjective','31.0','toiout.wav','toiou:toV, -auvth, -ou:ton','such, of such a kind'],
+['Noun','31.0','liqos.wav','livqoV, -ou, oJ','stone']
+];
+
+var ch32=[
+['Adjective','32.0','dikaio.wav','divkaioV, -aiva, -aion','right, just, righteous'],
+['Verb','32.0','mellw.wav','mevllw','I am about to, I am going to']
+];
+
+var ch33=[
+['Other','33.0','eite.wav','ei[te','if, whether'],
+['Verb','33.0','apollu.wav','ajpovllumi','active: I destroy, kill;  middle: I perish, die'],
+['Verb','33.0','apoluw.wav','ajpoluvw','I release']
+];
+
+var ch34=[
+['Adjective','34.0','loipos.wav','loipovV, -hv, -ovn','adj: remaining noun: (the) rest adverb: for the rest, henceforth'],
+['Noun','34.0','eqnos.wav','e[qnoV, -ouV, tov','sg: nation pl: Gentiles'],
+['Noun','34.0','mwushs.wav','Mwu&sh:V, -evwV, oJ','Moses'],
+['Verb','34.0','didwmi.wav','divdwmi','I give (out), entrust, give back, put'],
+['Verb','34.0','huparc.wav','uJpavrcw','I am, exist'],
+['Verb','34.0','paradi.wav','paradivdwmi','I entrust, hand over, betray'],
+['Verb','34.0','piptw.wav','pivptw','I fall']
+];
+
+var ch35=[
+['Adjective','35.0','','i[dioV, -a, -on','one\'s own (e.g., people, home)'],
+['Adjective','35.0','mesos.wav','mevsoV, -h, -on','middle, in the midst'],
+['Verb','35.0','afihmi.wav','ajfivhmi','I let go, leave, permit'],
+['Verb','35.0','anisth.wav','ajnivsthmi','intrans: I rise, get up trans: I raise'],
+['Verb','35.0','anoigw.wav','ajnoivgw','I open'],
+['Verb','35.0','deiknu.wav','deiknuvw, deivknumi','I show, explain'],
+['Verb','35.0','fhmi.wav','fhmiv','I say, affirm'],
+['Verb','35.0','histhm.wav','i{sthmi','intrans: I stand trans: I cause to stand'],
+['Verb','35.0','tiqhmi.wav','tivqhmi','I put, place']
+];
+
+var chCases=[
+['Article','none','','o','singular Nom. masculine'],
+['Article','none','','h','singular Nom. feminine'],
+['Article','none','','to','singular Nom./Acc. neuter'],
+['Article','none','','ton','singular Acc. masculine'],
+['Article','none','','thn','singular Acc. feminine'],
+['Article','none','','to','singular Nom./Acc. neuter'],
+['Article','none','','tou','singular Gen. masculine/neuter'],
+['Article','none','','thV','singular Gen. feminine'],
+['Article','none','','tou','singular Gen. masculine/neuter'],
+['Article','none','','tw','singular Dat. masculine/neuter'],
+['Article','none','','th','singular Dat. feminine'],
+['Article','none','','tw','singular Dat. masculine/neuter'],
+
+['Article','none','','oi','plural Nom. masculine'],
+['Article','none','','ai','plural Nom. feminine'],
+['Article','none','','ta','plural Nom./Acc. neuter'],
+['Article','none','','touV','plural Acc. masculine'],
+['Article','none','','taV','plural Acc. feminine'],
+['Article','none','','ta','plural Nom./Acc. neuter'],
+['Article','none','','twn','plural Gen. masculine/feminine/neuter'],
+['Article','none','','twn','plural Gen. masculine/feminine/neuter'],
+['Article','none','','twn','plural Gen. masculine/feminine/neuter'],
+['Article','none','','toiV','plural Dat. masculine/neuter'],
+['Article','none','','taiV','plural Dat. feminine'],
+['Article','none','','toiV','plural Dat. masculine/neuter']
+
+];
+
+var chIt=[
+['It','none','','autoV','he - singular Nom. masculine'],
+['It','none','','auth','she - singular Nom. feminine'],
+['It','none','','auto','it - singular Nom./Acc. neuter'],
+['It','none','','auton','him - singular Acc. masculine'],
+['It','none','','authn','her - singular Acc. feminine'],
+['It','none','','auto','it - singular Nom./Acc. neuter'],
+['It','none','','autou','his, of him - singular Gen. masculine/neuter'],
+['It','none','','authV','hers, of her - singular Gen. feminine'],
+['It','none','','autou','its, of it - singular Gen. masculine/neuter'],
+['It','none','','autw','to him - singular Dat. masculine/neuter'],
+['It','none','','auth','to her - singular Dat. feminine'],
+['It','none','','autw','to it - singular Dat. masculine/neuter'],
+
+['It','none','','auoi','they - plural Nom. masculine'],
+['It','none','','autai','they - plural Nom. feminine'],
+['It','none','','auta','they - plural Nom./Acc. neuter'],
+['It','none','','autouV','them - plural Acc. masculine'],
+['It','none','','autaV','them - plural Acc. feminine'],
+['It','none','','auta','them - plural Nom./Acc. neuter'],
+['It','none','','autwn','their, of them - plural Gen. masculine/feminine/neuter'],
+['It','none','','autwn','their, of them - plural Gen. masculine/feminine/neuter'],
+['It','none','','autwn','their, of them - plural Gen. masculine/feminine/neuter'],
+['It','none','','autoiV','to them - plural Dat. masculine/neuter'],
+['It','none','','autaiV','to them - plural Dat. feminine'],
+['It','none','','autoiV','to them - plural Dat. masculine/neuter']
+
+];
+
+var alpha_utf8_map=[
+['A','&Alpha;'],['B','&Beta;'],['G','&Gamma;'],['D','&Delta;'],['E','&Epsilon;'],['Z','&Zeta;'],['H','&Eta;'],['Q','&Theta;'],['I','&Iota;'],
+['K','&Kappa;'],['L','&Lambda;'],['M','&Mu;'],['N','&Nu;'],['X','&Xi;'],['O','&Omicron;'],['P','&Pi;'],['R','&Rho;'],['S','&Sigma;'],['T','&Tau;'],
+['U','&Upsilon;'],['F','&Phi;'],['C','&Chi;'],['Y','&Psi;'],['W','&Omega;'],
+['a','&alpha;'],['b','&beta;'],['g','&gamma;'],['d','&delta;'],['e','&epsilon;'],['z','&zeta;'],['h','&eta;'],['q','&theta;'],['i','&iota;'],
+['k','&kappa;'],['l','&lambda;'],['m','&mu;'],['n','&nu;'],['x','&xi;'],['o','&omicron;'],['p','&pi;'],['r','&rho;'],
+['s','&sigma;'],['V','&sigmaf;'],['t','&tau;'],['u','&upsilon;'],['f','&phi;'],['c','&chi;'],['y','&psi;'],['w','&omega;'], [' ',' '], ['-','-'], ['=','&#8125;'], ['+', '&#701;']];
+
+var cards=[ch4,ch6,ch7,ch8,ch9,ch10,ch11,ch12,ch13,ch14,ch16,ch17,ch18,ch19,ch20,ch21,
+	ch22,ch23,ch24,ch25,ch27,ch28,ch29,ch30,ch31,ch32,ch33,ch34,ch35,chCases,chIt];
+
+String.prototype.toArray = function() {
+return this.split('');
+}
+
+
+
+function playSoundBackup(soundfile) {
+ document.getElementById(soundfile).innerHTML =
+ "<object data=\"./words/"+soundfile+"\" type=\"audio/mpeg\"  width=\"0\"  height=\"0\" title=\""+soundfile+"\"/><param name=\"autostart\" value=\"true\" /><param name=\"hidden\" value=\"true\" /><param name=loop value=false /></object>";
+}
+
+
+function playSound(soundfile) {
+ document.getElementById(soundfile).innerHTML = "<audio><source src=\"./words/"+soundfile+"\" type=\"audio/mpeg\"><object class=\"playerpreview\" type=\"application/x-shockwave-flash\" data=\"player_mp3_mini.swf\"  width=\"0\" height=\"0\" ><param name=\"FlashVars\" value=\"mp3=./words/"+soundfile+"\"/><embed href=\"player_mp3_mini.swf\" width=\"0\" height=\"0\" flashvars=\"mp3=./words/"+soundfile+"\" /></object></audio>";
+ document.getElementById(soundfile).children[0].play();
+
+}
+
+
+function playSound_org(soundfile) {
+ document.getElementById(soundfile).innerHTML =
+ "<embed src=\"./words/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" type=\"audio/mpeg\"/>";
+}
+
+
+function playSoundMainBackup(soundfile) {
+ document.getElementById("dummy").innerHTML=
+ "<embed src=\"./words/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+
+function playSoundMain(soundfile) {
+// swfobject.embedSWF("player_mp3_mini.swf", soundfile, "200", "20", "9.0.0", "", {"mp3":"./words/"+soundfile}, {"bgcolor":"#085c68"} );
+ document.getElementById("dummy").innerHTML=
+ "<source src=\"./words/"+soundfile+"\" type=\"audio/mpeg\"><object class=\"playerpreview\" type=\"application/x-shockwave-flash\" data=\"player_mp3_mini.swf\"  width=\"0\" height=\"0\" ><param name=\"FlashVars\" value=\"mp3=./words/"+soundfile+"\"/><embed href=\"player_mp3_mini.swf\" width=\"0\" height=\"0\" flashvars=\"mp3=./words/"+soundfile+"\" /></object>";
+document.getElementById("dummy").load();
+ document.getElementById("dummy").play();
+}
+
+
+
+
+function teknia2greek( teknia )
+{
+	var ary = teknia.toArray();
+	var greek='';
+	for(i=0; i<ary.length; i++)
+	{
+		for(a=0; a<alpha_utf8_map.length; a++)
+		{
+			if( alpha_utf8_map[a][0] == ary[i] )
+			{
+				greek = greek + alpha_utf8_map[a][1];
+				break;
+			}
+		}
+	}
+	return (  greek );
+}
+
+
+function shuffle(array) {
+  var currentIndex = array.length
+    , temporaryValue
+    , randomIndex
+    ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+var chapterRand;
+var cardRand;
+var toggle=0;
+var toggleList=0;
+var c;
+var List = null;
+var RandIndex = null;
+var RandPos = 0;
+
+
+function removeWord()
+{
+	RandPos--;
+	console.log("removing [" + RandIndex[RandPos] + "] " + List[RandIndex[RandPos]] );
+	RandIndex.splice(RandPos, 1);
+
+	if( RandPos >= (RandIndex.length) )
+		RandPos = 0;
+
+	if( RandIndex.length > 1 )
+		d.getElementById('myTable').rows[1].cells[2].innerHTML = "<blink>You got them all right?</blink>";
+	
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = RandIndex.length + ' word(s)<br><u><a onClick="checkSelectionsF();">restart</a></u>';
+}
+
+function wordCount( from, to )
+{
+
+	var f=Number(from);
+	var t=Number(to);
+
+	var count=0;
+
+	for( i=f; i <= t; i++ )
+	{
+		count += cards[i].length;
+	}
+	
+	return count;
+}
+
+
+function buildRandomList()
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	List = new Array();
+	RandIndex = new Array();
+
+	count=0;
+
+	for( i=chF.value; i<=chT.value; i++ )
+	{
+		ch = cards[i];
+
+		for( j=0; j<cards[i].length; j++ )
+		{
+			
+			c = ch[j];
+
+			RandIndex[count] = count;
+			List[count++] = c;
+
+			chapterRand = Number(chF.value)+Math.floor( Math.random()*(1+Number(chT.value-chF.value)));
+						
+			//d.getElementById('myTable').rows[1].cells[2].innerHTML = 
+			
+			r=Math.floor(Math.random()*c.length);
+
+			//count++;
+		}
+	}
+			
+	shuffle( RandIndex );
+
+	//for(t=0; t<List.length; t++ ) console.log(List[RandIndex[t]][3]);
+
+	RandPos = 0;
+}
+
+function showAnswer()
+{
+
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	//alert(chF[4].text);
+
+	if( toggle == 1 )
+	{
+		document.getElementById('myTable').rows[0].cells[3].innerHTML = List[RandIndex[RandPos]][4];
+		var b = document.getElementById('myButton');
+		//b.value='- Next -';
+		toggle=0;
+
+		RandPos++;
+
+		if( RandPos >= RandIndex.length )
+			RandPos = 0;
+
+		if( RandIndex.length > 1 )
+		{
+			d.getElementById('myTable').rows[1].cells[2].innerHTML = "Got it right?<br><u><a onClick='removeWord(); toggle=0; showAnswer();'>Click&nbsp;here&nbsp;to&nbsp;remove</a></u>";
+		}
+	}
+	else
+	{
+		var x = document.getElementById('myTable').rows[0].cells;
+
+		x[2].innerHTML = '<img  style="cursor: pointer;" src="./speaker.png" onclick="playSoundMain(\''+ List[RandIndex[RandPos]][2] +'\');"></img>&nbsp;&nbsp;<font style="cursor: pointer;" size=14 class=flashcard onclick="showAnswer();">' + teknia2greek( List[RandIndex[RandPos]][3] ).replace(' ', '&nbsp;').replace(' ', '&nbsp;').replace(' ', '&nbsp;').replace(' ', '&nbsp;').replace(' ', '&nbsp;') + '</font>';
+		x[3].innerHTML = '';
+		
+		//document.getElementById('myButton').value='Answer';
+
+		d.getElementById('myTable').rows[1].cells[2].innerHTML = "";
+
+		toggle=1;
+	}
+}
+
+
+
+function showList(val)
+{
+	if( val == 1 )
+	{
+		toggleList = toggleList ? 0 : 1;
+		document.getElementById('myTable').rows[2].cells[0].innerHTML = '';
+	}
+
+
+	if( toggleList == 1 )
+	{
+		document.getElementById('myTable').rows[2].cells[0].innerHTML = '';
+		var b = document.getElementById('myListButton');
+		b.value='List';
+		toggleList=0;
+	}
+	else
+	{
+
+		d=document;
+		//para=d.getElementById('para');
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+
+		if( Number(wordCount( chF.value, chT.value )) <= 700 )
+		{
+			var tableList;
+			var x = document.getElementById('myTable').rows[2].cells;
+			//x[0].innerHTML = '<table>';
+			tableList = '<table width="100%">';
+			var l, ch;
+			var colorToggle=0;
+
+			//alert( chF.value + '  ' + chT.value );
+
+			for( var ch = Number(chF.value); ch <= Number(chT.value); ch++ )
+			{
+				//alert( ch );
+				for( word=0; word < cards[ch].length; word++, colorToggle++ )
+				{
+					var tdStyle = 'padding: 0; border-width: 0;';
+					var color;
+					if( colorToggle%2 == 0)
+						color = '#f4c4c4;';
+					else
+						color = '#ffffff;';				
+					var style;
+					style = '"cell-padding: 0; width: 100%; font-family : Arial, Tahoma, \'Times New Roman\', Verdana; background-color: '+color+' padding: 0; border-width: 0;"';
+
+
+					//tableList += '<tr style='+ style +'><td style="font-size: 24; '+tdStyle+'">' + teknia2greek(cards[ch][word][3],ch) + '</td><td style="'+tdStyle+'">&nbsp;&nbsp;&nbsp;<a href="#" onclick="playSound(\''+ cards[ch][word][3]+'.mp3' +'\');"><img src="./speaker.png"><img></a>&nbsp;&nbsp;&nbsp;</td><td style="'+tdStyle+'">'+ cards[ch][word][4] +'</td><td id="' + cards[ch][word][2] + '" ></td></tr>';
+					
+					tableList += '<tr style='+ style +'><td style="font-size: 18;'+tdStyle+'">' + teknia2greek(cards[ch][word][3],ch) + '</td><td style="'+tdStyle+'">&nbsp;<img src="./speaker.png" onclick="playSound(\''+ cards[ch][word][2] + '\');"></img>&nbsp;</td><td style="font-size: 10;'+tdStyle+'">'+ cards[ch][word][4] +'</td><td style="font-size: 10;'+tdStyle+'">'+cards[ch][word][0]+'</td><td id="' + cards[ch][word][2] + '"></td></tr>';
+
+					//tableList += '<tr style='+ style +'><td style="font-size: 18;'+tdStyle+'">' + teknia2greek(cards[ch][word][3],ch) + '</td><td style="'+tdStyle+'">&nbsp;<img src="./speaker.png" onclick="playSound(\''+ cards[ch][word][3] + '.mp3' + '\');"></img>&nbsp;</td><td style="font-size: 10;'+tdStyle+'">'+ cards[ch][word][4] +'</td><td style="font-size: 10;'+tdStyle+'">'+cards[ch][word][0]+'</td><td id="' + cards[ch][word][3] + '.mp3"></td></tr>';
+
+				}
+			}
+
+			if( chF.value == chT.value )
+			{
+				tableList += '<input type="button" onClick="prevList();" value="PrevList"></input>';
+				tableList += '<input type="button" onClick="nextList();" value="NextList"></input>';
+			}
+
+			tableList += '</table>';
+			x[0].innerHTML += tableList;
+			document.getElementById('myListButton').value='Hide List';
+			toggleList=1;
+		}
+		else
+		{
+			alert('You must select lists totaling less than 700 words');
+		}
+	}
+}
+
+
+function prevList()
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	val = chT.value;
+	if( val >= 0 )
+	{
+		chF.value = (Number(val)-1); 
+		chT.value = (Number(val)-1); 
+
+		document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+		showList(1);
+	}
+}
+
+
+function nextList()
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	val = chF.value;
+	if( val <= 22 )
+	{
+		chF.value = (Number(val)+1); 
+		chT.value = (Number(val)+1); 
+
+		document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+		showList(1);
+	}
+}
+
+
+function checkSelectionsF(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chT.value = chF.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+	setCookie('bbg_chapterFrom', chF.value, 365 );
+	setCookie('bbg_chapterTo', chT.value, 365 );
+
+	toggle=0;
+
+	buildRandomList();
+	showAnswer();
+	
+	showList(1);	
+
+}
+
+
+function checkSelectionsT(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chF.value = chT.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+	setCookie('bbg_chapterFrom', chF.value, 365 );
+	setCookie('bbg_chapterTo', chT.value, 365 );
+
+	toggle=0;
+
+	buildRandomList();
+	showAnswer();
+
+
+	showList(1);
+}
+
+
+function getCookie(c_name)
+{
+	if (document.cookie.length>0)
+  	{
+  		c_start=document.cookie.indexOf(c_name + "=");
+  		if (c_start!=-1)
+    		{
+    			c_start=c_start + c_name.length+1;
+    			c_end=document.cookie.indexOf(";",c_start);
+    			if (c_end==-1) c_end=document.cookie.length;
+    			return unescape(document.cookie.substring(c_start,c_end));
+    		}
+  	}
+	return "";
+}
+
+function setCookie(c_name,value,expiredays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate()+expiredays);
+	document.cookie=c_name+ "=" +escape(value)+
+	((expiredays==null) ? "" : ";expires="+exdate.toUTCString());
+}
+
+function checkCookies()
+{
+	chapterFrom=getCookie('bbg_chapterFrom');
+	if (chapterFrom!=null && chapterFrom!="")
+  	{
+ 		d=document;
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+		chF.value=chapterFrom;
+		chapterTo=getCookie('bbg_chapterTo');
+		
+		if(chapterTo!=null && chapterTo!="")
+		{
+			chT.value=chapterTo;	
+		}
+  	}
+}
+
+
+</script>
+
+		<table class="outer" width="100%">
+			<tr><audio id="dummy"></audio></tr>
+			<tr>
+				<td class="inner" align="center">			
+					<table class="innermost" width="100%">
+						<tr><td colspan=2 align="right"><a href="http://www.busysteve.com/site/index.html">home</a></td></tr>
+
+						<tr>
+							<td class="innermost" align="left">
+<table id="myTable" class="greek_list">
+<tr><td><img src="./busysteve_logo_small.jpg"></img></td>
+    <td width="180" align=top><form>
+
+		<select id="chFrom" onChange="checkSelectionsF();">
+		<option value="0" selected="yes">Chapter 04</option>
+		<option value="1">Chapter 06</option>
+		<option value="2">Chapter 07</option>
+		<option value="3">Chapter 08</option>
+		<option value="4">Chapter 09</option>
+		<option value="5">Chapter 10</option>
+		<option value="6">Chapter 11</option>
+		<option value="7">Chapter 12</option>
+		<option value="8">Chapter 13</option>
+		<option value="9">Chapter 14</option>
+		<option value="10">Chapter 16</option>
+		<option value="11">Chapter 17</option>
+		<option value="12">Chapter 18</option>
+		<option value="13">Chapter 19</option>
+		<option value="14">Chapter 20</option>
+		<option value="15">Chapter 21</option>
+		<option value="16">Chapter 22</option>
+		<option value="17">Chapter 23</option>
+		<option value="18">Chapter 24</option>
+		<option value="19">Chapter 25</option>
+		<option value="20">Chapter 27</option>
+		<option value="21">Chapter 28</option>
+		<option value="22">Chapter 29</option>
+		<option value="23">Chapter 30</option>
+		<option value="24">Chapter 31</option>
+		<option value="25">Chapter 32</option>
+		<option value="26">Chapter 33</option>
+		<option value="27">Chapter 34</option>
+		<option value="28">Chapter 35</option>
+		<option value="29">Article Cases</option>
+		<option value="30">&alpha;&upsilon;&tau;&omicron;&sigmaf;</option>
+			</select>
+
+		<select id="chTo" onChange="checkSelectionsT();">
+		<option value="0">Chapter 04</option>
+		<option value="1">Chapter 06</option>
+		<option value="2">Chapter 07</option>
+		<option value="3">Chapter 08</option>
+		<option value="4">Chapter 09</option>
+		<option value="5">Chapter 10</option>
+		<option value="6">Chapter 11</option>
+		<option value="7">Chapter 12</option>
+		<option value="8">Chapter 13</option>
+		<option value="9">Chapter 14</option>
+		<option value="10">Chapter 16</option>
+		<option value="11">Chapter 17</option>
+		<option value="12">Chapter 18</option>
+		<option value="13">Chapter 19</option>
+		<option value="14">Chapter 20</option>
+		<option value="15">Chapter 21</option>
+		<option value="16">Chapter 22</option>
+		<option value="17">Chapter 23</option>
+		<option value="18">Chapter 24</option>
+		<option value="19">Chapter 25</option>
+		<option value="20">Chapter 27</option>
+		<option value="21">Chapter 28</option>
+		<option value="22">Chapter 29</option>
+		<option value="23">Chapter 30</option>
+		<option value="24">Chapter 31</option>
+		<option value="25">Chapter 32</option>
+		<option value="26">Chapter 33</option>
+		<option value="27">Chapter 34</option>
+		<option value="28" selected="yes">Chapter 35</option>
+		<option value="29">Article Cases</option>
+		<option value="30">&alpha;&upsilon;&tau;&omicron;&sigmaf;</option>
+        </select>
+
+
+<!--input type="button" id="myButton" onClick="showAnswer();" value="Answer"--></input>
+    			<input type="button" id="myListButton" onClick="showList();" value="List"></input>
+        </form>
+    </td>
+    <td width="50%"></td>
+    <td width="50%"></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="width: 100%; "></td></tr>
+</table>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
+

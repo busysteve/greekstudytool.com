@@ -1,0 +1,1424 @@
+
+<html>
+<head>
+	<title>busysteve.com - Biblical Greek Flash Cards</title>
+	<link rel="stylesheet" type="text/css" href="./busysteve.css">
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="Content-type: text/html; charset=utf-8">
+	<META name="keywords" content="greek, flashcards, ntgreek, biblical, busysteve, elements">
+	<META name="description" content="Biblical Greek flash cards, inspired by: The Elements of New Testament Greek">
+</head>
+<body onLoad="checkCookies(); buildRandomList(); showAnswer(); checkSelectionsF();">
+
+<script src="http://www.google.com/jsapi"></script>
+<script>google.load("swfobject", "2.2");</script>
+
+
+<script type="text/javascript" charset="utf-8">
+
+
+var ch1 = [
+['Chapter 1','','','ἀπαγγέλλω','I announce, proclaim, report (45)'],
+['Chapter 1','','','ἀποδίδωμι','I give away, pay, return (48)'],
+['Chapter 1','','','ἄρα','so, then, consequently (49)'],
+['Chapter 1','','','ἄφεσις, ἡ','forgiveness (17)'],
+['Chapter 1','','','ἄχρι','until (conj. or prep. + gen.) (49)'],
+['Chapter 1','','','βάπτισμα, τό','baptism (19)'],
+['Chapter 1','','','δεύτερος','second (43)'],
+['Chapter 1','','','διακονέω','I serve (37)'],
+['Chapter 1','','','διέρχομαι','I go through, cross over (43)'],
+['Chapter 1','','','ἐκπορεύομαι','I go out, come out (33)'],
+['Chapter 1','','','ἐνδύω','I clothe myself, put on, wear (27)'],
+['Chapter 1','','','ἐπιγινώσκω','I know, understand, recognize (44)'],
+['Chapter 1','','','ἔρημος, ἡ','desert, wilderness (48)'],
+['Chapter 1','','','ἑτοιμάζω','I make ready, prepare (40)'],
+['Chapter 1','','','ἔτος, -ους, τό','year (49)'],
+['Chapter 1','','','εὐδοκέω','I am well pleased, approve (21)'],
+['Chapter 1','','','Ἠσαΐας, ὁ','Isaiah (22)'],
+['Chapter 1','','','θηρίον, τό','animal, beast (46)'],
+['Chapter 1','','','θλῖψις, -εως, ἡ','tribulation, affliction, oppression (45)'],
+['Chapter 1','','','θρίξ, τριχός, ἡ','hair (15)'],
+['Chapter 1','','','ἱκανός','qualified, able (39)'],
+['Chapter 1','','','Ἰορδάνης, ὁ','the Jordan (15)'],
+['Chapter 1','','','ἰσχυρός','strong, mighty, powerful (29)'],
+['Chapter 1','','','καθίζω','I cause to sit down, appoint (46)'],
+['Chapter 1','','','κρατέω','I grasp, hold (fast), arrest (47)'],
+['Chapter 1','','','μετάνοια, ἡ','repentance (22)'],
+['Chapter 1','','','ναός, ὁ','temple, sanctuary (45)'],
+['Chapter 1','','','ὅμοιος','like, similar (45)'],
+['Chapter 1','','','ὀπίσω','after, behind (35)'],
+['Chapter 1','','','οὐαί','woe (46)'],
+['Chapter 1','','','οὐκέτι','no longer (47)'],
+['Chapter 1','','','πειράζω','I tempt, test (38)'],
+['Chapter 1','','','ποταμός, ὁ','river (17)'],
+['Chapter 1','','','πρό','before, in front of, at (gen) (47)'],
+['Chapter 1','','','προσφέρω','I bring to, offer (47)'],
+['Chapter 1','','','Σατανᾶς, ὁ','Satan (36)'],
+['Chapter 1','','','σταυρόω','I crucify (46)'],
+['Chapter 1','','','τεσσεράκοντα','forty (22)'],
+['Chapter 1','','','φυλακή, ἡ','watch, guard, prison (47)'],
+['Chapter 1','','','χώρα, ἡ','district, region (28)'],
+];
+
+var ch2 = [
+['Chapter 2','','','ἁμαρτάνω','to sin (43)'],
+['Chapter 2','','','ἄξιος','worthy, fit, deserving (41)'],
+['Chapter 2','','','ἅπτω','I touch, take hold of (39)'],
+['Chapter 2','','','ἄρχων, -οντος, ὁ','ruler, authority, judge (37)'],
+['Chapter 2','','','βούλομαι','I wish, want, desire (37)'],
+['Chapter 2','','','δέω','bind, tie (43)'],
+['Chapter 2','','','ἐγγίζω','I draw near, approach (42)'],
+['Chapter 2','','','ἑκατὸν','one hundred (17)'],
+['Chapter 2','','','ἐκεῖθεν','from there (37)'],
+['Chapter 2','','','ἐλέγχω','reprove, correct (17)'],
+['Chapter 2','','','ἐμαυτοῦ','(of) myself (37)'],
+['Chapter 2','','','ἔμπροσθεν','in front of, before (48)'],
+['Chapter 2','','','ἐπιτίθημι','I lay upon, put upon (39)'],
+['Chapter 2','','','ἐργάζομαι','I work, do, perform (41)'],
+['Chapter 2','','','εὐλογέω','I bless, praise (42)'],
+['Chapter 2','','','θαυμάζω','I marvel, am amazed, wonder (43)'],
+['Chapter 2','','','θεραπεύω','I heal, restore, serve (43)'],
+['Chapter 2','','','θύρα, ἡ','door, gate, entrance (39)'],
+['Chapter 2','','','καινός','new, unused (42)'],
+['Chapter 2','','','καλῶς','well (37)'],
+['Chapter 2','','','καυχάομαι','I boast, glory (37)'],
+['Chapter 2','','','κερδαίνω','to gain (17)'],
+['Chapter 2','','','λύω','loose (42)'],
+['Chapter 2','','','μαρτυρία, ἡ','testimony, witness (37)'],
+['Chapter 2','','','μάρτυς , ὁ','witness (35)'],
+['Chapter 2','','','μικρός','small, short (46)'],
+['Chapter 2','','','οἰκοδομέω','I build (up), erect, edify (40)'],
+['Chapter 2','','','οὗ','where (25)'],
+['Chapter 2','','','παραλαμβάνω','take (to oneself), take with/along (49)'],
+['Chapter 2','','','παρίστημι','I place beside, present (41)'],
+['Chapter 2','','','πέντε','five (38)'],
+['Chapter 2','','','περισσεύω','I exceed, overflow, abound (39)'],
+['Chapter 2','','','πλανάω','go astray, be misled, wander about aimlessly (39)'],
+['Chapter 2','','','πράσσω','I do, accomplish, practice (39)'],
+['Chapter 2','','','πρόβατον , τό','sheep (39)'],
+['Chapter 2','','','σπέρμα, -ατος, τό','seed, descendants, children (43)'],
+['Chapter 2','','','τέλος, -ους, τό','end, goal (40)'],
+['Chapter 2','','','τελώνης, ὁ','tax-collector (21)'],
+['Chapter 2','','','τέσσαρες','four (41)'],
+['Chapter 2','','','ὥσπερ','(just) as, so (36)'],
+];
+
+var ch3 = [
+['Chapter 3','','','ἀγρός, ὁ','field, country (36)'],
+['Chapter 3','','','ἀκάθαρτος','unclean, impure (32)'],
+['Chapter 3','','','ἀκροβυστία, ἡ','uncircumcision (20)'],
+['Chapter 3','','','ἀναγινώσκω','I read (aloud) (32)'],
+['Chapter 3','','','ἄνεμος, ὁ','wind (31)'],
+['Chapter 3','','','ἀρνέομαι','I deny, reject (33)'],
+['Chapter 3','','','βιβλίον, τό','book, scroll (34)'],
+['Chapter 3','','','διαθήκη, ἡ','covenant, decree, last will and testament (33)'],
+['Chapter 3','','','διακονία, ἡ','service, office, ministry, deacon (34)'],
+['Chapter 3','','','δικαιόω','I justify, vindicate (39)'],
+['Chapter 3','','','διότι','for, because, therefore (23)'],
+['Chapter 3','','','δυνατός','powerful, strong, mighty, able (32)'],
+['Chapter 3','','','ἐγγύς','near, close to (31)'],
+['Chapter 3','','','ἔξειμι','it is lawful, permitted (31)'],
+['Chapter 3','','','ἐπίγνωσις, -εως, ἡ','knowledge, recognition (20)'],
+['Chapter 3','','','εὐθέως','immediately (36)'],
+['Chapter 3','','','ἐχθρός','hostile, hated (32)'],
+['Chapter 3','','','ἥλιος, ὁ','sun (32)'],
+['Chapter 3','','','ἱερεύς, -εως, ὁ','priest (31)'],
+['Chapter 3','','','καθαρίζω','I cleanse, purify (31)'],
+['Chapter 3','','','καταργέω','I cancel, nullify, make void (27)'],
+['Chapter 3','','','λογίζομαι','I account, reckon, conclude (40)'],
+['Chapter 3','','','μέλος, -ους, τό','member, part, limb (34)'],
+['Chapter 3','','','ναί','yes, certainly, indeed (33)'],
+['Chapter 3','','','νυνί','now (20)'],
+['Chapter 3','','','ὀργή, ἡ','anger, wrath, punishment (36)'],
+['Chapter 3','','','οὖς, ὠτός, τό','ear, hearing (36)'],
+['Chapter 3','','','παραγίνομαι','I come, arrive, appear (37)'],
+['Chapter 3','','','παρρησία, ἡ','confidence, boldness (31)'],
+['Chapter 3','','','περιτομή, ἡ','circumcision (36)'],
+['Chapter 3','','','πλήν','yet, however, but (31)'],
+['Chapter 3','','','ποῖος','of what kind? (33)'],
+['Chapter 3','','','ποτήριον, τό','cup (31)'],
+['Chapter 3','','','ποῦ','where? (48)'],
+['Chapter 3','','','πτωχός','poor (34)'],
+['Chapter 3','','','ὑποστρέφω','I turn back, return (35)'],
+['Chapter 3','','','ὑστερέω','I fall short of, lack (16)'],
+['Chapter 3','','','φανερόω','I reveal, make manifest, show (49)'],
+['Chapter 3','','','Φίλιππος, ὁ','Philip (36)'],
+['Chapter 3','','','χωρίς','without, apart from (41)'],
+];
+
+var ch4 = [
+['Chapter 4','','','ἀγοράζω','I buy, purchase (30)'],
+['Chapter 4','','','ἀδικέω','I do wrong, treat unjustly (28)'],
+['Chapter 4','','','ἀληθινός','true, real, genuine (28)'],
+['Chapter 4','','','ἀνάγκη, ἡ','necessity, pressure (17)'],
+['Chapter 4','','','ἅπαξ','once and for all (14)'],
+['Chapter 4','','','ἀρνίον, τό','lamb, sheep (30)'],
+['Chapter 4','','','ἁρπάζω','I grasp, snatch, seize (14)'],
+['Chapter 4','','','Βαρναβᾶς, ὁ','Barnabas (28)'],
+['Chapter 4','','','γαμέω','I marry (28)'],
+['Chapter 4','','','γνῶσις, -εως, ἡ','knowledge (29)'],
+['Chapter 4','','','διακρίνω','I discriminate, judge, doubt (19)'],
+['Chapter 4','','','ἐλεέω','I have mercy on (29)'],
+['Chapter 4','','','ἔλεος, -ους, τό','mercy, compassion (27)'],
+['Chapter 4','','','ἐπιθυμία, ἡ','lust, craving, desire (39)'],
+['Chapter 4','','','ἐπικαλέω','I call (upon), name (30)'],
+['Chapter 4','','','ἐπιτιμάω','I rebuke, reprove, warn (29)'],
+['Chapter 4','','','ἡγέομαι','I lead, think, consider (28)'],
+['Chapter 4','','','θυγάτηρ, -τρός, ἡ','daughter, girl (28)'],
+['Chapter 4','','','θυσία, ἡ','sacrifice, offering (28)'],
+['Chapter 4','','','Ἰάκωβος, ὁ','James (42)'],
+['Chapter 4','','','ἴδε','look, see, behold (29)'],
+['Chapter 4','','','Ἰούδας, ὁ','Jude, Judah, Judas (44)'],
+['Chapter 4','','','Καῖσαρ, -αρος, ὁ','Caesar, emperor (29)'],
+['Chapter 4','','','μάχαιρα, ἡ','sword (29)'],
+['Chapter 4','','','μιμνῄσκομαι','I remember, recollect (23)'],
+['Chapter 4','','','μισέω','I hate, detest (40)'],
+['Chapter 4','','','μισθός, ὁ','pay, wages, reward (29)'],
+['Chapter 4','','','παράκλησις, -εως, ἡ','encouragement, comfort (29)'],
+['Chapter 4','','','παρέρχομαι','I pass by, neglect, disobey (29)'],
+['Chapter 4','','','πάσχα, τό','Passover (29)'],
+['Chapter 4','','','ποτέ','once, formerly, ever (29)'],
+['Chapter 4','','','σκανδαλίζω','I cause to stumble (29)'],
+['Chapter 4','','','σκότος,-ους, τό','darkness (31)'],
+['Chapter 4','','','συνείδησις, -εως, ἡ','conscience (30)'],
+['Chapter 4','','','σωτήρ, -ῆρος, ἡ','savior, deliverer (24)'],
+['Chapter 4','','','σωτηρία, ἡ','salvation, deliverance (46)'],
+['Chapter 4','','','φίλος','beloved, friend (29)'],
+['Chapter 4','','','φόβος, ὁ','fear, reverence, respect (47)'],
+['Chapter 4','','','φυλάσσω','I guard, protect (31)'],
+['Chapter 4','','','φυλή, ἡ','tribe, nation, people (31)'],
+];
+
+var ch5 = [
+['Chapter 5','','','ἀδικία, ἡ','unrighteousness, injustice (25)'],
+['Chapter 5','','','ἀληθής','true, honest, genuine (26)'],
+['Chapter 5','','','ἀναβλέπω','I look up, see again, receive sight (25)'],
+['Chapter 5','','','ἄρτι','now (36)'],
+['Chapter 5','','','ἀσθενής','weak, powerless, sick (26)'],
+['Chapter 5','','','βαστάζω','I bear, endure (27)'],
+['Chapter 5','','','γάμος, ὁ','wedding, marriage (16)'],
+['Chapter 5','','','γέ','indeed, even (25)'],
+['Chapter 5','','','γεύομαι','I taste, experience (15)'],
+['Chapter 5','','','γνωρίζω','I make known, reveal, know (25)'],
+['Chapter 5','','','δέκα','ten (25)'],
+['Chapter 5','','','δένδρον, τό','tree (25)'],
+['Chapter 5','','','διάκονος, ὁ','servant, deacon (29)'],
+['Chapter 5','','','δουλεύω','I am a slave, serve, obey (25)'],
+['Chapter 5','','','ἐκχέω','I pour out, shed (27)'],
+['Chapter 5','','','Ἕλλην, -ηνος, ὁ','a Greek, gentile, pagan (25)'],
+['Chapter 5','','','ἕνεκα','because of, on account of, for the sake of (26)'],
+['Chapter 5','','','ἥκω','I have come (26)'],
+['Chapter 5','','','Ἰακώβ, ὁ','Jacob (27)'],
+['Chapter 5','','','καθαρός','clean, pure (27)'],
+['Chapter 5','','','κεῖμαι','I lie, recline (24)'],
+['Chapter 5','','','λυπέω','I grieve, offend (26)'],
+['Chapter 5','','','Μαρία, ἡ','Mary (27)'],
+['Chapter 5','','','Μαριάμ, ἡ','Mary (27)'],
+['Chapter 5','','','μυστήριον, τό','mystery, secret (28)'],
+['Chapter 5','','','νικάω','I conquer, overcome (28)'],
+['Chapter 5','','','νυμφίος, ὁ','bridegroom (16)'],
+['Chapter 5','','','οἴνος, ὁ','wine (34)'],
+['Chapter 5','','','πνευματικός','spiritual (26)'],
+['Chapter 5','','','πόθεν','from where? (29)'],
+['Chapter 5','','','πόσος','how great/much/many (?) (27)'],
+['Chapter 5','','','προφητεύω','I prophesy (28)'],
+['Chapter 5','','','σός','your (27)'],
+['Chapter 5','','','σταυρός, ὁ','cross (27)'],
+['Chapter 5','','','στρατιώτης, ὁ','soldier (26)'],
+['Chapter 5','','','συνίημι','I understand, comprehend (26)'],
+['Chapter 5','','','τελέω','I finish, complete (28)'],
+['Chapter 5','','','φρονέω','I think, ponder (26)'],
+['Chapter 5','','','φωνέω','I call (43)'],
+['Chapter 5','','','χήρα, ἡ','widow (26)'],
+];
+
+var ch6 = [
+['Chapter 6','','','ἁμαρτωλός, ὁ','sinner (47)'],
+['Chapter 6','','','ἀμπελών, -ῶνος, ὁ','vineyard (23)'],
+['Chapter 6','','','ἀνάγω','I lead up, restore (23)'],
+['Chapter 6','','','ἀναιρέω','I take away, destroy, kill (24)'],
+['Chapter 6','','','ἄπιστος','faithless, unbelieving (23)'],
+['Chapter 6','','','ἀσθένεια, ἡ','weakness, sickness, disease (24)'],
+['Chapter 6','','','ἀσθενέω','I am weak, sick, in need (33)'],
+['Chapter 6','','','ἀστήρ, -έρος, ὁ','star (24)'],
+['Chapter 6','','','αὐξάνω','I grow, increase (23)'],
+['Chapter 6','','','δέησις, -εως, ἡ','prayer, entreaty, petition (18)'],
+['Chapter 6','','','εἰκών, -όνος, ἡ','image, likeness, form (23)'],
+['Chapter 6','','','ἐλεύθερος','free (23)'],
+['Chapter 6','','','ἐνεργέω','I work, produce (21)'],
+['Chapter 6','','','ἑορτή, ἡ','festival (25)'],
+['Chapter 6','','','ἐπιστολή, ἡ','letter, epistle (24)'],
+['Chapter 6','','','ἐπιστρέφω','I turn (around/back), return (36)'],
+['Chapter 6','','','Ἠλίας, ὁ','Elijah (29)'],
+['Chapter 6','','','ἰάομαι','I heal, cure, restore (26)'],
+['Chapter 6','','','ἰσχύω','I am strong, powerful, able (28)'],
+['Chapter 6','','','καταλείπω','I leave (behind), abandon, neglect (24)'],
+['Chapter 6','','','κελεύω','I command, order, urge (25)'],
+['Chapter 6','','','κρίσις, -εως, ἡ','judgment, condemnation (47)'],
+['Chapter 6','','','λευκός','white, bright, shining (25)'],
+['Chapter 6','','','μανθάνω','I learn (25)'],
+['Chapter 6','','','μήν, -ος, ὁ','month, new moon (18)'],
+['Chapter 6','','','μήποτε','never, lest (25)'],
+['Chapter 6','','','μήτε','and not, nor (34)'],
+['Chapter 6','','','νεφέλη, ἡ','cloud (25)'],
+['Chapter 6','','','νοῦς, νοός, ὁ','mind, understanding (24)'],
+['Chapter 6','','','ὀμνύω','I swear, take an oath (26)'],
+['Chapter 6','','','παῖς, παιδός , ὁ/ἡ','boy, child, son, servant (24)'],
+['Chapter 6','','','πάρειμι','I am present, have come (24)'],
+['Chapter 6','','','παρουσία, ἡ','coming, arrival (24)'],
+['Chapter 6','','','πίμπλημι','I fill, fulfill (24)'],
+['Chapter 6','','','πλῆθος, -ους, τό','multitude, large amount, crowd (31)'],
+['Chapter 6','','','πορνεία, ἡ','(sexual) immorality (25)'],
+['Chapter 6','','','προσευχή, ἡ','prayer (36)'],
+['Chapter 6','','','προσέχω','I pay attention to, devote myself to (24)'],
+['Chapter 6','','','προσκαλέω','I summon, call, invite (29)'],
+['Chapter 6','','','Τιμόθεος, ὁ','Timothy (24)'],
+];
+
+var ch7 = [
+['Chapter 7','','','ἁγιάζω','I sanctify, make holy, reverence (28)'],
+['Chapter 7','','','ἀγνοέω','I do not know, am ignorant (22)'],
+['Chapter 7','','','Αἴγυπτος, ἡ','Egypt (25)'],
+['Chapter 7','','','ἀναχωρέω','I go away, withdraw (14)'],
+['Chapter 7','','','ἀντί','instead of, for, in behalf of (22)'],
+['Chapter 7','','','βασιλεύω','I reign, rule (21)'],
+['Chapter 7','','','δέομαι','I ask, pray, beg (22)'],
+['Chapter 7','','','δοκιμάζω','I examine, test, prove (22)'],
+['Chapter 7','','','ἐκλέγομαι','I choose, elect (22)'],
+['Chapter 7','','','ἐκλεκτός','chosen, elect (22)'],
+['Chapter 7','','','ζῷον, τό','living thing/being, animal (23)'],
+['Chapter 7','','','Ἡρῴδης, ὁ','Herod (43)'],
+['Chapter 7','','','θεάομαι','I see, look at, behold (22)'],
+['Chapter 7','','','θυσιαστήριον, τό','altar (23)'],
+['Chapter 7','','','Ἰουδαία, ἡ','Judea (43)'],
+['Chapter 7','','','Ἰωσὴφ, ὁ','Joseph (35)'],
+['Chapter 7','','','καθεύδω','I sleep (22)'],
+['Chapter 7','','','κἀκεῖνος','and that one, he also (22)'],
+['Chapter 7','','','κατεργάζομαι','I do, achieve, accomplish (22)'],
+['Chapter 7','','','κατηγορέω','I accuse (23)'],
+['Chapter 7','','','κατοικέω','I live, dwell, reside (44)'],
+['Chapter 7','','','κοιλία, ἡ','belly, stomach, womb (22)'],
+['Chapter 7','','','κοπιάω','I work hard, labor (23)'],
+['Chapter 7','','','κωλύω','I hinder, prevent (23)'],
+['Chapter 7','','','Μακεδονία, ἡ','Macedonia (22)'],
+['Chapter 7','','','μέρος, -ους, τό','part, share, district (42)'],
+['Chapter 7','','','μηκέτι','no longer (22)'],
+['Chapter 7','','','νέος','new, fresh, young (23)'],
+['Chapter 7','','','πεινάω','I hunger, am hungry (23)'],
+['Chapter 7','','','πειρασμός, ὁ','temptation, trial, test (21)'],
+['Chapter 7','','','πέραν','on the other side (23)'],
+['Chapter 7','','','περιβάλλω','I put on, clothe, dress (23)'],
+['Chapter 7','','','πληγή, ἡ','blow, plague, wound (22)'],
+['Chapter 7','','','ῥύομαι','I rescue, deliver (17)'],
+['Chapter 7','','','σήμερον','today (41)'],
+['Chapter 7','','','σκεῦος, τό','vessel, jar, object (23)'],
+['Chapter 7','','','τελειόω, τό','I complete, make perfect (23)'],
+['Chapter 7','','','φαίνω','I shine, appear (31)'],
+['Chapter 7','','','χαρίζομαι','I give freely, grant (23)'],
+['Chapter 7','','','χιλιάς, -αδος, ἡ','a thousand (23)'],
+];
+
+var ch8 = [
+['Chapter 8','','','αἰτία, ἡ','cause, reason, accusation (20)'],
+['Chapter 8','','','ἅπας','all, everybody, everything (34)'],
+['Chapter 8','','','ἀπέχω','I have received, am distant (19)'],
+['Chapter 8','','','ἀργύριον, τό','silver, money (20)'],
+['Chapter 8','','','γενεά, ἡ','generation, family, decent (43)'],
+['Chapter 8','','','γένος, -ους, τό','race, descendent, family (20)'],
+['Chapter 8','','','γεωργός, ὁ','farmer (19)'],
+['Chapter 8','','','γονεύς, -έως, ὁ','parent (20)'],
+['Chapter 8','','','διαμαρτύρομαι','I solemnly urge, exhort, warn (15)'],
+['Chapter 8','','','διδαχή, ἡ','teaching [as content] (30)'],
+['Chapter 8','','','ἑκατοντάρχης, ὁ','centurion, captain, officer (20)'],
+['Chapter 8','','','ἐφίστημι','I stand by, appear (21)'],
+['Chapter 8','','','ἡγεμών, -όνος , ὁ','governor, ruler, leader (20)'],
+['Chapter 8','','','θερίζω','I reap, harvest (21)'],
+['Chapter 8','','','Ἰσαάκ, ὁ','Isaac (20)'],
+['Chapter 8','','','ἰχθύς, -ύος, ὁ','fish (20)'],
+['Chapter 8','','','καθίστημι','I bring, appoint (21)'],
+['Chapter 8','','','κοινωνία, ἡ','fellowship, communion (19)'],
+['Chapter 8','','','λατρεύω','I serve, worship (21)'],
+['Chapter 8','','','μετανοέω','I repent (34)'],
+['Chapter 8','','','μνημονεύω','I remember, think of, mention (21)'],
+['Chapter 8','','','νηστεύω','I fast (20)'],
+['Chapter 8','','','ξύλον, τό','wood, tree, cross (20)'],
+['Chapter 8','','','προάγω','I lead out (20)'],
+['Chapter 8','','','προστίθημι','I add (to), increase (18)'],
+['Chapter 8','','','πωλέω','I sell (22)'],
+['Chapter 8','','','σκηνή, ἡ','tent, booth, tabernacle (20)'],
+['Chapter 8','','','σοφός','wise, clever, skillful (20)'],
+['Chapter 8','','','στρέφω','I turn, return (21)'],
+['Chapter 8','','','συνέδριον, τό','Sanhedrin, council (22)'],
+['Chapter 8','','','τέρας, -ατος, τό','wonder (16)'],
+['Chapter 8','','','τιμάω','I honor, revere (21)'],
+['Chapter 8','','','τοσοῦτος, -αύτη, -οῦτον','so great, so large, so many (20)'],
+['Chapter 8','','','τρέχω','I run (20)'],
+['Chapter 8','','','τροφή, ἡ','food, nourishment (16)'],
+['Chapter 8','','','ὑπακούω','I obey, follow (21)'],
+['Chapter 8','','','ὑπηρέτης, ὁ','servant, helper, assistant (20)'],
+['Chapter 8','','','χιλίαρχος, ὁ','military tribune, high ranking officer (21)'],
+['Chapter 8','','','χρεία, ἡ','need, lack, necessity (49)'],
+['Chapter 8','','','ὡσεί','as, like, about (21)'],
+];
+
+var ch9 = [
+['Chapter 9','','','ἀδελφή, ἡ','sister (26)'],
+['Chapter 9','','','ἀληθῶς','truly, really (18)'],
+['Chapter 9','','','Ἀντιόχεια, ἡ','Antioch (18)'],
+['Chapter 9','','','ἀποκάλυψις, -εως, ἡ','revelation (18)'],
+['Chapter 9','','','ἀπώλεια, ἡ','destruction, ruin (18)'],
+['Chapter 9','','','ἀριθμός, ὁ','number, total (18)'],
+['Chapter 9','','','Ἀσία, ἡ','Asia (18)'],
+['Chapter 9','','','βλασφημία, ἡ','blasphemy, slander (18)'],
+['Chapter 9','','','δεσμός, ὁ','bond, chain, prison (18)'],
+['Chapter 9','','','δῶρον, τό','gift, present, offering (19)'],
+['Chapter 9','','','εἰσπορεύομαι','I go in, enter (18)'],
+['Chapter 9','','','ἐπαίρω','I lift up (19)'],
+['Chapter 9','','','ἐπάνω','above, over (19)'],
+['Chapter 9','','','ἐπιβάλλω','I throw over, lay on, put on (18)'],
+['Chapter 9','','','εὐχαριστέω','I give thanks, am thankful (38)'],
+['Chapter 9','','','θυμός, ὁ','passion, anger, rage (18)'],
+['Chapter 9','','','καταγγέλλω','I proclaim, make known (18)'],
+['Chapter 9','','','κατακρίνω','I condemn, pass judgment on (18)'],
+['Chapter 9','','','κενός','empty, vain (18)'],
+['Chapter 9','','','κλαίω','I weep, cry (40)'],
+['Chapter 9','','','κληρονομέω','I inherit, obtain (18)'],
+['Chapter 9','','','κοιμάω','I (fall) asleep, die (18)'],
+['Chapter 9','','','κρείττων','better (19)'],
+['Chapter 9','','','κριτής, ὁ','judge (19)'],
+['Chapter 9','','','κτίσις, -εως, ἡ','creation, creature (19)'],
+['Chapter 9','','','κώμη, ἡ','village, small town (27)'],
+['Chapter 9','','','Λάζαρος, ὁ','Lazarus (15)'],
+['Chapter 9','','','μαρτύριον, τό','testimony, witness, proof (19)'],
+['Chapter 9','','','μεριμνάω','I am anxious, worry (19)'],
+['Chapter 9','','','μνημεῖον, τό','grave, tomb (40)'],
+['Chapter 9','','','οὔπω','not yet (26)'],
+['Chapter 9','','','παλαιός','old, former (19)'],
+['Chapter 9','','','πάντοτε','always (41)'],
+['Chapter 9','','','παράπτωμα, -ατος, τό','transgression, trespass, sin (19)'],
+['Chapter 9','','','παρατίθημι','I place before (19)'],
+['Chapter 9','','','πότε','when? (19)'],
+['Chapter 9','','','προφητεία, ἡ','prophecy (19)'],
+['Chapter 9','','','συνέρχομαι','I come/travel together, go with (30)'],
+['Chapter 9','','','ταράσσω','I stir up, disturb, trouble (17)'],
+['Chapter 9','','','φιλέω','I love, like, kiss (25)'],
+];
+
+var ch10 = [
+['Chapter 10','','','ἀνθίστημι','I resist, oppose (14)'],
+['Chapter 10','','','ἀποκαλύπτω','I reveal, uncover (26)'],
+['Chapter 10','','','ἀρέσκω','I please (17)'],
+['Chapter 10','','','βρῶμα, -ατος, τό','food (17)'],
+['Chapter 10','','','γρηγορέω','I am awake alert, watchful (22)'],
+['Chapter 10','','','διάβολος, ὁ','devil, accuser, slanderous (adj) (37)'],
+['Chapter 10','','','ἐξίστημι','I amaze, confuse (17)'],
+['Chapter 10','','','ἐπαύριον','tomorrow (17)'],
+['Chapter 10','','','ἕτοιμος','ready, prepared (17)'],
+['Chapter 10','','','θησαυρός, ὁ','treasure, storehouse (17)'],
+['Chapter 10','','','ἵππος, ὁ','horse (17)'],
+['Chapter 10','','','Καισάρεια, ἡ','Caesarea (17)'],
+['Chapter 10','','','κἄν','and if, even if, if only (17)'],
+['Chapter 10','','','καταλύω','I thrown down, destroy, abolish (17)'],
+['Chapter 10','','','κατέχω','I hold back, restrain, hold fast, possess (17)'],
+['Chapter 10','','','κόπος, ὁ','work, labor (18)'],
+['Chapter 10','','','κρυπτός','hidden, secret (17)'],
+['Chapter 10','','','κρύπτω','I hide, conceal, cover (18)'],
+['Chapter 10','','','μήτι','[interrogative particle expecting an negative answer] (18)'],
+['Chapter 10','','','νίπτω','I wash (17)'],
+['Chapter 10','','','οἰκοδομή, ἡ','edification, building (18)'],
+['Chapter 10','','','ὀλίγος','little, few (40)'],
+['Chapter 10','','','ὁμοίως','likewise, similarly (30)'],
+['Chapter 10','','','οὔ','no (17)'],
+['Chapter 10','','','πάθημα, -ατος, τό','suffering (16)'],
+['Chapter 10','','','παραχρῆμα','at once, immediately (18)'],
+['Chapter 10','','','πάσχω','I suffer (42)'],
+['Chapter 10','','','περιτέμνω','I circumcise (17)'],
+['Chapter 10','','','πλήρωμα, -ατος, τό','fullness, fulfillment (17)'],
+['Chapter 10','','','ποιμήν, ένος, ὁ','shepherd (18)'],
+['Chapter 10','','','πόλεμος, ὁ','war, battle, fight (18)'],
+['Chapter 10','','','πολλάκις','often, frequently, many times (18)'],
+['Chapter 10','','','πυλών, -ῶνος, ὁ','gate, entrance (18)'],
+['Chapter 10','','','στέφανος, ὁ','crown, wreath, reward (18)'],
+['Chapter 10','','','τίκτω','I bear, give birth to, bring forth (18)'],
+['Chapter 10','','','τύπος, ὁ','type, example, pattern (15)'],
+['Chapter 10','','','ὑποτάσσω','I subject (38)'],
+['Chapter 10','','','ὑψόω','I exalt, lift up (20)'],
+['Chapter 10','','','φανερός','manifest, visible, clear (18)'],
+['Chapter 10','','','χρυσοῦς','golden (18)'],
+];
+
+var ch11 = [
+['Chapter 11','','','ἀθετέω','I nullify, reject, set aside (16)'],
+['Chapter 11','','','ἀνακρίνω','I judge, examine, call to account (16)'],
+['Chapter 11','','','δείκνυμι','I show (33)'],
+['Chapter 11','','','δεῖπνον, τό','dinner, supper, banquet (16)'],
+['Chapter 11','','','δέσμιος, ὁ','prisoner (16)'],
+['Chapter 11','','','δηνάριον, τό','denarius (16)'],
+['Chapter 11','','','διαλογίζομαι','I consider, ponder, reason (16)'],
+['Chapter 11','','','διατάσσω','I order, direct, command (16)'],
+['Chapter 11','','','διψάω','I am thirsty, long for (16)'],
+['Chapter 11','','','διώκω','I pursue (45)'],
+['Chapter 11','','','ἐκτείνω','I stretch out (16)'],
+['Chapter 11','','','ἐλπίζω','I hope (31)'],
+['Chapter 11','','','ἐμβαίνω','I go in, step in, embark (16)'],
+['Chapter 11','','','ἔπειτα','then, next (16)'],
+['Chapter 11','','','ἐπιθυμέω','I desire, long for, lust for (16)'],
+['Chapter 11','','','ἐπιλαμβάνομαι','I take hold of, catch, arrest (19)'],
+['Chapter 11','','','ἐπιμένω','I stay, remain, persevere (16)'],
+['Chapter 11','','','ἐργάτης, ὁ','laborer, worker (16)'],
+['Chapter 11','','','εὐλογία, ἡ','blessing, praise (16)'],
+['Chapter 11','','','εὐσέβεια, ἡ','godliness, piety (15)'],
+['Chapter 11','','','Ἔφεσος, ἡ','Ephesus (16)'],
+['Chapter 11','','','ζῆλος, ὁ/τό','jealousy, envy (16)'],
+['Chapter 11','','','θεμέλιος, ὁ','foundation (15)'],
+['Chapter 11','','','κακῶς','badly, wrongly, wickedly (16)'],
+['Chapter 11','','','κατέρχομαι','I come down, arrive, put in (16)'],
+['Chapter 11','','','μέχρι','until (17)'],
+['Chapter 11','','','ὁμολογέω','I confess, profess (26)'],
+['Chapter 11','','','παραγγέλλω','I command, charge (32)'],
+['Chapter 11','','','παρέχω','I offer, grant (16)'],
+['Chapter 11','','','πλησίον','neighbor (17)'],
+['Chapter 11','','','πλούσιος','rich, wealthy (28)'],
+['Chapter 11','','','πλοῦτος, ὁ/τό','wealth, riches (22)'],
+['Chapter 11','','','ῥίζα, ἡ','root, source, shoot, descendent (17)'],
+['Chapter 11','','','τιμή, ἡ','honor, value, price (41)'],
+['Chapter 11','','','ὑποκριτής, ὁ','hypocrite, pretender (17)'],
+['Chapter 11','','','ὑπομένω','I remain, endure (17)'],
+['Chapter 11','','','ὑπομονή, ἡ','endurance, perseverance, patience (32)'],
+['Chapter 11','','','φεύγω','I flee, avoid (29)'],
+['Chapter 11','','','χάρισμα, -ατος, τό','gift, favor (17)'],
+['Chapter 11','','','ὦ','O (direct address) (17)'],
+];
+
+var ch12 = [
+['Chapter 12','','','ἀνέχω','I endure, bear with (15)'],
+['Chapter 12','','','ἀνομία, ἡ','lawlessness (15)'],
+['Chapter 12','','','ἀπάγω','I lead away, bring before (15)'],
+['Chapter 12','','','βλασφημέω','I blaspheme, defame, slander (34)'],
+['Chapter 12','','','γνωστός','known, notable (15)'],
+['Chapter 12','','','γυμνός','naked, poorly dressed (15)'],
+['Chapter 12','','','∆αμασκός, ἡ','Damascus (15)'],
+['Chapter 12','','','δέρω','I skin, beat (15)'],
+['Chapter 12','','','διδασκαλία, ἡ','teaching, instruction (21)'],
+['Chapter 12','','','εἶτα','then, furthermore (15)'],
+['Chapter 12','','','ἐντέλλομαι','I command (15)'],
+['Chapter 12','','','ἐπαγγέλλομαι','I announce, proclaim, promise (15)'],
+['Chapter 12','','','εὐχαριστία, ἡ','thankfulness, thanksgiving (15)'],
+['Chapter 12','','','καταλαμβάνω','I seize, attain, overtake (15)'],
+['Chapter 12','','','Καφαρναούμ, ἡ','Capernaum (16)'],
+['Chapter 12','','','κλείω','I shut, close, lock (16)'],
+['Chapter 12','','','κλέπτης, ὁ','thief (16)'],
+['Chapter 12','','','κληρονόμος, ὁ','heir (15)'],
+['Chapter 12','','','κτίζω','I create, make (15)'],
+['Chapter 12','','','λῃστής, ὁ','robber, bandit, revolutionary (15)'],
+['Chapter 12','','','λύπη, ἡ','grief, sorrow, pain (16)'],
+['Chapter 12','','','μοιχεύω','I commit adultery (15)'],
+['Chapter 12','','','νομίζω','I think, suppose (15)'],
+['Chapter 12','','','ξηραίνω','I dry (up), wither (15)'],
+['Chapter 12','','','ὅθεν','from where (15)'],
+['Chapter 12','','','οἰκουμένη, ἡ','world, inhabited earth, humankind (15)'],
+['Chapter 12','','','ὁμοιόω','I compare, make like (15)'],
+['Chapter 12','','','οὐδέποτε','never (16)'],
+['Chapter 12','','','περισσότερος','greater, more (16)'],
+['Chapter 12','','','πλήρης','filled, full, complete (16)'],
+['Chapter 12','','','προσδοκάω','I wait for, look for, expect (16)'],
+['Chapter 12','','','σεαυτοῦ','yourself (43)'],
+['Chapter 12','','','σκοτία, ἡ','darkness (16)'],
+['Chapter 12','','','συκῆ, ἡ','fig tree (16)'],
+['Chapter 12','','','συλλαμβάνω','I arrest, catch, become pregnant (16)'],
+['Chapter 12','','','συνίστημι','I recommend, commend (16)'],
+['Chapter 12','','','σφραγίς, -ῖδος, ἡ','seal, mark, inscription (16)'],
+['Chapter 12','','','τολμάω','I dare, am courageous (16)'],
+['Chapter 12','','','χορτάζω','I feed, satisfy (16)'],
+['Chapter 12','','','ὡσαύτως','likewise, similarly (17)'],
+];
+
+var ch13 = [
+['Chapter 13','','','ἄκανθα, ἡ','thorn (14)'],
+['Chapter 13','','','ἀκοή, ἡ','hearing, report, ear (24)'],
+['Chapter 13','','','ἀλλότριος','strange, foreign (14)'],
+['Chapter 13','','','ἀμφότεροι','both, all (14)'],
+['Chapter 13','','','ἀναγγέλλω','I report, announce, proclaim (14)'],
+['Chapter 13','','','ἀνάκειμαι','I lie, recline (14)'],
+['Chapter 13','','','ἀνάστασις, -εως, ἡ','resurrection (42)'],
+['Chapter 13','','','ἀπειθέω','I disobey (14)'],
+['Chapter 13','','','ἀτενίζω','I look intently (14)'],
+['Chapter 13','','','αὔριον','tomorrow, soon (14)'],
+['Chapter 13','','','ἀφίστημι','I mislead, go away, fall away (14)'],
+['Chapter 13','','','γράμμα, -ατος, τό','letter (of alphabet), document (14)'],
+['Chapter 13','','','διαλογισμός, ὁ','thought, opinion, dispute (14)'],
+['Chapter 13','','','ἕκτος','sixth (14)'],
+['Chapter 13','','','ἐλάχιστος','smallest, least, insignificant (14)'],
+['Chapter 13','','','ἐπεί','because, since, for (25)'],
+['Chapter 13','','','ἐπιτρέπω','I allow, permit (18)'],
+['Chapter 13','','','ἐπουράνιος','heavenly, in heaven (19)'],
+['Chapter 13','','','κρίμα, -ατος, τό','judging, judgment (27)'],
+['Chapter 13','','','νήπιος, ὁ','infant, child (15)'],
+['Chapter 13','','','ὀφείλω','I owe, ought (35)'],
+['Chapter 13','','','ὀψία','late, evening (15)'],
+['Chapter 13','','','παρθένος, ἡ/ὁ','virgin (15)'],
+['Chapter 13','','','παύω','I stop, cease (15)'],
+['Chapter 13','','','πέτρα, ἡ','rock, stone (15)'],
+['Chapter 13','','','ποτίζω','I water, give to drink (15)'],
+['Chapter 13','','','προλέγω','I tell beforehand (15)'],
+['Chapter 13','','','πώς','somehow, perhaps (15)'],
+['Chapter 13','','','ῥαββί','rabbi, master, teacher (15)'],
+['Chapter 13','','','σαλεύω','I shake (15)'],
+['Chapter 13','','','Σαῦλος, ὁ','Saul (15)'],
+['Chapter 13','','','σκάνδαλον, τό','stumbling block, trap, temptation (15)'],
+['Chapter 13','','','συμφέρω','I bring together (15)'],
+['Chapter 13','','','σφραγίζω','I seal, mark, certify (15)'],
+['Chapter 13','','','ταχέως','quickly, soon, hastily (15)'],
+['Chapter 13','','','τέλειος','perfect, complete, mature, adult (19)'],
+['Chapter 13','','','τράπεζα, ἡ','table, meal, food (15)'],
+['Chapter 13','','','ὑπακοή, ἡ','obedience (15)'],
+['Chapter 13','','','χόρτος, ὁ','grass, hay (15)'],
+['Chapter 13','','','ὠφελέω','I help, aid, benefit (15)'],
+];
+
+fr01 = [
+['19,864x to 469x','','','ὁ, ἡ, τό','the (19,864)'],
+['19,864x to 469x','','','καί','and, even, also, but (8,998)'],
+['19,864x to 469x','','','αὐτός, ή, ό','he, she, it; self, same (5,597)'],
+['19,864x to 469x','','','σύ, ὑμεῖς','you (sg); you (pl) (2,900)'],
+['19,864x to 469x','','','δέ','but, and, rather, now (2,788)'],
+['19,864x to 469x','','','ἐν','in, on, at, to, by, among, with (2,752)'],
+['19,864x to 469x','','','ἐγώ, ἡμεῖς','I; we (2,570)'],
+['19,864x to 469x','','','εἰμί','I am, exist (2,463)'],
+['19,864x to 469x','','','λέγω','I say, speak, call (2,353)'],
+['19,864x to 469x','','','εἰς ','into, in, to, for (1,768)'],
+['19,864x to 469x','','','οὐ','not (with ind verbs and positive answer questions) (1,621)'],
+['19,864x to 469x','','','ὃς, ἥ, ὅ','who, which, what, that (1,407)'],
+['19,864x to 469x','','','οὗτος, αὕτη, τοῦτο','this; he, she it (1,384)'],
+['19,864x to 469x','','','θεός, ὁ','God, god (1,317)'],
+['19,864x to 469x','','','ὅτι','that, because, for (1,296)'],
+['19,864x to 469x','','','πᾶς, πᾶσα, πᾶν','every, all; everyone, everything (1,243)'],
+['19,864x to 469x','','','μή','not (with non-ind verbs and negative answer questions) (1,042)'],
+['19,864x to 469x','','','γάρ','for, because, so, then (1,041)'],
+['19,864x to 469x','','','Ἰησοῦς, ὁ','Jesus, Joshua (918)'],
+['19,864x to 469x','','','ἐκ ','from, (out) of, away from (914)'],
+['19,864x to 469x','','','ἐπί','on (gen); on, at in (dat); on, to, for (acc) (890)'],
+['19,864x to 469x','','','κύριος, ὁ','lord, master, sir, Lord (716)'],
+['19,864x to 469x','','','ἔχω','I have, possess, hold (708)'],
+['19,864x to 469x','','','πρός','for (gen); at (dat); to, for, against, with, at by (700)'],
+['19,864x to 469x','','','γίνομαι','I become, come, exist, am born (669)'],
+['19,864x to 469x','','','διά','though, during, with, at, by (gen); because of (acc) (667)'],
+['19,864x to 469x','','','ἵνα','that, in order that, so that (663)'],
+['19,864x to 469x','','','ἀπό','(away) from, with for (646)'],
+['19,864x to 469x','','','ἀλλά','but, yet, rather, nevertheless (638)'],
+['19,864x to 469x','','','ἔρχομαι ','I come, go (631)'],
+['19,864x to 469x','','','ποιέω','I do, practice make (568)'],
+['19,864x to 469x','','','τίς, τί','who? which? what? why? (554)'],
+['19,864x to 469x','','','ἄνθρωπος, ὁ','man, human being, husband (550)'],
+['19,864x to 469x','','','τις, τι','someone, anyone, certain one, something (533)'],
+['19,864x to 469x','','','Χριστός, ὁ','Messiah, Christ, Anointed One (529)'],
+['19,864x to 469x','','','ὡς','as, like, that, about (504)'],
+['19,864x to 469x','','','εἰ','if, since, whether (502)'],
+['19,864x to 469x','','','οὖν','so, then, therefore, consequently (498)'],
+['19,864x to 469x','','','κατά','down, against (gen); according to, along (acc) (473)'],
+['19,864x to 469x','','','μετά ','with, among, against (gen); after (acc) (469)']
+];
+
+fr02 = [
+['452x to 195x','','','ὁράω','I see, perceive (452)'],
+['452x to 195x','','','ἀκούω','I hear, listen, obey (428)'],
+['452x to 195x','','','πολύς, πολλή, πολύ','much, many, large, great (416)'],
+['452x to 195x','','','δίδωμι','I give, grant (415)'],
+['452x to 195x','','','πατήρ, πατρός, ὁ','father, Father, ancestor, forefather (413)'],
+['452x to 195x','','','ἡμέρα, ἡ','day, time (389)'],
+['452x to 195x','','','πνεῦμα, -ατος, τό','spirit, Spirit, wind, breath (379)'],
+['452x to 195x','','','υἱός, ὁ','son, Son, descendent, child (377)'],
+['452x to 195x','','','εἷς, μία, ἓν','one, single (345)'],
+['452x to 195x','','','ἀδελφός, ὁ ','brother, fellow believer (343)'],
+['452x to 195x','','','ἤ','or, than (343)'],
+['452x to 195x','','','ἐάν','if, when (333)'],
+['452x to 195x','','','περί','about, concerning (gen); around, near (acc) (333)'],
+['452x to 195x','','','λόγος, ὁ','word, Word, message, statement, account (330)'],
+['452x to 195x','','','ἑαυτοῦ','(of) himself, herself, itself (319)'],
+['452x to 195x','','','οἶδα','I know, am acquainted with, understand (318)'],
+['452x to 195x','','','λαλέω','I speak, say (296)'],
+['452x to 195x','','','οὐρανός, ὁ','heaven, sky (273)'],
+['452x to 195x','','','μαθητής, ὁ','disciple, follower (261)'],
+['452x to 195x','','','λαμβάνω ','I take, receive, seize (258)'],
+['452x to 195x','','','γῆ, ἡ','earth, land, ground (250)'],
+['452x to 195x','','','μέγας, μεγάλη, μέγα','large, great, important (243)'],
+['452x to 195x','','','πίστις, -εως, ἡ','faith, belief, trust, faithfulness, doctrine (243)'],
+['452x to 195x','','','πιστεύω','I believe (in), have faith (in), trust, entrust (241)'],
+['452x to 195x','','','ἐκεῖνος','that (person) (240)'],
+['452x to 195x','','','οὐδείς, οὐδεμία, οὐδέν','no one, nothing, no (234)'],
+['452x to 195x','','','ἅγιος','holy, saints (pl) (233)'],
+['452x to 195x','','','ἀποκρίνομαι','I answer, reply (231)'],
+['452x to 195x','','','ὄνομα, -ατος, τό','name, title, reputation (228)'],
+['452x to 195x','','','γινώσκω ','I know, understand, perceive, acknowledge (222)'],
+['452x to 195x','','','ὑπό','by (gen); under, below (acc) (220)'],
+['452x to 195x','','','ἐξέρχομαι','I go out, come up (218)'],
+['452x to 195x','','','ἀνήρ, ἀνδρός, ὁ','man, husband (216)'],
+['452x to 195x','','','γυνή, -αικός, ἡ','woman, wife, bride (215)'],
+['452x to 195x','','','τέ','and, so (215)'],
+['452x to 195x','','','δύναμαι','I can, am able (210)'],
+['452x to 195x','','','θέλω','I will, want, desire, wish (208)'],
+['452x to 195x','','','οὕτως','in this manner, thus, so (208)'],
+['452x to 195x','','','ἰδού','see! behold! look! (200)'],
+['452x to 195x','','','Ἰουδαῖος ','Jewish; a Jew (195)']
+];
+
+fr03 = [
+['194x to 142x','','','εἰσέρχομαι','I come in, go it, enter (194)'],
+['194x to 142x','','','νόμος, ὁ','law, rule, principle (194)'],
+['194x to 142x','','','παρά','from (gen); with, beside (dat); at, on (acc) (194)'],
+['194x to 142x','','','γράφω','I write, record (191)'],
+['194x to 142x','','','κόσμος, ὁ','world, earth, universe; adornment (186)'],
+['194x to 142x','','','καθώς','as, just as, even as (182)'],
+['194x to 142x','','','μέν','on the one hand, indeed (179)'],
+['194x to 142x','','','χείρ, χειρός, ἡ','hand, power (177)'],
+['194x to 142x','','','εὑρίσκω','I find, discover; obtain (mid) (176)'],
+['194x to 142x','','','ἄγγελος, ὁ ','angel, messenger (175)'],
+['194x to 142x','','','ὄχλος, ὁ','crowd, multitude (175)'],
+['194x to 142x','','','ἁμαρτία, ἡ','sin, sinfulness (173)'],
+['194x to 142x','','','ἔργον, τό','work, deed, action (169)'],
+['194x to 142x','','','ἄν','(conditional particle used with sub) (166)'],
+['194x to 142x','','','δόξα, ἡ','glory, majesty, splendor (166)'],
+['194x to 142x','','','βασιλεία, ἡ','kingdom, reign, rule (162)'],
+['194x to 142x','','','ἔθνος, -ους, τό','nation, gentiles, people (162)'],
+['194x to 142x','','','πόλις, -εως, ἡ','city, town (162)'],
+['194x to 142x','','','τότε','then (160)'],
+['194x to 142x','','','ἐσθίω ','I eat, consume (158)'],
+['194x to 142x','','','Παῦλος, ὁ','Paul (158)'],
+['194x to 142x','','','καρδία, ἡ','heart, mind (156)'],
+['194x to 142x','','','Πέτρος, ὁ','Peter (156)'],
+['194x to 142x','','','ἄλλος','other, another, different (155)'],
+['194x to 142x','','','ἵστημι','I stand, set (155)'],
+['194x to 142x','','','πρῶτος','first, earlier, foremost (155)'],
+['194x to 142x','','','χάρις, -ιτος, ἡ','grace, favor, thanks (155)'],
+['194x to 142x','','','πορεύομαι','I go, travel (153)'],
+['194x to 142x','','','ὑπέρ','for, on behalf of, about (gen); above, beyond (acc) (150)'],
+['194x to 142x','','','καλέω ','I call, address, invite (148)'],
+['194x to 142x','','','νῦν','now, the present (147)'],
+['194x to 142x','','','σάρξ, σαρκός, ἡ','flesh, body, sinful nature (147)'],
+['194x to 142x','','','ἕως','until, while (146)'],
+['194x to 142x','','','ἐγείρω','I raise up, restore, awaken (144)'],
+['194x to 142x','','','ὅστις, ἥτις, ὅ τι','who, whoever (144)'],
+['194x to 142x','','','προφήτης, -ος, ὁ','prophet (144)'],
+['194x to 142x','','','ἀγαπάω','I love (143)'],
+['194x to 142x','','','ἀφίημι','I leave, forgive, divorce (143)'],
+['194x to 142x','','','οὐδέ','and not, neither, nor (143)'],
+['194x to 142x','','','λαός, ὁ ','people, crowd (142)']
+];
+
+fr04 = [
+['142x to 103x','','','σῶμα, -ατος, τό','body, corpse (142)'],
+['142x to 103x','','','πάλιν','again, furthermore (141)'],
+['142x to 103x','','','ζάω','I live, recover (140)'],
+['142x to 103x','','','φωνή, ἡ','voice, sound, call (139)'],
+['142x to 103x','','','δύο','two (135)'],
+['142x to 103x','','','ζωή, ἡ','life (135)'],
+['142x to 103x','','','Ἰωάννης, -ου, ὁ','John (135)'],
+['142x to 103x','','','ἀποστέλλω','I send (out/away) (132)'],
+['142x to 103x','','','βλέπω','I see, look at, watch (132)'],
+['142x to 103x','','','ἀμήν ','amen, truly, so be it (129)'],
+['142x to 103x','','','νεκρός','dead, useless (128)'],
+['142x to 103x','','','σύν','(together) with, accompany, besides (128)'],
+['142x to 103x','','','δοῦλος, ὁ','slave (124)'],
+['142x to 103x','','','ὅταν','whenever, when (123)'],
+['142x to 103x','','','αἰών, -ῶνος, ὁ','eternity, age, world (122)'],
+['142x to 103x','','','ἀρχιερεύς, -έως, ὁ','high priest (122)'],
+['142x to 103x','','','βάλλω','I throw, cast, put (122)'],
+['142x to 103x','','','θάνατος, ὁ','death (120)'],
+['142x to 103x','','','δύναμις, -εως, ἡ','power, ability, miracle (119)'],
+['142x to 103x','','','παραδίδωμι ','I hand over, betray, entrust (119)'],
+['142x to 103x','','','μένω','I remain, stay, abide, live (118)'],
+['142x to 103x','','','ἀπέρχομαι','I go away, depart, pass by (117)'],
+['142x to 103x','','','ζητέω','I seek, look for (117)'],
+['142x to 103x','','','ἀγάπη, ἡ','love (116)'],
+['142x to 103x','','','βασιλεύς, -έως, ὁ','king (115)'],
+['142x to 103x','','','ἐκκλησία, ἡ','congregation, assembly, church (114)'],
+['142x to 103x','','','ἴδιος','one’s own; home; individually (114)'],
+['142x to 103x','','','κρίνω','I judge, decide, condemn (114)'],
+['142x to 103x','','','μόνος','only, alone, deserted (114)'],
+['142x to 103x','','','οἶκος, ὁ ','house(hold), home, family, temple (114)'],
+['142x to 103x','','','ἀποθνῄσκω','I die (111)'],
+['142x to 103x','','','ὅσος','as much as, as many as, as great as (110)'],
+['142x to 103x','','','ἀλήθεια, ἡ','truth, truthfulness (109)'],
+['142x to 103x','','','μέλλω','I am about to, am going to, intend (109)'],
+['142x to 103x','','','ὅλος','whole, all, entire (109)'],
+['142x to 103x','','','παρακαλέω','I exhort, comfort, urge (109)'],
+['142x to 103x','','','ἀνίστημι','I stand up, arise, raise, bring to life (108)'],
+['142x to 103x','','','σῴζω','I save, preserve, heal, deliver (106)'],
+['142x to 103x','','','ὥρα, ἡ','hour, moment, time (106)'],
+['142x to 103x','','','ὅτε ','when, while (103)']
+];
+
+fr05 = [
+['103x to 85x','','','πῶς','how? in what way? (103)'],
+['103x to 85x','','','ψυχή, ἡ','soul, life, living being (103)'],
+['103x to 85x','','','ἀγαθός','good, useful (102)'],
+['103x to 85x','','','ἐξουσία, ἡ','authority, right, power (102)'],
+['103x to 85x','','','αἴρω','I take (up/away), raise (101)'],
+['103x to 85x','','','δεῖ','it is necessary, one must (101)'],
+['103x to 85x','','','ὁδός, -οῦ, ἡ','road, way, journey (101)'],
+['103x to 85x','','','ἀλλήλων','one another, each other (100)'],
+['103x to 85x','','','καλός','good, beautiful, useful (100)'],
+['103x to 85x','','','ὀφθαλμός, ὁ ','eye, sight (100)'],
+['103x to 85x','','','τίθημι','I put, place, appoint (100)'],
+['103x to 85x','','','ἕτερος','other, another, different (98)'],
+['103x to 85x','','','τέκνον, τό','child, son, descendent (98)'],
+['103x to 85x','','','Φαρισαῖος, ὁ','Pharisee (98)'],
+['103x to 85x','','','αἷμα, -ατος, τό','blood, death (97)'],
+['103x to 85x','','','ἄρτος, ὁ','bread, loaf, food (97)'],
+['103x to 85x','','','γεννάω','I beget, give birth to (97)'],
+['103x to 85x','','','διδάσκω','I teach (97)'],
+['103x to 85x','','','ἐκεῖ','there, in that place (95)'],
+['103x to 85x','','','περιπατέω ','I walk, live, conduct myself (95)'],
+['103x to 85x','','','φοβέω','I fear, am afraid, reverence (95)'],
+['103x to 85x','','','ἐνώπιον','before, in the presence of (94)'],
+['103x to 85x','','','τόπος, ὁ','place, location (94)'],
+['103x to 85x','','','ἔτι','still, yet (93)'],
+['103x to 85x','','','οἰκία, ἡ','house(hold), home, family (93)'],
+['103x to 85x','','','πούς, ποδός, ὁ','foot (93)'],
+['103x to 85x','','','δικαιοσύνη, ἡ','righteousness, justice (92)'],
+['103x to 85x','','','εἰρήνη, ἡ','peace (92)'],
+['103x to 85x','','','θάλασσα, ἡ','sea, lake (91)'],
+['103x to 85x','','','κάθημαι ','I sit (down), stay, live (91)'],
+['103x to 85x','','','ἀκολουθέω','I follow, accompany (90)'],
+['103x to 85x','','','ἀπόλλυμι','I destroy, ruin, lose (90)'],
+['103x to 85x','','','μηδείς, μηδεμία, μηδέν','no; no one (90)'],
+['103x to 85x','','','πίπτω','I fall (down), perish (90)'],
+['103x to 85x','','','ἑπτά','seven (88)'],
+['103x to 85x','','','οὔτε','neither, nor, and not (87)'],
+['103x to 85x','','','ἄρχω','I rule; begin (mid) (86)'],
+['103x to 85x','','','πληρόω','I (ful)fill, complete (86)'],
+['103x to 85x','','','προσέρχομαι','I come/go to, approach (86)'],
+['103x to 85x','','','καιρός, ὁ ','time, season, age (85)']
+];
+
+fr06 = [
+['85x to 68x','','','προσεύχομαι','I pray (85)'],
+['85x to 68x','','','κἀγώ','and I, but I, I also (84)'],
+['85x to 68x','','','μήτηρ, -τρός, ἡ','mother (83)'],
+['85x to 68x','','','ὥστε','so that, in order that (83)'],
+['85x to 68x','','','ἀναβαίνω','I go up, ascend (82)'],
+['85x to 68x','','','ἕκαστος','each, every (82)'],
+['85x to 68x','','','ὅπου','where, since (82)'],
+['85x to 68x','','','ἐκβάλλω','I cast out, drive out, lead out (81)'],
+['85x to 68x','','','καταβαίνω','I go down, descend (81)'],
+['85x to 68x','','','μᾶλλον ','more, rather (81)'],
+['85x to 68x','','','ἀπόστολος, ὁ','apostle, messenger (80)'],
+['85x to 68x','','','Μωϋσῆς, -έως, ὁ','Moses (80)'],
+['85x to 68x','','','δίκαιος','righteous, just, right (79)'],
+['85x to 68x','','','πέμπω','I send, appoint (79)'],
+['85x to 68x','','','ὑπάγω','I go away, depart (79)'],
+['85x to 68x','','','πονηρός','evil, bad, wicked, sick (78)'],
+['85x to 68x','','','στόμα, -ατος, τό','mouth, speech (78)'],
+['85x to 68x','','','ἀνοίγω','I open (77)'],
+['85x to 68x','','','βαπτίζω','I immerse, dip, baptize (77)'],
+['85x to 68x','','','Ἰερουσαλήμ, ἡ ','Jerusalem (77)'],
+['85x to 68x','','','σημεῖον, τό','sign, miracle, wonder (77)'],
+['85x to 68x','','','ἐμός','my, mine (76)'],
+['85x to 68x','','','εὐαγγέλιον, τό','good news, gospel (76)'],
+['85x to 68x','','','μαρτυρέω','I bear witness, testify, approve (76)'],
+['85x to 68x','','','πρόσωπον, τό','face, appearance, person (76)'],
+['85x to 68x','','','ὕδωρ, -ατος, τό','water (76)'],
+['85x to 68x','','','δώδεκα','twelve (75)'],
+['85x to 68x','','','κεφαλή, ἡ','head, authority, source (75)'],
+['85x to 68x','','','Σίμων, -ωνος, ὁ','Simon (75)'],
+['85x to 68x','','','ἀποκτείνω ','I kill, put to death (74)'],
+['85x to 68x','','','χαίρω','I rejoice, am glad; greetings (74)'],
+['85x to 68x','','','Ἀβραάμ, ὁ','Abraham (73)'],
+['85x to 68x','','','πίνω','I drink (73)'],
+['85x to 68x','','','φῶς, φωτός, τό','light (73)'],
+['85x to 68x','','','αἰώνιος','eternal (71)'],
+['85x to 68x','','','πῦρ, -ός, τό','fire (71)'],
+['85x to 68x','','','αἰτέω','I ask (for), demand (70)'],
+['85x to 68x','','','ἱερόν, τό','temple, sanctuary (70)'],
+['85x to 68x','','','τηρέω','I keep, guard, obey (70)'],
+['85x to 68x','','','ἄγω ','I lead, bring (68)']
+];
+
+fr07 = [
+['68x to 58x','','','Ἰσραήλ, ὁ','Israel (68)'],
+['68x to 58x','','','ῥῆμα, -ατος, τό','word, saying, object (68)'],
+['68x to 58x','','','σάββατον, τό','Sabbath, week (68)'],
+['68x to 58x','','','τρεῖς, τρία','three (68)'],
+['68x to 58x','','','ἐντολή, ἡ','commandment, command, law (67)'],
+['68x to 58x','','','πιστός','faithful, reliable, believing, trusting (67)'],
+['68x to 58x','','','πλοῖον, τό','boat, ship (67)'],
+['68x to 58x','','','ἀπολύω','I release, dismiss, divorce (66)'],
+['68x to 58x','','','καρπός, ὁ','fruit, crop, result (66)'],
+['68x to 58x','','','πρεσβύτερος ','older; elder, presbyter (66)'],
+['68x to 58x','','','φέρω','I bear, carry, endure (66)'],
+['68x to 58x','','','φημί','I say, affirm (66)'],
+['68x to 58x','','','εἴτε','if, whether (65)'],
+['68x to 58x','','','γραμματεύς, -έως, ὁ','scribe, scholar, expert in the law (63)'],
+['68x to 58x','','','δαιμόνιον, τό','demon, evil spirit (63)'],
+['68x to 58x','','','ἔξω','outside, outer, out (63)'],
+['68x to 58x','','','ἐρωτάω','I ask, request (63)'],
+['68x to 58x','','','ὄρος, -ους, τό','mountain, hill (63)'],
+['68x to 58x','','','δοκέω','I think, suppose, seem (62)'],
+['68x to 58x','','','θέλημα, -ατος, τό ','will, wish, desire (62)'],
+['68x to 58x','','','θρόνος, ὁ','throne (62)'],
+['68x to 58x','','','Ἱεροσόλυμα, ἡ/τά','Jerusalem (62)'],
+['68x to 58x','','','ἀγαπητός','beloved, dear (61)'],
+['68x to 58x','','','Γαλιλαία, ἡ','Galilee (61)'],
+['68x to 58x','','','δοξάζω','I glorify, praise, honor (61)'],
+['68x to 58x','','','ἤδη','now, already (61)'],
+['68x to 58x','','','κηρύσσω','I proclaim, announce, preach (61)'],
+['68x to 58x','','','νύξ, νυκτός, ἡ','night (61)'],
+['68x to 58x','','','ὧδε','here, in this place (61)'],
+['68x to 58x','','','ἱμάτιον, τό ','garment, coat, robe (60)'],
+['68x to 58x','','','προσκυνέω','I worship (60)'],
+['68x to 58x','','','ὑπάρχω','I am, exist, am present (60)'],
+['68x to 58x','','','ἀσπάζομαι','I greet, welcome (60)'],
+['68x to 58x','','','∆αυὶδ, ὁ','David (59)'],
+['68x to 58x','','','διδάσκαλος, ὁ','teacher (59)'],
+['68x to 58x','','','λίθος, ὁ','stone (59)'],
+['68x to 58x','','','συνάγω','I gather, bring together (59)'],
+['68x to 58x','','','χαρά, ἡ','joy (59)'],
+['68x to 58x','','','θεωρέω','I look at, perceive, see (58)'],
+['68x to 58x','','','μέσος ','middle (58)']
+];
+
+fr08 = [
+['57x to 50x','','','τοιοῦτος, -αύτη, -οῦτον','of such a kind, such (57)'],
+['57x to 50x','','','δέχομαι','I take, receive, welcome (56)'],
+['57x to 50x','','','ἐπερωτάω','I ask (for) (56)'],
+['57x to 50x','','','μηδέ','and not, but not, nor (56)'],
+['57x to 50x','','','συναγωγή, ἡ','synagogue, assembly (56)'],
+['57x to 50x','','','τρίτος','third (56)'],
+['57x to 50x','','','ἀρχή, ἡ','beginning, origin, ruler (55)'],
+['57x to 50x','','','κράζω','I cry out, call out (55)'],
+['57x to 50x','','','λοιπός','remaining, rest, other (55)'],
+['57x to 50x','','','Πιλᾶτος, ὁ ','Pilate (55)'],
+['57x to 50x','','','δεξιός','right (hand/side) (54)'],
+['57x to 50x','','','εὐαγγελίζω','I announce good news, proclaim, preach (54)'],
+['57x to 50x','','','οὐχί','not, no (used with positive answer questions) (54)'],
+['57x to 50x','','','χρόνος, ὁ','time (54)'],
+['57x to 50x','','','διό','therefore, for this reason (53)'],
+['57x to 50x','','','ἐλπίς, -ίδος, ἡ','hope (53)'],
+['57x to 50x','','','ὅπως','in order that, that, how (53)'],
+['57x to 50x','','','παιδίον, τό','child, infant (53)'],
+['57x to 50x','','','ἐπαγγελία, ἡ','promise, pledge (52)'],
+['57x to 50x','','','ἔσχατος ','last, end (52)'],
+['57x to 50x','','','πείθω','I persuade, convince (52)'],
+['57x to 50x','','','σπείρω','I sow (52)'],
+['57x to 50x','','','εὐθύς','immediately, at once (51)'],
+['57x to 50x','','','σοφία, ἡ','wisdom, insight (51)'],
+['57x to 50x','','','γλῶσσα, ἡ','tongue, language (50)'],
+['57x to 50x','','','γραφή, ἡ','writing, scripture (50)'],
+['57x to 50x','','','κακός','bad, evil (50)'],
+['57x to 50x','','','μακάριος','blessed, fortunate (50)'],
+['57x to 50x','','','παραβολή, ἡ','parable, comparison, symbol (50)'],
+['57x to 50x','','','τυφλός ','blind (50)']
+];
+
+
+
+var alpha_utf8_map=[
+['A','&Alpha;'],['B','&Beta;'],['G','&Gamma;'],['D','&Delta;'],['E','&Epsilon;'],['Z','&Zeta;'],['H','&Eta;'],['Q','&Theta;'],['I','&Iota;'],
+['K','&Kappa;'],['L','&Lambda;'],['M','&Mu;'],['N','&Nu;'],['X','&Xi;'],['O','&Omicron;'],['P','&Pi;'],['R','&Rho;'],['S','&Sigma;'],['T','&Tau;'],
+['U','&Upsilon;'],['F','&Phi;'],['C','&Chi;'],['Y','&Psi;'],['W','&Omega;'],
+['a','&alpha;'],['b','&beta;'],['g','&gamma;'],['d','&delta;'],['e','&epsilon;'],['z','&zeta;'],['h','&eta;'],['q','&theta;'],['i','&iota;'],
+['k','&kappa;'],['l','&lambda;'],['m','&mu;'],['n','&nu;'],['x','&xi;'],['o','&omicron;'],['p','&pi;'],['r','&rho;'],
+['s','&sigma;'],['V','&sigmaf;'],['t','&tau;'],['u','&upsilon;'],['f','&phi;'],['c','&chi;'],
+['y','&psi;'],['w','&omega;'], [' ','&nbsp;'], ['-','-'], ['=','&#8125;'], ['+', '&#701;'], ['|', '|'], ['/', '/']];
+
+var cards=[ch1, ch2, ch3, ch4, ch5, ch6,ch7,ch8,ch9,ch10,ch11,ch12,ch13, fr01, fr02, fr03, fr04, fr05, fr06, fr07, fr08 ];
+
+String.prototype.toArray = function() {
+return this.split('');
+}
+
+
+function playSoundBackup(soundfile) {
+ document.getElementById(soundfile).innerHTML =
+ "<object data=\"./vocab/"+soundfile+"\" type=\"audio/mpeg\"  width=\"0\"  height=\"0\" title=\""+soundfile+"\"/><param name=\"autostart\" value=\"true\" /><param name=\"hidden\" value=\"true\" /><param name=loop value=false /></object>";
+}
+
+
+function playSound(soundfile) {
+ document.getElementById(soundfile).innerHTML = "<audio><source src=\"./vocab/"+soundfile+"\" type=\"audio/mpeg\"><object class=\"playerpreview\" type=\"application/x-shockwave-flash\" data=\"player_mp3_mini.swf\"  width=\"0\" height=\"0\" ><param name=\"FlashVars\" value=\"mp3=./vocab/"+soundfile+"\"/><embed href=\"player_mp3_mini.swf\" width=\"0\" height=\"0\" flashvars=\"mp3=./vocab/"+soundfile+"\" /></object></audio>";
+ document.getElementById(soundfile).children[0].play();
+
+}
+
+
+function playSound_org(soundfile) {
+ document.getElementById(soundfile).innerHTML =
+ "<embed src=\"./vocab/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" type=\"audio/mpeg\"/>";
+}
+
+
+function playSoundMainBackup(soundfile) {
+ document.getElementById("dummy").innerHTML=
+ "<embed src=\"./vocab/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+
+function playSoundMain(soundfile) {
+// swfobject.embedSWF("player_mp3_mini.swf", soundfile, "200", "20", "9.0.0", "", {"mp3":"./vocab/"+soundfile}, {"bgcolor":"#085c68"} );
+ document.getElementById("dummy").innerHTML=
+ "<source src=\"./vocab/"+soundfile+"\" type=\"audio/mpeg\"><object class=\"playerpreview\" type=\"application/x-shockwave-flash\" data=\"player_mp3_mini.swf\"  width=\"0\" height=\"0\" ><param name=\"FlashVars\" value=\"mp3=./vocab/"+soundfile+"\"/><embed href=\"player_mp3_mini.swf\" width=\"0\" height=\"0\" flashvars=\"mp3=./vocab/"+soundfile+"\" /></object>";
+document.getElementById("dummy").load();
+ document.getElementById("dummy").play();
+}
+
+
+function teknia2greek( teknia, check )
+{
+	if( check < 22 )
+	{
+		return teknia;
+	}
+	
+	var ary = teknia.toArray();
+	var greek='';
+	for(i=0; i<ary.length; i++)
+	{
+		for(a=0; a<alpha_utf8_map.length; a++)
+		{
+			if( alpha_utf8_map[a][0] == ary[i] )
+			{
+				greek = greek + alpha_utf8_map[a][1];
+				break;
+			}
+		}
+	}
+	return greek;
+}
+
+
+function shuffle(array) {
+  var currentIndex = array.length
+    , temporaryValue
+    , randomIndex
+    ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+var chapterRand;
+var cardRand;
+var toggle=0;
+var toggleList=0;
+var c;
+var List = null;
+var RandIndex = null;
+var RandPos = 0;
+
+
+function removeWord()
+{
+	RandPos--;
+	console.log("removing [" + RandIndex[RandPos] + "] " + List[RandIndex[RandPos]] );
+	RandIndex.splice(RandPos, 1);
+
+	if( RandPos >= (RandIndex.length) )
+		RandPos = 0;
+
+	if( RandIndex.length > 1 )
+		d.getElementById('myTable').rows[1].cells[2].innerHTML = "<blink>You got them all right?</blink>";
+	
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = RandIndex.length + ' word(s)<br><u><a onClick="checkSelectionsF();">restart</a></u>';
+}
+
+function wordCount( from, to )
+{
+
+	var f=Number(from);
+	var t=Number(to);
+
+	var count=0;
+
+	for( i=f; i <= t; i++ )
+	{
+		count += cards[i].length;
+	}
+	
+	return count;
+}
+
+
+function buildRandomList()
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	List = new Array();
+	RandIndex = new Array();
+
+	count=0;
+
+	for( i=chF.value; i<=chT.value; i++ )
+	{
+		ch = cards[i];
+
+		for( j=0; j<cards[i].length; j++ )
+		{
+			
+			c = ch[j];
+
+			RandIndex[count] = count;
+			List[count++] = c;
+
+			chapterRand = Number(chF.value)+Math.floor( Math.random()*(1+Number(chT.value-chF.value)));
+						
+			//d.getElementById('myTable').rows[1].cells[2].innerHTML = 
+			
+			r=Math.floor(Math.random()*c.length);
+
+			//count++;
+		}
+	}
+			
+	shuffle( RandIndex );
+
+	//for(t=0; t<List.length; t++ ) console.log(List[RandIndex[t]][3]);
+
+	RandPos = 0;
+}
+
+function showAnswer()
+{
+
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	//alert(chF[4].text);
+
+	if( toggle == 1 )
+	{
+		document.getElementById('myTable').rows[0].cells[3].innerHTML = List[RandIndex[RandPos]][4];
+		var b = document.getElementById('myButton');
+		//b.value='- Next -';
+		toggle=0;
+
+		RandPos++;
+
+		if( RandPos >= RandIndex.length )
+			RandPos = 0;
+
+		if( RandIndex.length > 1 )
+		{
+			d.getElementById('myTable').rows[1].cells[2].innerHTML = "Got it right?<br><u><a onClick='removeWord(); toggle=0; showAnswer();'>Click&nbsp;here&nbsp;to&nbsp;remove</a></u>";
+		}
+	}
+	else
+	{
+		var x = document.getElementById('myTable').rows[0].cells;
+		//x[2].innerHTML = '<a href="#" onclick="playSoundMain(\''+ c[cardRand][2] +'\');"><img src="./speaker.png"></img></a>&nbsp;&nbsp;<font size=14 class=flashcard>' + List[RandIndex[RandPos]][3] + '</font>';
+		x[2].innerHTML = '<img src="./speaker.png" onclick="playSoundMain(\''+ List[RandIndex[RandPos]][3] +'.mp3\');"></img>&nbsp;&nbsp;<font style="cursor: pointer;" size=14 class=flashcard onclick="showAnswer();">' + List[RandIndex[RandPos]][3] + '</font>';
+		x[3].innerHTML = '';
+		
+		//document.getElementById('myButton').value='Answer';
+
+		d.getElementById('myTable').rows[1].cells[2].innerHTML = "";
+
+		toggle=1;
+	}
+}
+
+
+
+function showList(val)
+{
+	if( val == 1 )
+	{
+		toggleList = toggleList ? 0 : 1;
+		document.getElementById('myTable').rows[2].cells[0].innerHTML = '';
+	}
+
+
+	if( toggleList == 1 )
+	{
+		document.getElementById('myTable').rows[2].cells[0].innerHTML = '';
+		var b = document.getElementById('myListButton');
+		b.value='List';
+		toggleList=0;
+	}
+	else
+	{
+
+		d=document;
+		//para=d.getElementById('para');
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+
+		if( Number(wordCount( chF.value, chT.value )) <= 700 )
+		{
+			var tableList;
+			var x = document.getElementById('myTable').rows[2].cells;
+			//x[0].innerHTML = '<table>';
+			tableList = '<table width="100%">';
+			var l, ch;
+			var colorToggle=0;
+
+			//alert( chF.value + '  ' + chT.value );
+
+			for( var ch = Number(chF.value); ch <= Number(chT.value); ch++ )
+			{
+				//alert( ch );
+				for( word=0; word < cards[ch].length; word++, colorToggle++ )
+				{
+					var tdStyle = 'padding: 0; border-width: 0;';
+					var color;
+					if( colorToggle%2 == 0)
+						color = '#f4c4c4;';
+					else
+						color = '#ffffff;';				
+					var style;
+					style = '"cell-padding: 0; width: 100%; font-family : Arial, Tahoma, \'Times New Roman\', Verdana; background-color: '+color+' padding: 0; border-width: 0;"';
+
+
+					//tableList += '<tr style='+ style +'><td style="font-size: 24; '+tdStyle+'">' + teknia2greek(cards[ch][word][3],ch) + '</td><td style="'+tdStyle+'">&nbsp;&nbsp;&nbsp;<a href="#" onclick="playSound(\''+ cards[ch][word][3]+'.mp3' +'\');"><img src="./speaker.png"><img></a>&nbsp;&nbsp;&nbsp;</td><td style="'+tdStyle+'">'+ cards[ch][word][4] +'</td><td id="' + cards[ch][word][2] + '" ></td></tr>';
+					
+					tableList += '<tr style='+ style +'><td style="font-size: 18;'+tdStyle+'">' + teknia2greek(cards[ch][word][3],ch) + '</td><td style="'+tdStyle+'">&nbsp;<img src="./speaker.png" onclick="playSound(\''+ cards[ch][word][3] + '.mp3' + '\');"></img>&nbsp;</td><td style="font-size: 10;'+tdStyle+'">'+ cards[ch][word][4] +'</td><td style="font-size: 10;'+tdStyle+'">'+cards[ch][word][0]+'</td><td id="' + cards[ch][word][3] + '.mp3"></td></tr>';
+
+					//tableList += '<tr style='+ style +'><td style="font-size: 18;'+tdStyle+'">' + teknia2greek(cards[ch][word][3],ch) + '</td><td style="'+tdStyle+'">&nbsp;<img src="./speaker.png" onclick="playSound(\''+ cards[ch][word][3] + '.mp3' + '\');"></img>&nbsp;</td><td style="font-size: 10;'+tdStyle+'">'+ cards[ch][word][4] +'</td><td style="font-size: 10;'+tdStyle+'">'+cards[ch][word][0]+'</td><td id="' + cards[ch][word][3] + '.mp3"></td></tr>';
+
+				}
+			}
+
+			if( chF.value == chT.value )
+			{
+				tableList += '<input type="button" onClick="prevList();" value="PrevList"></input>';
+				tableList += '<input type="button" onClick="nextList();" value="NextList"></input>';
+			}
+
+			tableList += '</table>';
+			x[0].innerHTML += tableList;
+			document.getElementById('myListButton').value='Hide List';
+			toggleList=1;
+		}
+		else
+		{
+			alert('You must select lists totaling less than 700 words');
+		}
+	}
+}
+
+
+function prevList()
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	val = chT.value;
+	if( val >= 0 )
+	{
+		chF.value = (Number(val)-1); 
+		chT.value = (Number(val)-1); 
+
+		document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+		showList(1);
+	}
+}
+
+
+function nextList()
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	val = chF.value;
+	if( val <= 22 )
+	{
+		chF.value = (Number(val)+1); 
+		chT.value = (Number(val)+1); 
+
+		document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+		showList(1);
+	}
+}
+
+
+function checkSelectionsF(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chT.value = chF.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+	setCookie('deepChapterFrom', chF.value, 365 );
+	setCookie('deepChapterTo', chT.value, 365 );
+
+	toggle=0;
+
+	buildRandomList();
+	showAnswer();
+	
+	showList(1);	
+
+}
+
+
+function checkSelectionsT(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chF.value = chT.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+	setCookie('deepChapterFrom', chF.value, 365 );
+	setCookie('deepChapterTo', chT.value, 365 );
+
+	toggle=0;
+
+	buildRandomList();
+	showAnswer();
+
+
+	showList(1);
+}
+
+
+function getCookie(c_name)
+{
+	if (document.cookie.length>0)
+  	{
+  		c_start=document.cookie.indexOf(c_name + "=");
+  		if (c_start!=-1)
+    		{
+    			c_start=c_start + c_name.length+1;
+    			c_end=document.cookie.indexOf(";",c_start);
+    			if (c_end==-1) c_end=document.cookie.length;
+    			return unescape(document.cookie.substring(c_start,c_end));
+    		}
+  	}
+	return "";
+}
+
+function setCookie(c_name,value,expiredays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate()+expiredays);
+	document.cookie=c_name+ "=" +escape(value)+
+	((expiredays==null) ? "" : ";expires="+exdate.toUTCString());
+}
+
+function checkCookies()
+{
+	chapterFrom=getCookie('deepChapterFrom');
+	if (chapterFrom!=null && chapterFrom!="")
+  	{
+ 		d=document;
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+		chF.value=chapterFrom;
+		chapterTo=getCookie('deepChapterTo');
+		
+		if(chapterTo!=null && chapterTo!="")
+		{
+			chT.value=chapterTo;	
+		}
+  	}
+}
+
+
+</script>
+
+		<table class="outer" width="100%">
+			<tr><audio id="dummy"></audio></tr>
+			<tr>
+				<td class="inner" align="center">			
+					<table class="innermost" width="100%">
+						<tr><td colspan=2 align="right"><a href="http://busysteve.com/index.html">home</a></td></tr>
+
+						<tr>
+							<td class="innermost" align="left">
+<table id="myTable" class="greek_list">
+<tr><td><img src="./busysteve_logo_small.jpg"></img></td>
+    <td width="180" align=top><form>
+<select id="chFrom" onChange="checkSelectionsF();">
+<option value="0" selected="yes">Chapter 01</option>
+<option value="1">Chapter 02</option>
+<option value="2">Chapter 03</option>
+<option value="3">Chapter 04</option>
+<option value="4">Chapter 05</option>
+<option value="5">Chapter 06</option>
+<option value="6">Chapter 07</option>
+<option value="7">Chapter 08</option>
+<option value="8">Chapter 09</option>
+<option value="9">Chapter 10</option>
+<option value="10">Chapter 11</option>
+<option value="11">Chapter 12</option>
+<option value="12">Chapter 13</option>
+<option value="13">19,864x to 469x</option>
+<option value="14">452x to 195x</option>
+<option value="15">194x to 142x</option>
+<option value="16">142x to 103x</option>
+<option value="17">103x to 85x</option>
+<option value="18">85x to 68x</option>
+<option value="19">68x to 58x</option>
+<option value="20">57x to 50x</option>
+</select>
+
+<select id="chTo" onChange="checkSelectionsT();">
+<option value="0">Chapter 01</option>
+<option value="1">Chapter 02</option>
+<option value="2">Chapter 03</option>
+<option value="3">Chapter 04</option>
+<option value="4">Chapter 05</option>
+<option value="5">Chapter 06</option>
+<option value="6">Chapter 07</option>
+<option value="7">Chapter 08</option>
+<option value="8">Chapter 09</option>
+<option value="9">Chapter 10</option>
+<option value="10">Chapter 11</option>
+<option value="11">Chapter 12</option>
+<option value="12" selected="yes">Chapter 13</option>
+<option value="13">19,864x to 469x</option>
+<option value="14">452x to 195x</option>
+<option value="15">194x to 142x</option>
+<option value="16">142x to 103x</option>
+<option value="17">103x to 85x</option>
+<option value="18">85x to 68x</option>
+<option value="19">68x to 58x</option>
+<option value="20">57x to 50x</option>
+</select>
+
+<!--input type="button" id="myButton" onClick="showAnswer();" value="Answer"--></input>
+    			<input type="button" id="myListButton" onClick="showList();" value="List"></input>
+        </form>
+    </td>
+    <td></td>
+    <td width="100%"></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="width: 100%; "></td></tr>
+</table>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
+

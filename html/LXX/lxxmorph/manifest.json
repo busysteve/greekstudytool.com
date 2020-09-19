@@ -1,0 +1,21 @@
+
+{
+  "name": "Greek Study Tool",
+  "description": "Greek Study Tool Chrome App.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "icons": { "128": "GST_Logo_sm.png" }
+,
+ "app": {
+"urls": [
+"http://greekstudytool.com/help.html"
+],
+"launch": {
+"web_url": "http://greekstudytool.com/chrome-app.html"
+}
+},
+"permissions": [
+"unlimitedStorage",
+"notifications"
+]
+}

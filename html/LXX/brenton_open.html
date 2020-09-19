@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>W3Schools Internal Note</h1>
+<div>
+<b>Book:</b> <span id="book"></span><br>
+<b>Chp:</b> <span id="chp"></span><br>
+<b>Verse:</b> <span id="verse"></span><br>
+<b>Verse2:</b> <span id="verse2"></span><br>
+<b>Verse3:</b> <span id="verse3"></span>
+</div>
+
+<script>
+var xmlhttp, xmlDoc;
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "lxx-brenton.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+document.getElementById("book").innerHTML=
+xmlDoc.getElementsByTagName("book")[0].childNodes[0].nodeValue;
+document.getElementById("chp").innerHTML=
+xmlDoc.getElementsByTagName("c")[0].childNodes[0].nodeValue;
+document.getElementById("verse").innerHTML=
+xmlDoc.getElementsByTagName("v")[0].childNodes[0].nodeValue;
+
+var node;
+
+var books = xmlDoc.getElementsByTagName("book");
+var chps = books[19].getElementsByTagName('c');
+var verses = chps[0].getElementsByTagName('v');
+
+document.getElementById("verse2").innerHTML = 
+verses[3].textContent;
+
+
+
+var nodes = verses[3].childNodes;
+
+for( n=0; n < nodes.length; n++ )
+{
+
+    if(nodes[n].nodeType == Node.TEXT_NODE)
+    {
+        document.getElementById("verse3").innerHTML += 
+        //node + '<br>';
+        '[ ' + nodes[n].textContent + ' ]<br>';
+        
+    }
+
+}
+</script>
+
+</body>
+</html>
+

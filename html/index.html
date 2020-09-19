@@ -138,7 +138,7 @@ window.mobilecheck = function() {
 	function loadMLVScript(id,callback)
 	{
 		if( loadTest(id,callback) == 1 )
-		loadScript( 'MLV_1.js', 'Loading Modern Literal Version Text.....', 'greektext', 'loadGNTScript', 'MLV_loaded' );
+		loadScript( 'MLV_2.js', 'Loading Modern Literal Version Text.....', 'greektext', 'loadGNTScript', 'MLV_loaded' );
 	}
 
 	function loadGNTScript(id,callback)
@@ -164,7 +164,7 @@ window.mobilecheck = function() {
 	function loadWorkScript(id,callback)
 	{
 		if( loadTest(id,callback) == 1  )
-		loadScript( 'gnt-work_strongs_inline_b.js', 'Loading Page Work Script.....', 'greektext', 'startPageUp', 'workscript_loaded' );	
+		loadScript( 'gnt-work_strongs_inline_f.js', 'Loading Page Work Script.....', 'greektext', 'startPageUp', 'workscript_loaded' );	
 	}
 
 	function startPageUp(id,callback)
@@ -176,7 +176,9 @@ window.mobilecheck = function() {
 		setfont(); 
 		display(); 
 
-		index_ver = 'C';
+        followAlongReadingHandler();
+
+		index_ver = 'F';
 
 		setTimeout('set_version()',1000);
 		//document.getElementById("myver").innerHTML = index_ver + "-" + webster_ver + "-" + gnt_ver + "-" + strongs_ver + "-" + strongslist_ver + "-" + work_ver;
@@ -446,7 +448,15 @@ stxi
 	<i id="dummy3"></i>
     	<object id="dummy2" data="../eph1/nothing.mp3" type="audio/mpeg"  width="0"  height="0" title=""><param name="autostart" value="true" /><param name="hidden" value="false" /><param name=loop value=false /></object>
 
-		<audio id="dummy" width="0" height="0">
+		<!--audio id="dummy" width="0" height="0">
+			<object data="../eph1/nothing.mp3" type="audio/mpeg"  width="0"  height="0" title="">
+			<param name="autostart" value="true" />
+			<param name="hidden" value="false" />
+			<param name=loop value=false />
+			</object>
+		</audio-->
+
+		<audio id="sound_player5" width="0" height="0">
 			<object data="../eph1/nothing.mp3" type="audio/mpeg"  width="0"  height="0" title="">
 			<param name="autostart" value="true" />
 			<param name="hidden" value="false" />
@@ -454,10 +464,10 @@ stxi
 			</object>
 		</audio>
 
-			<object class="playerpreview" id="playerswf" type="application/x-shockwave-flash" data="./player_mp3_js.swf"  width="0" height="0" >
+			<!--object class="playerpreview" id="playerswf" type="application/x-shockwave-flash" data="./player_mp3_js.swf"  width="0" height="0" >
 				<param name="movie" value="./player_mp3_mini.swf"/>
 				<param id="mp3filetoplay" name="FlashVars" value="mp3=./nothing.mp3"/>
-			</object>
+			</object-->
 
 
 
@@ -485,16 +495,20 @@ stxi
 		
 
 	</td>
-	<td align="right"><audio id="mysound"></audio> <a href="./progress.html">audio&nbsp;progress</a> <a href="./help.html">page&nbsp;help</a> <span id="dummy3" height="0" width="0"></span>
+	<td align="right"><audio id="mysound"></audio> 
+
+
+        <a href="./help.html">page&nbsp;help</a><br><a href="./resources.html">resources</a><br><a href="./LXX/lxxmorph/lxx-index.html">LXX&nbsp;Pentateuch&nbsp;(beta)</a> <span id="dummy3" height="0" width="0"></span>
 	</td></tr><tr><td><b id="menuclicky" align="left" style="font-size: 32px;" onclick="toggleMenu();"></b></td></tr>
 <!--tr><td></td> <td></td><td></td><td></td></tr-->
 <tr><td align="center" colspan="4" style="width: 100%; align: center; ">
 <b id="book_title" style="font-size: 32px;">Book</b>&nbsp;
 <u><b id="chapter" style="font-size: 22px;">Chapter</b><b id="verse" style="font-size: 18px;"></b></u>
+<u><b id="followalong" style="font-size: 22px;"></b><b id="verse" style="font-size: 18px;"></b></u>
 <span id="sptooltip" class="tooltip" style="position: relative; top: 20px; left: 20px; opacity: 1; display: none;"></span>
 </td></tr>
 <tr><td align="center" colspan="4" style="width: 100%; align: center; font-size: 10px">Click a verse's number to hear it / Click the word "Chapter" above to hear full chapter<br>Click a word to see the Strong's info / Click the Strong's info to make it go away<br>Optimized for Chrome(Not compatable with all browsers)<br>
-<b onClick="playSoundMain(); playSound(); playSoundSW();"><i>Click here to stop sound</i></b>
+<b onClick="keep_reading = false; playSound5(); playSound(); playSoundSW(); playSoundMain(); "><i>Click here to stop sound</i></b>
 </td></tr>
 <tr>
 
@@ -508,8 +522,10 @@ Sorry, you'll need to enable JavaScript or your broswer is not compatable.  Opti
 				<br>Wescott-Hort Greek New Testament, 1881
 				<br>Webster inline English - Noah Webster, 1833
 				<br>Modern Literal Version © Copyright 1999, 2014 by G. Allen Walker, Co-Editor.
-				<br><a href="http://kovacs.cc/Bible/GNT_Phemister/" style="font-size: 14px;">Read by Marilyn Phemister</a>. ©Copyright 2001 by Marilyn Phemister.
-				<br>designed and developed by <a href="http://www.busysteve.com/about.html">Stephen Mathews</a> and <a href="http://kovacs.cc/">Vic Kovacs</a>
+				<br><a href="./MP/index.html" style="font-size: 14px;">Read by Marilyn Phemister</a>. ©Copyright 2001 by Marilyn Phemister.
+				<br>designed and developed by <a href="http://busysteve.com/about.html">Stephen Mathews</a> and <a href="http://kovacs.cc/">Vic Kovacs</a>
+
+<!--
 				<br>Donations accepted via <a href="https://www.paypal.com">Paypal.com</a> busysteve@gmail.com 
 				<br>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -527,12 +543,39 @@ Sorry, you'll need to enable JavaScript or your broswer is not compatable.  Opti
 				  <input type="hidden" name="item_name" value="Greek Study Tool"/>
 				  <input type="submit" name="submit" value="Donate"/>
 				</form>
+-->
 				<!--a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=busysteve@gmail.com&currency_code=USD&amount=2.00&item_name=Greek Study Tool">($2 quick link)</a-->
+
+
+
 				<br><text id="mailSteve">send comments to <a href="mailto:busysteve@gmail.com?Subject=Greek Study Tool Comment">busysteve@gmail.com</a></text> 
 				<br>include version number: <text id="myver">loading...</text>
+
+                <br>
+                								&nbsp;&nbsp;{&nbsp;flash cards&nbsp;-&nbsp;
+								<a href="http://busysteve.com/greek_js_ltrntg.html">ltrntg</a>
+								&nbsp;
+								<a href="http://busysteve.com/greek_js_tentg.html">tentg</a>
+								&nbsp;
+								<a href="http://busysteve.com/greek_js_deepergreek.html">deeper</a>
+								&nbsp;
+								<a href="http://busysteve.com/greek_js_bbg.html">bbg</a>
+								&nbsp;
+								<a href="http://busysteve.com/greek_js_bbh.html">bbh2</a>
+								&nbsp;
+								<a href="http://busysteve.com/busy_freq.html">frequency</a>
+								&nbsp;
+								<a href="http://busysteve.com/greek_js_advanced.html">advanced</a>
+								&nbsp;}&nbsp;&nbsp;
+
 				</td>
 			</tr>
 		</table>
+<br>
+<!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6821840&style=0038&nbdigits=6&type=page&initCount=0" title="webs counters" Alt="webs counters"   border="0" >
+</a>                                        <br/>
 </body>
 </html>
 
