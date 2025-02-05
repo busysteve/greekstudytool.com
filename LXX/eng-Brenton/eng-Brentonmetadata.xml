@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBLMetadata id="65bfdebd704a8324" type="text" typeVersion="1.5">
+  <identification>
+    <name>Brenton English Septuagint</name>
+    <nameLocal>Brenton Septuagint Translation</nameLocal>
+    <abbreviation>eng-Brenton</abbreviation>
+    <abbreviationLocal>Brenton</abbreviationLocal>
+    <scope>Old Testament with Deuterocanon</scope>
+    <description>Translation of the Greek Septuagint into English by Sir Lancelot Charles Lee Brenton</description>
+    <dateCompleted>1851</dateCompleted>
+    <systemId fullname="Brenton English Septuagint" name="engbrent" type="paratext" />
+    <bundleProducer />
+  </identification>
+  <confidential>false</confidential>
+  <language>
+    <iso>eng</iso>
+    <name>English</name>
+    <nameLocal>English</nameLocal>
+    <ldml />
+    <rod>03222</rod>
+    <script>Latin</script>
+    <scriptDirection>LTR</scriptDirection>
+    <numerals>Arabic</numerals>
+  </language>
+  <country>
+    <iso>GB</iso>
+    <name>United Kingdom</name>
+  </country>
+  <type>
+    <translationType>New</translationType>
+    <audience>Common</audience>
+  </type>
+  <bookNames>
+    <book code="GEN">
+      <long>GENESIS</long>
+      <short>Genesis</short>
+      <abbr>GEN</abbr>
+    </book>
+    <book code="EXO">
+      <long>EXODUS</long>
+      <short>Exodus</short>
+      <abbr>EXO</abbr>
+    </book>
+    <book code="LEV">
+      <long>LEVITICUS</long>
+      <short>Leviticus</short>
+      <abbr>LEV</abbr>
+    </book>
+    <book code="NUM">
+      <long>NUMBERS</long>
+      <short>Numbers</short>
+      <abbr>NUM</abbr>
+    </book>
+    <book code="DEU">
+      <long>DEUTERONOMY</long>
+      <short>Deuteronomy</short>
+      <abbr>DEU</abbr>
+    </book>
+    <book code="JOS">
+      <long>JOSHUA</long>
+      <short>Joshua</short>
+      <abbr>JOS</abbr>
+    </book>
+    <book code="JDG">
+      <long>JUDGES</long>
+      <short>Judges</short>
+      <abbr>JDG</abbr>
+    </book>
+    <book code="RUT">
+      <long>RUTH</long>
+      <short>Ruth</short>
+      <abbr>RUT</abbr>
+    </book>
+    <book code="1SA">
+      <long>KINGS I</long>
+      <short>Kings I</short>
+      <abbr>1SA</abbr>
+    </book>
+    <book code="2SA">
+      <long>KINGS II</long>
+      <short>Kings II</short>
+      <abbr>2SA</abbr>
+    </book>
+    <book code="1KI">
+      <long>KINGS III</long>
+      <short>Kings III</short>
+      <abbr>1KI</abbr>
+    </book>
+    <book code="2KI">
+      <long>KINGS IV</long>
+      <short>Kings IV</short>
+      <abbr>2KI</abbr>
+    </book>
+    <book code="1CH">
+      <long>CHRONICLES I</long>
+      <short>Chronicles I</short>
+      <abbr>1CH</abbr>
+    </book>
+    <book code="2CH">
+      <long>CHRONICLES II</long>
+      <short>Chronicles II</short>
+      <abbr>2CH</abbr>
+    </book>
+    <book code="EZR">
+      <long>EZRA</long>
+      <short>Ezra</short>
+      <abbr>EZR</abbr>
+    </book>
+    <book code="NEH">
+      <long>NEHEMIAH</long>
+      <short>Nehemiah</short>
+      <abbr>NEH</abbr>
+    </book>
+    <book code="EST">
+      <long>ESTHER</long>
+      <short>Esther</short>
+      <abbr>EST</abbr>
+    </book>
+    <book code="JOB">
+      <long>JOB</long>
+      <short>Job</short>
+      <abbr>JOB</abbr>
+    </book>
+    <book code="PSA">
+      <long>PSALMS</long>
+      <short>Psalms</short>
+      <abbr>PSA</abbr>
+    </book>
+    <book code="PRO">
+      <long>PROVERBS</long>
+      <short>Proverbs</short>
+      <abbr>PRO</abbr>
+    </book>
+    <book code="ECC">
+      <long>ECCLESIASTES</long>
+      <short>Ecclesiastes</short>
+      <abbr>ECC</abbr>
+    </book>
+    <book code="SNG">
+      <long>SONG OF SONGS</long>
+      <short>Song of Songs</short>
+      <abbr>SNG</abbr>
+    </book>
+    <book code="ISA">
+      <long>ESIAS</long>
+      <short>Esias</short>
+      <abbr>ISA</abbr>
+    </book>
+    <book code="JER">
+      <long>JEREMIAS</long>
+      <short>Jeremias</short>
+      <abbr>JER</abbr>
+    </book>
+    <book code="LAM">
+      <long>LAMENTATIONS</long>
+      <short>Lamentations</short>
+      <abbr>LAM</abbr>
+    </book>
+    <book code="EZK">
+      <long>JEZEKIEL</long>
+      <short>Jezekiel</short>
+      <abbr>EZK</abbr>
+    </book>
+    <book code="DAN">
+      <long>DANIEL</long>
+      <short>Daniel</short>
+      <abbr>DAN</abbr>
+    </book>
+    <book code="HOS">
+      <long>OSEE</long>
+      <short>Osee</short>
+      <abbr>HOS</abbr>
+    </book>
+    <book code="JOL">
+      <long>JOEL</long>
+      <short>Joel</short>
+      <abbr>JOL</abbr>
+    </book>
+    <book code="AMO">
+      <long>AMOS</long>
+      <short>Amos</short>
+      <abbr>AMO</abbr>
+    </book>
+    <book code="OBA">
+      <long>OBDIAS</long>
+      <short>Obdias</short>
+      <abbr>OBA</abbr>
+    </book>
+    <book code="JON">
+      <long>JONAS</long>
+      <short>Jonas</short>
+      <abbr>JON</abbr>
+    </book>
+    <book code="MIC">
+      <long>MICHAEAS</long>
+      <short>Michaeas</short>
+      <abbr>MIC</abbr>
+    </book>
+    <book code="NAM">
+      <long>NAUM</long>
+      <short>Naum</short>
+      <abbr>NAM</abbr>
+    </book>
+    <book code="HAB">
+      <long>AMBACUM</long>
+      <short>Ambacum</short>
+      <abbr>HAB</abbr>
+    </book>
+    <book code="ZEP">
+      <long>SOPHONIAS</long>
+      <short>Sophonias</short>
+      <abbr>ZEP</abbr>
+    </book>
+    <book code="HAG">
+      <long>AGGAEUS</long>
+      <short>Aggaeus</short>
+      <abbr>HAG</abbr>
+    </book>
+    <book code="ZEC">
+      <long>ZACHARIAS</long>
+      <short>Zacharias</short>
+      <abbr>ZEC</abbr>
+    </book>
+    <book code="MAL">
+      <long>MALACHIAS</long>
+      <short>Malachias</short>
+      <abbr>MAL</abbr>
+    </book>
+    <book code="TOB">
+      <long>TOBIT</long>
+      <short>Tobit</short>
+      <abbr>TOB</abbr>
+    </book>
+    <book code="JDT">
+      <long>JUDITH</long>
+      <short>Judith</short>
+      <abbr>JDT</abbr>
+    </book>
+    <book code="WIS">
+      <long>WISDOM</long>
+      <short>Wisdom</short>
+      <abbr>WIS</abbr>
+    </book>
+    <book code="SIR">
+      <long>SIRACH</long>
+      <short>Sirach</short>
+      <abbr>SIR</abbr>
+    </book>
+    <book code="BAR">
+      <long>BARUCH</long>
+      <short>Baruch</short>
+      <abbr>BAR</abbr>
+    </book>
+    <book code="LJE">
+      <long>EPISTLE OF JEREMY</long>
+      <short>Epistle of Jeremy</short>
+      <abbr>LJE</abbr>
+    </book>
+    <book code="S3Y">
+      <long>PRAYER OF AZARIAS</long>
+      <short>Prayer of Azarias</short>
+      <abbr>S3Y</abbr>
+    </book>
+    <book code="SUS">
+      <long>SUSANNA</long>
+      <short>Susanna</short>
+      <abbr>SUS</abbr>
+    </book>
+    <book code="BEL">
+      <long>BEL AND THE DRAGON</long>
+      <short>Bel and the Dragon</short>
+      <abbr>BEL</abbr>
+    </book>
+    <book code="1MA">
+      <long>I MACCABEES</long>
+      <short>I Maccabees</short>
+      <abbr>1MA</abbr>
+    </book>
+    <book code="2MA">
+      <long>II MACCABEES</long>
+      <short>II Maccabees</short>
+      <abbr>2MA</abbr>
+    </book>
+    <book code="1ES">
+      <long>I ESDRAS</long>
+      <short>I Esdras</short>
+      <abbr>1ES</abbr>
+    </book>
+    <book code="MAN">
+      <long>PRAYER OF MANASSES</long>
+      <short>Prayer of Manasses</short>
+      <abbr>MAN</abbr>
+    </book>
+    <book code="3MA">
+      <long>III MACCABEES</long>
+      <short>III Maccabees</short>
+      <abbr>3MA</abbr>
+    </book>
+    <book code="4MA">
+      <long>IV MACCABEES</long>
+      <short>IV Maccabees</short>
+      <abbr>4MA</abbr>
+    </book>
+  </bookNames>
+  <contents>
+    <bookList default="true" id="1">
+      <name>Brenton English Septuagint</name>
+      <nameLocal>Brenton Septuagint Translation</nameLocal>
+      <abbreviation>eng-Brenton</abbreviation>
+      <abbreviationLocal>Brenton</abbreviationLocal>
+      <description>common</description>
+      <descriptionLocal />
+      <books>
+        <book code="GEN" />
+        <book code="EXO" />
+        <book code="LEV" />
+        <book code="NUM" />
+        <book code="DEU" />
+        <book code="JOS" />
+        <book code="JDG" />
+        <book code="RUT" />
+        <book code="1SA" />
+        <book code="2SA" />
+        <book code="1KI" />
+        <book code="2KI" />
+        <book code="1CH" />
+        <book code="2CH" />
+        <book code="EZR" />
+        <book code="NEH" />
+        <book code="EST" />
+        <book code="JOB" />
+        <book code="PSA" />
+        <book code="PRO" />
+        <book code="ECC" />
+        <book code="SNG" />
+        <book code="ISA" />
+        <book code="JER" />
+        <book code="LAM" />
+        <book code="EZK" />
+        <book code="DAN" />
+        <book code="HOS" />
+        <book code="JOL" />
+        <book code="AMO" />
+        <book code="OBA" />
+        <book code="JON" />
+        <book code="MIC" />
+        <book code="NAM" />
+        <book code="HAB" />
+        <book code="ZEP" />
+        <book code="HAG" />
+        <book code="ZEC" />
+        <book code="MAL" />
+        <book code="TOB" />
+        <book code="JDT" />
+        <book code="WIS" />
+        <book code="SIR" />
+        <book code="BAR" />
+        <book code="LJE" />
+        <book code="S3Y" />
+        <book code="SUS" />
+        <book code="BEL" />
+        <book code="1MA" />
+        <book code="2MA" />
+        <book code="1ES" />
+        <book code="MAN" />
+        <book code="3MA" />
+        <book code="4MA" />
+      </books>
+    </bookList>
+  </contents>
+  <copyright>
+    <statement contentType="xhtml">
+      <p>Public Domain
+
+</p>
+    </statement>
+  </copyright>
+  <promotion>
+    <promoVersionInfo contentType="xhtml">
+      <p>Public Domain</p>
+    </promoVersionInfo>
+    <promoEmail contentType="xhtml">Thank you for downloading Brenton Septuagint Translation! Now you'll have anytime, anywhere access to God's Word on your mobile device—even if 
+you're outside of service coverage or not connected to the Internet. It also means faster service whenever you read that version since it's 
+stored on your device. Enjoy! This download was made possible by Sir Lancelot Charles Lee Brenton. We really appreciate their passion for making the Bible available to millions of people around the world. Because of 
+their generosity, people like you can open up the Bible and hear from God no matter where you are. You can learn more about them at http://eBible.org.</promoEmail>
+  </promotion>
+  <archiveStatus>
+    <archivistName />
+    <dateArchived />
+    <dateUpdated />
+    <comments />
+  </archiveStatus>
+  <format>text/xml</format>
+</DBLMetadata>

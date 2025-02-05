@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BookNames>
+  <book code="GEN" abbr="GEN" short="Genesis" long="GENESIS" alt="" />
+  <book code="EXO" abbr="EXO" short="Exodus" long="EXODUS" alt="" />
+  <book code="LEV" abbr="LEV" short="Leviticus" long="LEVITICUS" alt="" />
+  <book code="NUM" abbr="NUM" short="Numbers" long="NUMBERS" alt="" />
+  <book code="DEU" abbr="DEU" short="Deuteronomy" long="DEUTERONOMY" alt="" />
+  <book code="JOS" abbr="JOS" short="Joshua" long="JOSHUA" alt="" />
+  <book code="JDG" abbr="JDG" short="Judges" long="JUDGES" alt="" />
+  <book code="RUT" abbr="RUT" short="Ruth" long="RUTH" alt="" />
+  <book code="1SA" abbr="1SA" short="Kings I" long="KINGS I" alt="" />
+  <book code="2SA" abbr="2SA" short="Kings II" long="KINGS II" alt="" />
+  <book code="1KI" abbr="1KI" short="Kings III" long="KINGS III" alt="" />
+  <book code="2KI" abbr="2KI" short="Kings IV" long="KINGS IV" alt="" />
+  <book code="1CH" abbr="1CH" short="Chronicles I" long="CHRONICLES I" alt="" />
+  <book code="2CH" abbr="2CH" short="Chronicles II" long="CHRONICLES II" alt="" />
+  <book code="EZR" abbr="EZR" short="Ezra" long="EZRA" alt="" />
+  <book code="NEH" abbr="NEH" short="Nehemiah" long="NEHEMIAH" alt="" />
+  <book code="EST" abbr="EST" short="Esther" long="ESTHER" alt="" />
+  <book code="JOB" abbr="JOB" short="Job" long="JOB" alt="" />
+  <book code="PSA" abbr="PSA" short="Psalms" long="PSALMS" alt="" />
+  <book code="PRO" abbr="PRO" short="Proverbs" long="PROVERBS" alt="" />
+  <book code="ECC" abbr="ECC" short="Ecclesiastes" long="ECCLESIASTES" alt="" />
+  <book code="SNG" abbr="SNG" short="Song of Songs" long="SONG OF SONGS" alt="" />
+  <book code="ISA" abbr="ISA" short="Esias" long="ESIAS" alt="" />
+  <book code="JER" abbr="JER" short="Jeremias" long="JEREMIAS" alt="" />
+  <book code="LAM" abbr="LAM" short="Lamentations" long="LAMENTATIONS" alt="" />
+  <book code="EZK" abbr="EZK" short="Jezekiel" long="JEZEKIEL" alt="" />
+  <book code="DAN" abbr="DAN" short="Daniel" long="DANIEL" alt="" />
+  <book code="HOS" abbr="HOS" short="Osee" long="OSEE" alt="" />
+  <book code="JOL" abbr="JOL" short="Joel" long="JOEL" alt="" />
+  <book code="AMO" abbr="AMO" short="Amos" long="AMOS" alt="" />
+  <book code="OBA" abbr="OBA" short="Obdias" long="OBDIAS" alt="" />
+  <book code="JON" abbr="JON" short="Jonas" long="JONAS" alt="" />
+  <book code="MIC" abbr="MIC" short="Michaeas" long="MICHAEAS" alt="" />
+  <book code="NAM" abbr="NAM" short="Naum" long="NAUM" alt="" />
+  <book code="HAB" abbr="HAB" short="Ambacum" long="AMBACUM" alt="" />
+  <book code="ZEP" abbr="ZEP" short="Sophonias" long="SOPHONIAS" alt="" />
+  <book code="HAG" abbr="HAG" short="Aggaeus" long="AGGAEUS" alt="" />
+  <book code="ZEC" abbr="ZEC" short="Zacharias" long="ZACHARIAS" alt="" />
+  <book code="MAL" abbr="MAL" short="Malachias" long="MALACHIAS" alt="" />
+  <book code="TOB" abbr="TOB" short="Tobit" long="TOBIT" alt="" />
+  <book code="JDT" abbr="JDT" short="Judith" long="JUDITH" alt="" />
+  <book code="WIS" abbr="WIS" short="Wisdom" long="WISDOM" alt="" />
+  <book code="SIR" abbr="SIR" short="Sirach" long="SIRACH" alt="" />
+  <book code="BAR" abbr="BAR" short="Baruch" long="BARUCH" alt="" />
+  <book code="LJE" abbr="LJE" short="Epistle of Jeremy" long="EPISTLE OF JEREMY" alt="" />
+  <book code="S3Y" abbr="S3Y" short="Prayer of Azarias" long="PRAYER OF AZARIAS" alt="" />
+  <book code="SUS" abbr="SUS" short="Susanna" long="SUSANNA" alt="" />
+  <book code="BEL" abbr="BEL" short="Bel and the Dragon" long="BEL AND THE DRAGON" alt="" />
+  <book code="1MA" abbr="1MA" short="I Maccabees" long="I MACCABEES" alt="" />
+  <book code="2MA" abbr="2MA" short="II Maccabees" long="II MACCABEES" alt="" />
+  <book code="1ES" abbr="1ES" short="I Esdras" long="I ESDRAS" alt="" />
+  <book code="MAN" abbr="MAN" short="Prayer of Manasses" long="PRAYER OF MANASSES" alt="" />
+  <book code="3MA" abbr="3MA" short="III Maccabees" long="III MACCABEES" alt="" />
+  <book code="4MA" abbr="4MA" short="IV Maccabees" long="IV MACCABEES" alt="" />
+</BookNames>

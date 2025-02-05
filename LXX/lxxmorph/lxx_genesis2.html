@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Greek Old Testament (Septuagint)</h1>
+<div>
+<b>Book:</b> <span id="book"></span><br>
+<b>Chp:</b> <span id="chp"></span><br>
+<b>Verse:</b> <span id="verse"></span><br>
+<b>Verse2:</b> <span id="verse2"></span><br>
+<b>Verse3:</b> <span id="verse3"></span><br>
+<b>Chapter:</b> <span id="chapter"></span>
+</div>
+
+<script>
+var xmlhttp, xmlDoc;
+xmlhttp = new XMLHttpRequest();
+xmlhttp.open("GET", "./lxx-xmls/01.Gen.mlxx.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+document.getElementById("book").innerHTML=
+xmlDoc.getElementsByTagName("book")[0].childNodes[0].nodeValue;
+document.getElementById("chp").innerHTML=
+xmlDoc.getElementsByTagName("ch")[0].childNodes[0].nodeValue;
+document.getElementById("verse").innerHTML=
+xmlDoc.getElementsByTagName("ver")[0].childNodes[0].nodeValue;
+
+var node;
+
+var books = xmlDoc.getElementsByTagName("book");
+var chps = books[0].getElementsByTagName('ch');
+var verses = chps[0].getElementsByTagName('ver');
+
+//document.getElementById("verse2").innerHTML = verses[3].textContent;
+
+var nodes = verses[3].childNodes;
+
+for( n=0; n < nodes.length; n++ )
+{
+
+    if(nodes[n].nodeType !== Node.TEXT_NODE)
+    {
+        document.getElementById("verse2").innerHTML += 
+        //node + '<br>';
+        '[ ' + nodes[n].childNodes[0].textContent + ' ]<br>';
+        
+    }
+
+}
+
+
+chps = books[0].getElementsByTagName('ch');
+verses = chps[10].getElementsByTagName('ver');
+
+ nodes = verses[15].childNodes;
+
+for( n=0; n < nodes.length; n++ )
+{
+
+    if(nodes[n].nodeType !== Node.TEXT_NODE)
+    {
+        document.getElementById("verse3").innerHTML += 
+        //node + '<br>';
+        '' + nodes[n].childNodes[0].textContent + ' ';
+        
+    }
+
+}
+
+
+
+chps = books[0].getElementsByTagName('ch');
+//verses = chps[10].getElementsByTagName('ver');
+
+// nodes = verses[15].childNodes;
+
+//for( c=0; c < chps.length; c++ )
+c=0;
+{
+    document.getElementById("chapter").innerHTML = "";
+
+    if(chps[c].nodeType !== Node.TEXT_NODE)
+    {
+        verses = chps[c].childNodes;
+
+
+        for( v=0; v < verses.length; v++ )
+        {
+
+            if(verses[v].nodeType !== Node.TEXT_NODE)
+            {
+
+                document.getElementById("chapter").innerHTML += '<b>'+ verses[v].attributes[0].nodeValue +'</b> ';
+
+                words = verses[v].childNodes;
+
+                for( w=0; w < words.length; w++ )
+                {
+
+                    if(words[w].nodeType !== Node.TEXT_NODE)
+                    {
+
+                        document.getElementById("chapter").innerHTML += 
+                        //node + '<br>';
+                        '' + words[w].childNodes[0].textContent + ' ';
+                        
+                    }
+
+                }
+                
+            }
+
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,224 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+decl {\#include <FL/fl_ask.H>} {private local
+} 
+
+decl {\#include <FL/Fl_File_Chooser.H>} {private local
+} 
+
+decl {\#include <FL/Fl_Tree.H>} {public local
+} 
+
+decl {\#include <FL/Fl_Tree_Item.H>} {private local
+} 
+
+decl {\#include "xmltag.h"} {private local
+} 
+
+decl {XMLTag g_XML;} {private local
+} 
+
+Function {edit_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {835 260 485 410} type Double resizable visible
+  } {
+    Fl_Tabs {} {open
+      xywh {5 5 475 400} resizable
+    } {
+      Fl_Group {} {
+        label Tag open
+        xywh {5 35 475 370}
+      } {
+        Fl_Text_Editor tag_data {selected
+          xywh {10 40 465 360} labelfont 4
+        }
+      }
+    }
+  }
+} 
+
+class XTree {open : {virtual public Fl_Tree}
+} {
+  Function {XTree(int x, int y, int w, int h ) : Fl_Tree( x, y, w, h )} {open
+  } {
+    code {// Constuctor} {}
+  }
+  Function {handle(int e)} {
+    comment {Added for right click detection} open return_type int
+  } {
+    code {//printf("Hello, World!\\n");
+
+int ret = Fl_Tree::handle(e);
+
+switch( e )
+{
+
+	case FL_PUSH:
+		if( Fl::event_button() == FL_RIGHT_MOUSE )
+		{
+			//printf("Right Down");
+			//fflush( stdout );
+		}
+		break;
+		//return 1;
+	case FL_RELEASE:
+		if( Fl::event_button() == FL_RIGHT_MOUSE)
+		{
+			//printf("Right Up");
+			//fflush( stdout );
+			Fl_Tree_Item* ti = this->first_selected_item();
+			
+			if( ti != NULL )
+			{
+				printf( "%s\\n", ((XMLTag*)ti->user_data())->getXMLFormatted() );
+				edit_window()->show();
+				tag_data->buffer( new Fl_Text_Buffer() );
+				tag_data->buffer()->text(((XMLTag*)ti->user_data())->getXMLFormatted()); 
+			}
+		}
+		break;
+		//return 1;
+	default:
+		break;
+}
+
+return ret;} {}
+  }
+} 
+
+Function {fill_recursive( Fl_Tree_Prefs& tpf, Fl_Tree_Item* tp, XMLTag &xr )} {open private return_type void
+} {
+  code {//for( int i=0; i < xr.count(); i++ )
+{		
+	std::string strAttrs("");
+
+	for( int a=0; a < xr.attribute_count(); a++ )
+	{
+		strAttrs += " ";
+		strAttrs += xr.attribute_name( a ) + "=";
+		strAttrs += "\\"" + xr.attribute( a ) + "\\"";		
+	}
+	
+	Fl_Tree_Item* p = tp->add( tpf, ("<"+xr.name() + strAttrs+">").c_str()  );
+	
+	p->user_data( (void*) &xr );
+		
+	for( int r=0; r < xr.count(); r++ )
+		fill_recursive( tpf, p, xr[r] );
+}} {}
+} 
+
+Function {fill_tree( Fl_Tree_Prefs& tpf, Fl_Tree_Item* tp, XMLTag &xr )} {open private return_type void
+} {
+  code {for( int i=0; i < xr.count(); i++ )
+{		
+	std::string strAttrs("");
+
+	for( int a=0; a < xr[i].attribute_count(); a++ )
+	{
+		strAttrs += " ";
+		strAttrs += xr[i].attribute_name( a ) + "=";
+		strAttrs += "\\"" + xr[i].attribute( a ) + "\\"";		
+	}
+	
+	Fl_Tree_Item* p = tp->add( tpf, (xr[i].name() + strAttrs).c_str()  );
+	
+	p->user_data( (void*) &xr[i] );
+		
+	fill_tree( tpf, p, xr[i] );
+}} {}
+} 
+
+Function {make_window()} {open
+} {
+  Fl_Window {} {open
+    xywh {162 311 895 605} type Double resizable visible
+  } {
+    Fl_Group {} {open
+      xywh {10 10 875 510} resizable
+    } {
+      Fl_Tree tree {
+        callback {//printf( "0x%016x\\n\\n", o->callback_item() );
+//printf( "%s\\n\\n", ( (XMLTag*)(((Fl_Tree_Item*)(o->callback_item()) )->user_data()) )->getXMLFormatted() );
+//fflush( stdout );
+
+switch( tree->callback_reason() )
+{
+	case FL_TREE_REASON_SELECTED:
+	{
+		printf( "%d\\n", Fl::event_button() );
+		fflush( stdout );	
+	
+		if ( Fl::event_button() == FL_RIGHT_MOUSE ) 
+		{
+			printf( "%s\\n\\n", ( (XMLTag*)(((Fl_Tree_Item*)(o->callback_item()) )->user_data()) )->getXMLFormatted() );
+			fflush( stdout );
+		}
+		break;
+	}
+	case FL_TREE_REASON_OPENED:
+	case FL_TREE_REASON_CLOSED:
+	//case FL_TREE_REASON_RESELECTED:
+	case FL_TREE_REASON_DESELECTED:
+	default:
+	break;
+}
+
+
+
+//printf( "%s\\n", ( (XMLTag*)(((Fl_Tree_Item*)v)->user_data()) )->getXMLFormatted() );}
+        private xywh {10 10 875 510}
+        class XTree
+      }
+    }
+    Fl_Button open {
+      label OpenXML
+      callback {Fl_Tree_Prefs prefs;
+
+const char * fname = fl_file_chooser( "Choose an XML file to read", "*.xml", NULL, 0 );
+
+if( fname != NULL )
+{
+
+	try
+	{
+		g_XML.load( fname );
+
+		//printf( "%s\\n", g_XML.getXML() );
+		
+		fflush( stdout );	
+		
+		Fl_Tree_Item* ti = NULL;	
+	
+		fill_recursive( prefs, 	
+			tree->root(),
+			g_XML );
+	}
+	catch( XMLTagException &e )
+	{
+		fl_alert( "%s\\n%s\\n 0x%02.02x(%c) position: %d", e.msg.c_str(), e.sample.c_str(), e.byte, e.byte, e.pos );
+	}
+	catch(...)
+	{
+		fl_alert( "Could not open %s", fname );
+	}	
+
+}
+
+tree->redraw();}
+      xywh {10 570 105 25}
+    }
+  }
+} 
+
+Function {} {open
+} {
+  code {make_window()->show();
+
+tree->showroot(0);
+
+return Fl::run();} {}
+} 

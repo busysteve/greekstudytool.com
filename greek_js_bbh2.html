@@ -1,0 +1,1008 @@
+<html>
+<head>
+	<title>busysteve.com - Biblical Greek Flash Cards</title>
+	<link rel="stylesheet" type="text/css" href="./busysteve.css">
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="Content-type: text/html; charset=utf-8">
+	<META name="keywords" content="greek, flashcards, biblical, busysteve">
+</head>
+<body onLoad="checkCookies(); showAnswer(); checkSelectionsF();">
+
+
+<script type="text/javascript" charset="utf-8">
+
+var ch3 = [
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'אָדָם', 'man, mankind, Adam' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'אֶ֫רֶץ', 'land, earth, ground [F]' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'אֱלֹהִים', 'God, gods' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'אָב', 'father, ancestor' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'אֵל', 'God, god' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'בֵּן', 'son' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'בַּ֫יִת', 'house, household' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'דָּבָר', 'word, matter, thing' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'יוֹם', 'day' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'יִשְׂרָאֵל', 'Israel' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'יְרוּשָׁלַ֫םִ', 'Jerusalem' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'יְרוּשָׁלַ֫יִם', 'Jerusalem' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'יְהוָה', 'Yahweh, Lord' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'מִצְרַ֫יִם', 'Egypt' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'מֹשֶׁה', 'Moses' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'מֶ֫לֶךְ', 'king, ruler' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'סוּס', 'horse' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'עֶ֫בֶד', 'slave, servant' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'פַּרְעֹה', 'Pharaoh' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'שָׁנָה', 'year' ], 
+[ 'Chapter 3 – Syllabification and Pronunciation', '', '', 'שֵׁם', 'name, reputation' ]
+];
+
+
+var ch4 = [
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'אֲדֹנָי', 'Lord' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'אָדוֹן', 'lord, master' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'אָח', 'brother' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'אַחִים', ' [irregular plural of אָח]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'אִישׁ', 'man, husband' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'אֲנָשִׁים', ' [irregular plural of אִישׁ]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'אִשָּׁה', 'woman, wife' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'נָשִׁים', ' [Irregular plural of אִשָּׁה] ' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'בַּת', 'daughter [F]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'בָּנוֹת', ' [Irregular plural of בַּת]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'גּוֹי', 'nation, people' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'דֶּ֫רֶךְ', 'way, road, journey [M/F]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'הַר', 'mountain, hill, hill country' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'הָרִים', ' [plural of הַר]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'כֹּהֵן', 'priest' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'לֵב', 'heart, mind, will' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'לֵבָב', 'heart, mind, will' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'מַ֫יִם', 'water' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'נֶ֫פֶשׁ', 'soul, life, person, neck, throat [F]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'נָבִיא', 'prophet' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'סֵ֫פֶר', 'book, scroll, document' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'עַ֫יִן', 'eye, spring [F]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'עֵינַ֫יִם', '[Dual of עַ֫יִן] [F]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'עִיר', 'city, town [F]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'עָרִים', '[Irregular plural of עִיר] [F]' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'צָבָא', 'host, army, war, service' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'צְבָאוֹת', ' [Plural of צָבָא] host, army, war, service' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'קוֹל', 'voice, sound, noise' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'רֹאשׁ', 'head, top, chief' ], 
+[ 'Chapter 4 – Hebrew Nouns', '', '', 'תּוֹרָה', 'law, instruction, teaching, custom' ]
+];
+
+
+var ch5 = [
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'אֵשׁ', 'fire [F]' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'הֵיכָל', 'temple, palace' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'וְ', 'and, but, also, even, then' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'זָהָב', 'gold' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'חֶ֫רֶב', 'sword [F]' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'חַי', 'living, alive' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'חַיִּים', 'life, lifetime' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'יֶ֫לֶד', 'child, boy, youth' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'יָם', 'sea' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'כֶּ֫סֶף', 'silver, money' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'כֹּה', 'thus, here' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'מָקוֹם', 'place, location' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'מִשְׁפָּט', 'judgment, decision, ordinance, law, custom, manner' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'מִזְבֵּחַ', 'altar' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'נְאֻם', 'utterance, announcement, revelation' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'עוֹלָם', 'forever, everlasting, ancient' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'עָנָן', 'clouds, cloud mass' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'רוּחַ', 'spirit, wind, breath [F]' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'שַׂר', 'chief official, ruler, prince' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'שַׁ֫עַר', 'gate' ], 
+[ 'Chapter 5 – Definite Article and Conjunction Waw', '', '', 'שָׁמַ֫יִם', 'heaven, sky' ]
+];
+
+var ch6 = [
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'אַחַר', 'after, behind' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'אַחֲרֵי', 'after, behind' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'אֵת / אֶת־', 'preposition: with, beside' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'particle: definite direct object marker', 'ʾēt / ʾet-' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'אֶל / אֶל־', 'to, toward, in, into' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'בֵּין', 'between' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'וּבֵין', 'and between' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'בְּ', 'in, at, with, by, against' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'בְּתוֹךְ', 'in the middle of, inside' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'תָּ֫וֶךְ', 'noun: middle, center' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'חָכְמָה', 'wisdom, skill' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'כְּ', 'as, like, according to' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'כֹּל', 'all, each, every' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'כָּל־', 'all, each, every' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'לִפְנֵי', 'before, in front of' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'לְ', 'to, toward, for' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'לְמַ֫עַן', 'on account of, for the sake of' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'מִן / מִן־', 'from, out of' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'מַ֫עַל', 'above, upward, on top of' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'מִמַּ֫עַל', '(from) above, (from) on top of' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'מִצְוָה', 'commandment' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'מִצְוֹת', '[irregular plural of מִצְוָה]' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'עַד', 'until, as far as, during' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'עַל', 'on, upon, on account of, according to' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'עַל־דְּבַר', 'because of, on account of' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'עִם', 'with, together with' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'פֶּה', 'mouth, opening' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'שָׂדֶה', 'field, pasture land' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', 'תַּ֫חַת', 'under, below, instead of' ], 
+[ 'Chapter 6 – Hebrew Prepositions', '', '', '', '' ]
+];
+
+var ch7 = [ 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'אֶחָד', 'one' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'גָּדוֹל', 'great, big, large' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'דַּל', 'poor, weak, needy' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'זָקֵן', 'adjective: old noun: elder' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'חָכָם', 'wise, skillful, experienced' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'טוֹב', 'good, pleasant' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'יָפֶה', 'beautiful' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'יָשָׁר', 'upright, just, level, straight' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'כֵּן', 'so, thus' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'לָכֵן', 'therefore' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'עַל־כֵּן', 'therefore' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'מְאֹד', 'very, exceedingly' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'מְעַט', 'little, few' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'עַתָּה', 'now, after all, at last, then' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'צַדִּיק', 'righteous, just, innocent' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'קֹ֫דֶשׁ', 'Holiness, something that is holy' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'קָדוֹשׁ', 'holy, set apart' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'קָטֹן', 'small, young, insignificant' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'קָרוֹב', 'near, close' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'קָשֶׁה', 'difficult, hard, severe' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'רָחוֹק', 'distant, remote, far away' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'רַב', 'great, many' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'רַע', 'bad, evil, wicked' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'רָשָׁע', 'wicked, guilty' ], 
+[ 'Chapter 7 – Hebrew Adjectives', '', '', 'שִׁיר', 'song' ]
+];
+
+var ch8 = [
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'אֹ֫הֶל', 'tent' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'אַחֵר', 'other, another, foreign' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'אֵיךְ', 'how?' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'אֵיכָה', 'how?' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'אֶ֫לֶף', 'thousand' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'אֲשֶׁר', 'who, whom, that, which' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'כַּאֲשֶׁר', 'as, when' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'בְּהֵמָה', 'animal(s), beast(s), cattle' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'גַּם', 'also, even' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'דָּם', 'blood' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'הֲ', 'interrogative particle' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'טָהוֹר', 'clean, pure' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'כִּי', 'that, because, but, except, indeed, truly' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'כִּי־אִם', 'but, except, only' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'כְּסִיל', 'fool, shameless person' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'לָ֫מָּה', 'why?' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'לָמָה', 'why?' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'מָה', 'what?' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'מַדּוּעַ', 'why?' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'מִי', 'who?' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'עָנִי', 'poor, humble, afflicted' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'שֶׁ֫מֶן', 'oil, fat' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', 'שֹׁפֵט', 'one who judges, a judge' ], 
+[ 'Chapter 8 – Hebrew Pronouns', '', '', '', '' ]
+];
+
+var ch9 = [
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'אוֹ', 'or' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'אַ֫יִן', 'there is not, there are not' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'אֵין', 'there is not, there are not' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'אַף', 'nostril, nose; anger' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'אַפַּ֫יִם', '[dual of אַף]' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'בֹּ֫קֶר', 'morning' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'בָּקָר', 'cattle, herd' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'בְּרָכָה', 'blessing, gift' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'הֵן', 'behold! if' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'הִנֵּה', 'behold!' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'חַטָּאת', 'sin, sin offering [F]' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'יֵשׁ', 'there is, there are' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'כָּבוֹד', 'glory, splendor, honor, abundance' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'כְּלִי', 'vessel, implement, weapon' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'לֶ֫חֶם', 'bread, food' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'לְבַד', 'alone, by oneself' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'מִשְׁפָּחָה', 'family, clan' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'מִלְחָמָה', 'war, battle, struggle' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'סָבִיב', 'around, about, surroundings, circuit' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'עַם', 'people' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', 'עֵץ', 'tree, wood' ], 
+[ 'Chapter 9 – Hebrew Pronominal Suffixes', '', '', '', '' ]
+];
+
+var ch10 = [
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'אֶ֫בֶן ', 'stone [F]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'אֲדָמָה ', 'ground, land, earth' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'אֹיֵב', 'enemy' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'בָּשָׂר ', 'flesh, meat, skin' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'בְּרִית', 'covenant [F]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'גְּבוּל', 'border, boundary, territory' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'חַ֫יִל', 'strength, wealth, army' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'חֶ֫סֶד', 'loyalty, faithfulness, steadfast love, lovingkindness' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'חֹ֫דֶשׁ', 'month, new moon' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'יָד', 'hand; side, power [F]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'יָדוֹת', '[plural of יָד]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'מָ֫וֶת', 'death, dying [M]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'מוֹת', ' [MS construct of מָ֫וֶת]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'מַטֶּה', 'staff, rod, tribe' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'מִדְבָּר', 'wilderness, desert, pasture' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'עוֹד', 'again, still, as long as' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'עֵת', 'time, point of time [F]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'עֹלָה', 'whole burnt offering' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'פָּנִים', 'face, front' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'פְּנֵי', ' [construct of פָּנִים]' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'צֹאן', 'flock(s), flock of sheep and goats' ], 
+[ 'Chapter 10 – Hebrew Construct Chain', '', '', 'רֶ֫גֶל', 'foot [F]' ]
+];
+
+
+var ch11 = [
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'אַמָּה', 'cubit, forearm' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'אֵם', 'mother [F]' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'בֶּ֫גֶד', 'clothing, garment, covering' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'זֶ֫רַע', 'seed, offspring, descendants' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'חָצֵר', 'courtyard, village, settlement' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'לַ֫יְלָה', 'night [M]' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'לָכֵן', 'therefore' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'מוֹעֵד', 'appointed time (of feast), meeting place, assembly' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'מַחֲנֶה', 'camp, army' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'מַלְאָךְ', 'messenger, angel' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'מַעֲשֶׂה', 'work, deed, act' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'נַ֫עַר', 'boy, youth, servant' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'נַחֲלָה', 'inheritance, property, possession' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'עָוֹן', 'transgression, iniquity, guilt, punishment (of sin)' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'קֶ֫רֶב', 'inner part(s), organ(s), body' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'בְּקֶ֫רֶב', 'in the middle of, among' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'רַק', 'only, still, but, however' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'שָׁלוֹם', 'peace, welfare, wholeness, deliverance' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'שָׁם', 'there, then, at that time' ], 
+[ 'Chapter 11 – Hebrew Numbers', '', '', 'תָּמִיד', 'continually' ]
+];
+
+ 
+var ch12 = [
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'אָכַל', 'to eat, consume' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'אָמַר', 'to say, mention, think' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'הָלַךְ', 'to go, walk, behave, die, pass away' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'הָיָה', 'to be, become, happen, occur' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'יָצָא', 'to go out, go forth, come out, come forth' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'יָשַׁב', 'to sit (down), remain, dwell, inhabit' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'נָתַן', 'to give, put, set' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'עָשָׂה', 'to do, make, create' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'רָאָה', 'to see, perceive, understand' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'שָׁבַת', 'to stop, cease, rest' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'שָׁמַע', 'to hear, listen to, understand, obey' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'אֲרוֹן', 'ark, chest, coffin' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'מִנְחָה', 'gift, offering, tribute' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'שַׁבָּת', 'Sabbath, period of rest' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'אַךְ', 'only, surely, nevertheless' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'אַל', 'no, not' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'אִם', 'if' ], 
+[ 'Chapter 12 – Introduction to Hebrew Verbs', '', '', 'לֹא', 'no, not' ]
+];
+
+ 
+var ch13 = [
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'בָּרַךְ', 'to bless' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'זָכַר', 'to remember, recall, call to mind, mention' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'זָקֵן', 'to be(come) old' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'חָזַק', 'to be(come) strong, grow firm, have courage' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'יָדַע', 'to know, know sexually, have understanding' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'כָּבֵד', 'to be heavy, be honored' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'כָּתַב', 'to write (upon) register, record' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'מָלֵא', 'to be full, fill' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'מָלַךְ', 'to be(come) king or queen, reign, rule' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'מָצָא', 'to find (out), reach, obtain' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'פָּקַד', 'to attend, pay attention to, take care of, number, appoint, visit' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'שָׁכַב', 'to lie down, have sexual intercourse' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'שָׁלַח', 'to send, stretch out' ], 
+[ 'Chapter 13 Qal Perfect – Strong Verbs', '', '', 'שָׁמַר', 'to watch (over), guard, keep, observe, protect' ]
+];
+
+var ch14 = [
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'בּוֹא', 'to go in, enter, come to' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'בָּנָה', 'to build (up), build (establish) a family' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'יָלַד', 'to bring forth, bear' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'יָרֵא', 'to fear, be afraid, be in awe of' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'יָרַד', 'to go down, come down, descend' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'לָקַח', 'to take, grasp, capture, seize, lay hold of' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'מוּת', 'to die' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'נָפַל', 'to fall, fall prostrate, fall upon' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'נָשָׂא', 'to lift, carry, raise, bear (load or burden), take away' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'עָלָה', 'to go up, ascend' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'עָבַר', 'to pass over, pass through, pass by, cross' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'עָמַד', 'to stand (up), stand still, take one’s stand' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'קוּם', 'to rise, arise, get up, stand' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'קָרָא', 'to call, summon, proclaim, announce, read aloud' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'שִׂים', 'to set (up), put, place, lay (upon), establish' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'שׁוּב', 'to turn back, return, go back' ], 
+[ 'Chapter 14 Qal Perfect – Weak Verbs', '', '', 'פֹּה', 'here, at this place' ]
+];
+
+var ch15 = [
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'חָיָה', 'to live, be alive, stay alive, revive, restore to life' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'יָכֹל', 'to be able, be capable of, endure, prevail, be victorious' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'כָּרַת', 'to cut off, cut down, make a covenant' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'סוּר', 'to turn aside, turn off, leave' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'עָבַד', 'to work, serve, toil, till, cultivate' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'עָנָה', 'to answer, respond, reply, testify' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'אֹ֫זֶן', 'ear [F]' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'אַ֫יִל', 'noun: ram, ruler adj: mighty' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'גִּבּוֹר', 'adj: mighty, valiant, heroic noun: hero' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'זֶ֫בַח', 'a sacrifice' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'צְדָקָה', 'righteousness, righteous act, justice' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'צָפוֹן', 'north, northern [F]' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'אָז', 'then, since, before' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'אַף', 'also, indeed, even' ], 
+[ 'Chapter 15 Qal Imperfect – Strong Verbs', '', '', 'פֶּן־', 'lest, otherwise' ]
+];
+
+
+var ch16 = [
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'גָּאַל', 'to redeem, deliver, act as kinsman, avenge' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'חָטָא', 'to miss (a goal or mark), sin, commit a sin' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'יָסַף', 'to add, continue' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'יָרַשׁ', 'to inherit, take possession of, dispossess, take away someone’s property' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'כָּפַר', 'to cover, atone, make atonement' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'נָטָה', 'to spread out, stretch out, extend, pitch (a tent)' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'עָזַב', 'to leave, forsake, abandon, set free, let go' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'קָרַב', 'to approach, draw near, come near' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'רָבָה', 'to be(come) numerous, be(come) great, increase' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'שָׁתָה', 'to drink' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'תָּמַם', 'to be(come) complete, cease, come to an end, be spent, be consumed, be burned out' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'כַּף', 'hand, palm, sole of foot [F]' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'רֵ֫עַ', 'friend, companion, neighbor' ], 
+[ 'Chapter 16 Qal Imperfect – Weak Verbs', '', '', 'נֶ֫גֶד', 'opposite, in front of' ] 
+];
+
+
+var ch17 = [
+[ 'Chapter 17 Waw Consecutive', '', '', 'אָבַד', 'to perish, vanish, be(come) lost' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'אָהַב', 'to love' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'אָסַף', 'to gather (in), take in, take away, destroy' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'בָּעַר', 'to burn (up), consume' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'גָּלָה', 'to uncover, reveal, disclose' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'טָהֵר', 'to be clean, be pure' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'כָּלָה', 'to (be) complete, be finished, come to an end' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'רוּם', 'to be high, be exalted, rise' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'שָׁפַט', 'to judge, decide' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'אֱמֶת', 'truth, fidelity [F]' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'כִּסֵא', 'seat, chair, throne' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'מִסְפָּר', 'number' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'עֶ֫שֶׂר', 'ten' ], 
+[ 'Chapter 17 Waw Consecutive', '', '', 'שֶׁ֫מֶשׁ', 'sun' ]
+];
+
+
+var ch18 = [
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'בָּחַר', 'to choose, test, examine' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'בִּין', 'to understand, perceive, consider' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'דָּרַשׁ', 'to seek, inquire, investigate, ask for, require, demand' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'הָרַג', 'to kill, slay' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'חָפֵץ', 'to delight in, take pleasure in, desire, be willing' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'טוֹב', 'to be good, be pleasing, be pleasant, be joyful, be well with' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'קָדַשׁ', 'to be holy, set apart, or consecrated' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'רָעָה', 'to pasture, tend (flocks), shepherd, feed' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'שָׁאַל', 'to ask (of), inquire (of), request, demand' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'בַּ֫עַל', 'owner, master, husband, (divine title) Baal' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'שֵׁ֫בֶט', 'rod, staff, scepter, tribe' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'בַּ֫עַד', 'behind, through' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'בְּעַד', 'behind, through' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'יַ֫עַן', 'on account of' ], 
+[ 'Chapter 18 Qal Imperative, Cohortative, and Jussive', '', '', 'נָא', 'please, now; surely; particle often not translated' ], 
+];
+
+
+var ch19 = [
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'בָּטַח', 'to trust, be confident, rely (upon)' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'בָּכָה', 'to weep (in grief or joy), weep for' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'לָבַשׁ', 'to put on a garment, clothe, be clothed' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'שָׂרַף', 'to burn (completely), destroy' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'שָׂרָף', 'fiery serpent' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'שָׁלֵם', 'to be complete, be finished' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'דּוֹר', 'generation' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'חוּץ', 'outside, street' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'מְלָאכָה', 'work, occupation, service' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'פַּר', 'bull, ox, steer' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'פֶּ֫תַח', 'opening, entrance, doorway' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'רֹב', 'multitude, abundance, greatness' ], 
+[ 'Chapter 19 Pronominal Suffixes on Verbs', '', '', 'שָׂפָה', 'lip, language, edge, shore' ] 
+];
+
+
+var ch20 = [
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'אָחַז', 'to seize, grasp, take' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'טָמֵא', 'to be(come) unclean' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'יָצַר', 'to form, fashion, shape, create' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'נוּס', 'to flee, escape' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'נָגַע', 'to touch, strike, reach' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'סָבַב', 'to turn, go around, march around, surround' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'סָפַר', 'to count' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'שָׂמַח', 'to rejoice, be joyful, be glad' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'שָׁבַר', 'to break (up), break in pieces, smash, shatter' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'יַחְדָּו', 'together, at the same time' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'יַ֫חַד', 'together, along with' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'יַ֫יִן', 'wine' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'עֲבֹדָה', 'work, labor, service, worship' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'עֲבוֹדָה', 'work, labor, service, worship' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'עֵדָה', 'congregation, assembly' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'בִּלְתִּי', 'not, except' ], 
+[ 'Chapter 20 Qal Infinitive Construct', '', '', 'לְבִּלְתִּי', 'not, except' ]
+];
+
+var ch21 = [
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'זָבַח', 'to slaughter, sacrifice' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'חָנָה', 'to decline, camp, encamp, lay seige to' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'נוּחַ', 'to rest, settle down' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'נָסַע', 'to pull (out or up), set out, start out, depart, journey, march' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'פָּנָה', 'to turn' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'פָּתַח', 'to open' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'רָדַף', 'to pursue, follow after, chase, persecute' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'שָׂנֵא', 'to hate' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'שָׁאַר', 'to remain, be left over, survive' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'בָּמָה', '(cultic) high place, hill' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'חֻקָּה', 'statute, ordinance' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'חֻקּוֹת', '	[Plural of חֻקָּה] 	[Plene spelling]' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'חֻקֹּת', '	[Plural of חֻקָּה] 	[Defective spelling]' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'יָמִין', 'right hand, south [F]' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'מִשְׁכָּן', 'dwelling place, tabernacle' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'נַ֫חַל', 'stream, brook, wadi' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'רָעָב', 'famine, hunger' ], 
+[ 'Chapter 21 Qal Infinitive Absolute', '', '', 'רָעֵב', '[adj] hungry' ]
+];
+
+var ch22 = [
+[ 'Chapter 22 Qal Participle', '', '', 'אָרַר', 'to curse' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'בּוֹשׁ', 'to be ashamed' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'גָּדַל', 'to grow up, be(come) great, become strong, wealthy or important' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'חָשַׁב', 'to think, consider, devise, plan, value, esteem, reckon' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'יָטַב', 'to be well with, go well with, be pleasing' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'לָכַד', 'to take, capture, catch, seize' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'נָגַשׁ', 'to draw near, come near, approach' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'קָבַץ', 'to collect, gather, assemble' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'קָבַר', 'to bury' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'שָׁכַן', 'to settle, abide, reside, dwell, inhabit' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'שָׁפַךְ', 'to pour (out), spill, shed (blood)' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'חוֹמָה', 'wall' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'חֹק', 'statute, appointed time, portion' ], 
+[ 'Chapter 22 Qal Participle', '', '', 'כֶּ֫בֶשׂ', 'lamb, sheep' ]
+];
+
+var ch23 = [
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'אוֹר', 'light, daylight, sunshine' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'בְּכֹר', 'firstborn [defective spelling]' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'בְּכוֹר', 'firstborn [plene spelling]' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'חֵמָה', 'wrath, heat, poison' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'חֲצִי', 'half, middle' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'כֹּחַ', 'strength, power' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'נְחֹ֫שֶׁת', 'copper, bronze' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'נָשִׂיא', 'chief, leader, prince' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'עֶ֫רֶב', 'evening, sunset' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'עֶ֫צֶם', 'bone, skeleton' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'פְּרִי', 'fruit, offspring' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'קָהָל', 'assembly, community, crowd' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'רֶ֫כֶב', 'chariot, upper millstone, (collective) chariots or chariot riders' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'לָשׁוֹן', 'tongue, language' ], 
+[ 'Chapter 23 Issues of Sentence Syntax', '', '', 'תּוֹעֵבָה', 'abomination, abhorrence, offensive thing' ]
+];
+
+var ch24 = [
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', '(N) = Niphal, (P) = Piel, (H) = Hiphil', '' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'אָמַן', '(N) to be reliable, be faithful, be trustworthy' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'יָשַׁע', '(N) to be delivered, be victorious, receive help' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'יָתַר', '(N) to be left over, remain' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'כּוּן', '(N) to be established, be steadfast, be ready' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'לָחַם', '(N) to fight, do battle with' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'מָלַט', '(N) to escape, flee to safety' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'נָחַם', '(N) to be sorry, regret, have compassion' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'נָכָה', '(H) to strike, smite, beat, strike dead, destroy, injure' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'נָצַב', '(N) to stand (firm), take one’s stand' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'נָצַל', '(N) to be rescued, be delivered' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'סָתַר', '(N) to be hidden, hide oneself' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'פָּלָא', '(N) to be extraordinary, be wonderful, be too difficult' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'רוּץ', 'to run' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'שָׁחַת', '(P, H) to ruin, destroy, spoil, annihilate' ], 
+[ 'Chapter 24 The Niphal Stem – Strong Verbs', '', '', 'שָׁמַד', '(N) to be exterminated, be destroyed, be annihilated' ]
+];
+
+var ch25 = [
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'הָפַךְ', 'to turn, overturn, overthrow, destroy' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'זָנָה', 'to commit fornication, be a harlot (prostitute), be unfaithful' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'חָרָה', 'to be(come) hot, burn with anger, become angry' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'רָעַע', 'to be bad, be evil, be displeasing' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'שָׂבַע', 'to satisfy, be satiated, eat or drink one’s fill' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'שָׁכַח', 'to forget' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'שָׁמֵם', 'to be deserted, be uninhabited, be desolated' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'זָכָר', 'man, male' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'חֹ֫שֶׁךְ', 'darkness' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'מִגְרָשׁ', 'open land, pasture' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'מַמְלָכָה', 'kingdom, dominion, reign' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'נָהָר', 'river, stream' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'צֶ֫דֶק', 'righteousness, equity' ], 
+[ 'Chapter 25 The Niphal Stem – Weak Verbs', '', '', 'רֹעֶה', 'shepherd' ]
+];
+
+var ch26 = [
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', '(N) = Niphal, (P) = Piel, (H) = Hiphil', '' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'בָּקַשׁ', '(P) to seek, search for, discover, demand, require' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'דָּבַר', '(P) to speak' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'הָלַל', '(P) to praise, sing hallelujah' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'יָדָה', '(H) to thank, praise, confess' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'כָּסָה', 'to cover, conceal, hide;' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', '(P) to cover (up), clothe', 'kāsâ' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'מָהַר', '(P) to hasten, hurry, go or come quickly' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'נָבָא', '(N) to prophesy, be in a state of prophetic ecstasy' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'נָבַט', '(P) to look (at), gaze, behold' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'סָגַר', 'to shut, close' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'צָוָה', '(P) to command, give an order, charge' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'קָטַר', '(P) to make a sacrifice go up in smoke, offer (a sacrifice) by burning' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'שִׁיר', 'to sing' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'שִׁית', 'to set, put, place' ], 
+[ 'Chapter 26 The Piel Stem – Strong Verbs', '', '', 'שָׁרַת', '(P) to minister, serve, attend to the service of God' ]
+];
+
+var ch27 = [
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', '(N) = Niphal, (P) = Piel, (H) = Hiphil', '' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'גּוּר', 'to sojourn, dwell as a foreigner or alien' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'יָעַץ', 'to advise, counsel, plan, decide' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'לָמַד', 'to learn; (P) to teach' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'מָשַׁל', 'to rule, reign, govern, have dominion' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'מָכַר', 'to sell, hand over' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'עָזַר', 'to help, assist, come to the aid of' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'עָנָה', '(P) to afflict, oppress, humiliate, violate' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'קָלַל', 'to be small, be insignificant, be swift; (N, P) to declare cursed' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'קָנָה', 'to get, acquire, buy' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'רָכַב', 'to mount and ride, ride' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'שָׁחַט', 'to slaughter' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'אָחוֹת', 'sister, relative, loved one [F]' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'כָּנָף', 'wing, edge, extremity' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'עַמּוּד', 'pillar, column, tent pole' ], 
+[ 'Chapter 27 The Piel Stem – Weak Verbs', '', '', 'שֶׁ֫קֶר', 'lie, deception, falsehood' ]
+];
+
+var ch28 = [
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', '(H) = Hiphil', '' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'אָסַר', 'to tie, bind, fetter, imprison' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'זָעַק', 'to cry (out), call for help, summon' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'חָזָה', 'to see, behold, perceive' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'חָלָה', 'to be(come) weak or tired, be(come) sick' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'חָנַן', 'to be gracious to, show favor to, favor' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'מָאַס', 'to refuse, reject, despise' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'עוּר', 'to be awake, stir up' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'עָרַךְ', 'to lay out, set in rows, arrange, stack (wood), draw up a battle formation' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'רָחַץ', 'to wash, bathe' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'שָׂכַל', '(H) to understand, comprehend, have insight, make wise, have success' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'מַרְאֶה', 'vision, sight, appearance' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'נֶ֫גֶב', 'south, Negev' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'עָפָר', 'dust, dry earth' ], 
+[ 'Chapter 28 The Pual Stem – Strong Verbs', '', '', 'פַּ֫עַם', 'foot, pace, time [F]' ]
+];
+
+var ch29 = [
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'לִין', 'to remain overnight, spend the night, stay, dwell' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'מָשַׁח', 'to smear, anoint' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'מָשִׁיחַ', 'anointed one, Messiah' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'נָצַר', 'to keep watch, watch over, guard, protect, preserve' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'גֵּר', 'stranger, sojourner, alien' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'חַיָּה', 'animal, beast' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'חֵ֫לֶב', 'fat;' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', '(metaphorically) best, choice part', 'ḥēleb' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'חֲמוֹר', 'donkey' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'יֶ֫תֶר', 'rest, remainder, excess' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'עוֹר', 'skin, hide, leather' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'עֹז', 'strength, power, might' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'פֶּ֫שַׁע', 'transgression, rebellion, crime' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'קָצֶה', 'end, border, outskirts' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'שִׂמְחָה', 'joy, gladness' ], 
+[ 'Chapter 29 The Pual Stem – Strong Verbs', '', '', 'תָּמִים', 'blameless, perfect, honest, devout' ]
+];
+
+var ch30 = [
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', '(N) = Niphal, (P) = Piel, (H) = Hiphil', '' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'חָלַל', '(N) to be defiled, defile oneself;' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', '(P) to profane, defile;', '' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', '(H) to let something be profaned, begin', 'ḥālal' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'נָגַד', '(H) to tell, announce, report, declare, inform' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'שָׁבַע', '(N) to swear, take an oath; (H) to plead with someone' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'שָׁלַךְ', '(H) to send, throw (down, into or away), cast' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'דַּ֫עַת', 'knowledge, understanding, ability [F]' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'דֶּ֫לֶת', 'door [F]' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'הָמוֹן', 'multitude, crowd, sound, roar' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'זְרוֹעַ', 'arm, forearm; (metaphorically) strength, power [F]' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'כְּרוּב', 'cherub' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'כֶּ֫רֶם', 'vineyard' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'מַלְכּוּת', 'kingdom, dominion, royal power' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'עֵצָה', 'counsel, plan, advice' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'חָלָל', 'pierced, slain, defiled' ], 
+[ 'Chapter 30 The Hiphil Stem – Strong Verbs', '', '', 'טָמֵא', 'unclean' ]
+];
+
+
+var ch31 = [
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'אָוֶן', 'iniquity, wickedness, evildoer' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'אוֹצָר', 'treasure, treasury, storehouse' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'אוֹת', 'sign, mark, pledge' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'גּוֹרָל', 'lot, portion, allotment' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'יְשׁוּעָה', 'salvation, help, deliverance' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'מִקְנֶה', 'cattle, livestock, property' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'מִשְׁמֶ֫רֶת', 'watch, guard, responsibility [F]' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'נֶ֫גַע', 'mark, plague, affliction' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'צַר', 'adversary, enemy' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'קֶ֫דֶם', 'east, ancient times' ], 
+[ 'Chapter 31 The Hiphil Stem – Weak Verbs', '', '', 'קָרְבָּן', 'gift, offering' ]
+];
+
+var ch32 = [
+[ 'Chapter 32 The Hophal Stem – Strong Verbs', '', '', 'אֶ֫רֶז', 'cedar' ], 
+[ 'Chapter 32 The Hophal Stem – Strong Verbs', '', '', 'צוּר', 'rock, boulder' ], 
+[ 'Chapter 32 The Hophal Stem – Strong Verbs', '', '', 'קֶ֫רֶן', 'horn [F]' ], 
+[ 'Chapter 32 The Hophal Stem – Strong Verbs', '', '', 'קֶ֫שֶׁת', 'bow, weapon [F]' ]
+];
+
+var ch33 = [
+[ 'Chapter 33 The Hophal Stem – Weak Verbs', '', '', 'בֶּ֫טֶן', 'belly, stomach, womb [F]' ], 
+[ 'Chapter 33 The Hophal Stem – Weak Verbs', '', '', 'הֶ֫בֶל', 'vanity, futility, breath' ], 
+[ 'Chapter 33 The Hophal Stem – Weak Verbs', '', '', 'חֶרְפָּה', 'reproach, disgrace, shame' ], 
+[ 'Chapter 33 The Hophal Stem – Weak Verbs', '', '', 'מִזְרָח', 'east, sunrise' ]
+];
+
+var ch34 = [
+[ 'Chapter 34 The Hithpael Stem – Strong Verbs', '', '', 'מִקְדָּשׁ', 'sanctuary' ], 
+[ 'Chapter 34 The Hithpael Stem – Strong Verbs', '', '', 'עוֹף', 'flying creatures, birds, insects' ], 
+[ 'Chapter 34 The Hithpael Stem – Strong Verbs', '', '', 'עוּף', 'to fly' ], 
+[ 'Chapter 34 The Hithpael Stem – Strong Verbs', '', '', 'עֵז', 'goat, goat’s hair' ], 
+[ 'Chapter 34 The Hithpael Stem – Strong Verbs', '', '', 'פָּלַל', '(Hithpael) to pray, make intercession' ], 
+[ 'Chapter 34 The Hithpael Stem – Strong Verbs', '', '', 'קִיר', 'wall' ], 
+[ 'Chapter 34 The Hithpael Stem – Strong Verbs', '', '', 'שׁוֹפָר', 'trumpet, ram’s horn' ]
+];
+
+
+var ch35 = [
+[ 'Chapter 35 The Hithpael Stem – Weak Verbs', '', '', 'בַּרְזֶל', 'iron' ], 
+[ 'Chapter 35 The Hithpael Stem – Weak Verbs', '', '', 'עֵד', 'witness' ], 
+[ 'Chapter 35 The Hithpael Stem – Weak Verbs', '', '', 'צָרָה', 'distress, anxiety, trouble' ], 
+[ 'Chapter 35 The Hithpael Stem – Weak Verbs', '', '', 'שׁוֹר', 'ox, bull, cow' ], 
+[ 'Chapter 35 The Hithpael Stem – Weak Verbs', '', '', 'שֻׁלְחָן', 'table' ], 
+[ 'Chapter 35 The Hithpael Stem – Weak Verbs', '', '', 'תְּפִלָּה', 'prayer' ]
+];
+
+
+
+
+var alpha_utf8_map=[
+['A','&Alpha;'],['B','&Beta;'],['G','&Gamma;'],['D','&Delta;'],['E','&Epsilon;'],['Z','&Zeta;'],['H','&Eta;'],['Q','&Theta;'],['I','&Iota;'],
+['K','&Kappa;'],['L','&Lambda;'],['M','&Mu;'],['N','&Nu;'],['X','&Xi;'],['O','&Omicron;'],['P','&Pi;'],['R','&Rho;'],['S','&Sigma;'],['T','&Tau;'],
+['U','&Upsilon;'],['F','&Phi;'],['C','&Chi;'],['Y','&Psi;'],['W','&Omega;'],
+['a','&alpha;'],['b','&beta;'],['g','&gamma;'],['d','&delta;'],['e','&epsilon;'],['z','&zeta;'],['h','&eta;'],['q','&theta;'],['i','&iota;'],
+['k','&kappa;'],['l','&lambda;'],['m','&mu;'],['n','&nu;'],['x','&xi;'],['o','&omicron;'],['p','&pi;'],['r','&rho;'],
+['s','&sigma;'],['V','&sigmaf;'],['t','&tau;'],['u','&upsilon;'],['f','&phi;'],['c','&chi;'],
+['y','&psi;'],['w','&omega;'], [' ','&nbsp;'], ['-','-'], ['=','&#8125;'], ['+', '&#701;'], ['|', '|'], ['/', '/']];
+
+var cards=[ch3, ch4, ch5, ch6,ch7,ch8,ch9,ch10,ch11,ch12,ch13,ch14,ch15, ch16,ch17,ch18,ch19,ch20,ch21,ch22,ch23,ch24,ch25,ch26,ch27,ch28,ch29,ch30,ch31,ch32,ch33,ch34,ch35];
+
+String.prototype.toArray = function() {
+return this.split('');
+}
+
+
+function playSound(soundfile) {
+ document.getElementById(soundfile).innerHTML=
+ "<embed src=\"./sounds/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+
+function playSoundMain(soundfile) {
+ document.getElementById("dummy").innerHTML=
+ "<embed src=\"./sounds/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+
+
+function teknia2greek( teknia )
+{
+	return (  teknia );
+}
+
+var chapterRand;
+var cardRand;
+var toggle=0;
+var toggleList=0;
+var c;
+
+function wordCount( from, to )
+{
+
+	var f=Number(from);
+	var t=Number(to);
+
+	var count=0;
+
+	for( i=f; i <= t; i++ )
+	{
+		count += cards[i].length;
+	}
+
+	return count;
+}
+
+
+function showAnswer()
+{
+
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	//alert(chF[4].text);
+
+	if( toggle == 1 )
+	{
+		document.getElementById('myTable').rows[0].cells[3].innerHTML = c[cardRand][4];
+		var b = document.getElementById('myButton');
+		b.value='- Next -';
+		toggle=0;
+	}
+	else
+	{
+		chapterRand = Number(chF.value)+Math.floor( Math.random()*(1+Number(chT.value-chF.value)));
+		c = cards[chapterRand];
+
+		cardRand=Math.floor(Math.random()*c.length);
+
+		var x = document.getElementById('myTable').rows[0].cells;
+		//x[2].innerHTML = '<a href="#" onclick="playSoundMain(\''+ c[cardRand][2] +'\');"><img src="./speaker.png"></img></a><font size=14 class=flashcard>' + teknia2greek(c[cardRand][3]) + '</font>';
+		x[2].innerHTML = '<font size=14 class=flashcard>' + teknia2greek(c[cardRand][3]) + '</font>';
+		x[3].innerHTML = '';
+		document.getElementById('myButton').value='Answer';
+
+		d.getElementById('myTable').rows[1].cells[2].innerHTML = chF[chapterRand].text;
+
+		toggle=1;
+	}
+}
+
+function showList()
+{
+
+
+	if( toggleList == 1 )
+	{
+		document.getElementById('myTable').rows[2].cells[0].innerHTML = '';
+		var b = document.getElementById('myListButton');
+		b.value='List';
+		toggleList=0;
+	}
+	else
+	{
+
+		d=document;
+		//para=d.getElementById('para');
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+
+		if( Number(wordCount( chF.value, chT.value )) <= 100 )
+		{
+			var tableList;
+			var x = document.getElementById('myTable').rows[2].cells;
+			//x[0].innerHTML = '<table>';
+			tableList = '<table width="100%">';
+			var l, ch;
+			var colorToggle=0;
+
+			//alert( chF.value + '  ' + chT.value );
+
+			for( var ch = Number(chF.value); ch <= Number(chT.value); ch++ )
+			{
+				//alert( ch );
+				for( word=0; word < cards[ch].length; word++, colorToggle++ )
+				{
+					var tdStyle = 'padding: 0; border-width: 0;';
+					var color;
+					if( colorToggle%2 == 0)
+						color = '#f4c4c4;';
+					else
+						color = '#ffffff;';				
+					var style;
+					style = '"cell-padding: 0; width: 100%; font-family : Georgia, \'Times New Roman\', Arial, Tahoma,  Verdana; background-color: '+color+' padding: 0; border-width: 0;"';
+
+
+					//tableList += '<tr style='+ style +'><td style="font-size: 24; '+tdStyle+'">' + teknia2greek(cards[ch][word][3]) + '</td><td style="'+tdStyle+'">&nbsp;&nbsp;&nbsp;<a href="#" onclick="playSound(\''+ cards[ch][word][2] +'\');"><img src="./speaker.png"><img></a>&nbsp;&nbsp;&nbsp;</td><td style="'+tdStyle+'">'+ cards[ch][word][4] +'</td><td id="' + cards[ch][word][2] + '" ></td></tr>';
+					
+					tableList += '<tr style='+ style +'><td style="font-size: 24; '+tdStyle+'">' + teknia2greek(cards[ch][word][3]) + '</td><td style="'+tdStyle+'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="'+tdStyle+'">'+ cards[ch][word][4] +'</td><td id="' + cards[ch][word][2] + '" ></td></tr>';
+
+				}
+			}
+			tableList += '</table>';
+			x[0].innerHTML += tableList;
+			document.getElementById('myListButton').value='Hide List';
+			toggleList=1;
+		}
+		else
+		{
+			alert('You must select lists totaling less than 100 words');
+		}
+	}
+}
+
+function checkSelectionsF(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chT.value = chF.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+	setCookie('chapterFrom', chF.value, 365 );
+	setCookie('chapterTo', chT.value, 365 );
+
+	toggle=0;
+	showAnswer();
+
+}
+
+
+function checkSelectionsT(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chF.value = chT.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';;
+
+	setCookie('chapterFrom', chF.value, 365 );
+	setCookie('chapterTo', chT.value, 365 );
+
+	toggle=0;
+	showAnswer();
+
+}
+
+
+function getCookie(c_name)
+{
+	if (document.cookie.length>0)
+  	{
+  		c_start=document.cookie.indexOf(c_name + "=");
+  		if (c_start!=-1)
+    		{
+    			c_start=c_start + c_name.length+1;
+    			c_end=document.cookie.indexOf(";",c_start);
+    			if (c_end==-1) c_end=document.cookie.length;
+    			return unescape(document.cookie.substring(c_start,c_end));
+    		}
+  	}
+	return "";
+}
+
+function setCookie(c_name,value,expiredays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate()+expiredays);
+	document.cookie=c_name+ "=" +escape(value)+
+	((expiredays==null) ? "" : ";expires="+exdate.toUTCString());
+}
+
+function checkCookies()
+{
+	chapterFrom=getCookie('chapterFrom');
+	if (chapterFrom!=null && chapterFrom!="")
+  	{
+ 		d=document;
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+		chF.value=chapterFrom;
+		chapterTo=getCookie('chapterTo');
+		
+		if(chapterTo!=null && chapterTo!="")
+		{
+			chT.value=chapterTo;	
+		}
+  	}
+}
+
+
+</script>
+
+		<table class="outer" width="100%">
+			<tr id="dummy"></tr>
+			<tr>
+				<td class="inner" align="center">			
+					<table class="innermost" width="100%">
+						<tr>
+							<td class="innermost" align="left">
+<table id="myTable" class="greek_list">
+<tr><td><img src="./busysteve_logo_small.jpg"></img></td>
+    <td width="140" align=top><form><input type="button" id="myButton" onClick="showAnswer();" value="Answer"></input>
+    			<input type="button" id="myListButton" onClick="showList();" value="List"></input>
+<select id="chFrom" onChange="checkSelectionsF();">
+<option value="0" selected="yes">Chapter 03</option>
+<option value="1">Chapter 04</option>
+<option value="2">Chapter 05</option>
+<option value="3">Chapter 06</option>
+<option value="4">Chapter 07</option>
+<option value="5">Chapter 08</option>
+<option value="6">Chapter 09</option>
+<option value="7">Chapter 10</option>
+<option value="8">Chapter 11</option>
+<option value="9">Chapter 12</option>
+<option value="10">Chapter 13</option>
+<option value="11">Chapter 14</option>
+<option value="12">Chapter 15</option>
+<option value="13">Chapter 16</option>
+<option value="14">Chapter 17</option>
+<option value="15">Chapter 18</option>
+<option value="16">Chapter 19</option>
+<option value="17">Chapter 20</option>
+<option value="18">Chapter 21</option>
+<option value="19">Chapter 22</option>
+<option value="20">Chapter 23</option>
+<option value="21">Chapter 24</option>
+<option value="22">Chapter 25</option>
+<option value="23">Chapter 26</option>
+<option value="24">Chapter 27</option>
+<option value="25">Chapter 28</option>
+<option value="26">Chapter 29</option>
+<option value="27">Chapter 30</option>
+<option value="28">Chapter 31</option>
+<option value="29">Chapter 32</option>
+<option value="30">Chapter 33</option>
+<option value="31">Chapter 34</option>
+<option value="32">Chapter 35</option>
+        </select>
+
+<select id="chTo" onChange="checkSelectionsT();">
+<option value="0" selected="yes">Chapter 03</option>
+<option value="1">Chapter 04</option>
+<option value="2">Chapter 05</option>
+<option value="3">Chapter 06</option>
+<option value="4">Chapter 07</option>
+<option value="5">Chapter 08</option>
+<option value="6">Chapter 09</option>
+<option value="7">Chapter 10</option>
+<option value="8">Chapter 11</option>
+<option value="9">Chapter 12</option>
+<option value="10">Chapter 13</option>
+<option value="11">Chapter 14</option>
+<option value="12">Chapter 15</option>
+<option value="13">Chapter 16</option>
+<option value="14">Chapter 17</option>
+<option value="15">Chapter 18</option>
+<option value="16">Chapter 19</option>
+<option value="17">Chapter 20</option>
+<option value="18">Chapter 21</option>
+<option value="19">Chapter 22</option>
+<option value="20">Chapter 23</option>
+<option value="21">Chapter 24</option>
+<option value="22">Chapter 25</option>
+<option value="23">Chapter 26</option>
+<option value="24">Chapter 27</option>
+<option value="25">Chapter 28</option>
+<option value="26">Chapter 29</option>
+<option value="27">Chapter 30</option>
+<option value="28">Chapter 31</option>
+<option value="29">Chapter 32</option>
+<option value="30">Chapter 33</option>
+<option value="31">Chapter 34</option>
+<option value="32" selected="yes">Chapter 35</option>
+        </select>
+
+
+
+        </form>
+    </td>
+    <td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="width: 100%; "></td></tr>
+</table>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
+

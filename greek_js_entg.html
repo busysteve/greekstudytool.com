@@ -1,0 +1,1114 @@
+<html>
+<head>
+	<title>busysteve.com - Biblical Greek Flash Cards</title>
+	<link rel="stylesheet" type="text/css" href="./busysteve.css">
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="Content-type: text/html; charset=utf-8">
+	<META name="keywords" content="greek, flashcards, biblical, busysteve">
+</head>
+<body onLoad="checkCookies(); showAnswer(); checkSelectionsF();">
+
+
+<script type="text/javascript" charset="utf-8">
+
+
+var ch1 =
+[['chapter 1','','','Δαυιδ','David'],
+['chapter 1','','','Ἰσραηλ','Israel'],
+['chapter 1','','','Ἰωσηφ','Joseph'],
+['chapter 1','','','ῥαββι','rabbi'],
+['chapter 1','','','Ἰακωβ','Jacob'],
+['chapter 1','','','ἀμην','amen'],
+['chapter 1','','','Ἀβρααμ','Abraham'],
+['chapter 1*','','','και','and']];
+
+var ch2 =
+[['chapter 2*','','','ἀγω','I lead'],
+['chapter 2*','','','ἀκουω','I hear'],
+['chapter 2*','','','βαλλω','I throw'],
+['chapter 2*','','','βλεπω','I see'],
+['chapter 2*','','','διδασκω','I teach'],
+['chapter 2*','','','ἐχω','I have'],
+['chapter 2*','','','λαμβανω','I take'],
+['chapter 2*','','','λεγω','I say'],
+['chapter 2*','','','λυω','I untie'],
+['chapter 2*','','','ζητεω','I seek'],
+['chapter 2*','','','καλεω','I call'],
+['chapter 2*','','','λαλεω','I speak'],
+['chapter 2*','','','ποιεω','I do'],
+['chapter 2*','','','τηρεω','I keep'],
+['chapter 2*','','','φιλεω','I love'],
+['chapter 2*','','','ἀγγελος','messenger'],
+['chapter 2*','','','ἀδελφος','brother'],
+['chapter 2*','','','ἀρτος','bread'],
+['chapter 2*','','','δουλος','slave'],
+['chapter 2*','','','θεος','god'],
+['chapter 2*','','','κοσμος','world'],
+['chapter 2*','','','κυριος','lord'],
+['chapter 2*','','','λογος','word'],
+['chapter 2*','','','νομος','law'],
+['chapter 2*','','','οἰκος','household'],
+['chapter 2*','','','οὐρανος','heaven'],
+['chapter 2*','','','ὀχλος','crowd'],
+['chapter 2*','','','υἱος','son'],
+['chapter 2*','','','Χριστος','Christ'],
+['chapter 2*','','','ὁ','the'],
+['chapter 2*','','','ἀνθρωπος','human being'],
+['chapter 2*','','','λαος','people']];
+
+var ch3 = 
+[['chapter 3*','','','ἀγαπη','love'],
+['chapter 3*','','','ἀδελφη','sister'],
+['chapter 3*','','','γη','earth'],
+['chapter 3*','','','ζωη','life'],
+['chapter 3*','','','φωνη','sound'],
+['chapter 3*','','','ἁμαρτια','sin'],
+['chapter 3*','','','βασιλεια','reign'],
+['chapter 3*','','','ἐκκλησια','assembly'],
+['chapter 3*','','','ἡμερα','day'],
+['chapter 3*','','','καρδια','heart'],
+['chapter 3*','','','οἰκια','house'],
+['chapter 3*','','','δοξα','splendour'],
+['chapter 3*','','','θαλασσα','sea'],
+['chapter 3*','','','δαιμονιον','demon'],
+['chapter 3*','','','ἐργον','work'],
+['chapter 3*','','','εὐαγγελιον','good news'],
+['chapter 3*','','','ἱερον','temple'],
+['chapter 3*','','','πλοιον','boat'],
+['chapter 3*','','','προσωπον','face'],
+['chapter 3*','','','σημειον','sign'],
+['chapter 3*','','','τεκνον','child'],
+['chapter 3*','','','αὐτος','he'],
+['chapter 3*','','','Ἰησους','Jesus'],
+['chapter 3*','','','Παυλος','Paul'],
+['chapter 3*','','','Πετρος','Peter'],
+['chapter 3*','','','πιστευω + dat','I believe'],
+['chapter 3','','','ἀρχη','beginning'],
+['chapter 3','','','ψυχη','soul'],
+['chapter 3','','','Μαρια','Mary'],
+['chapter 3','','','Μαριαμ','Mary'],
+['chapter 3','','','ὡρα','hour'],
+['chapter 3','','','βιβλιον','book'],
+['chapter 3','','','σαββατον','Sabbath']];
+
+var ch4 =
+[['chapter 4*','','','ἀπο + gen','away from'],
+['chapter 4*','','','δια','+ gen: through'],
+['chapter 4*','','','δια + acc','because of'],
+['chapter 4*','','','δια + gen','through'],
+['chapter 4*','','','εἰς + acc','into'],
+['chapter 4*','','','ἐκ + gen','from'],
+['chapter 4*','','','ἐν + dat','in'],
+['chapter 4*','','','ἐπι','+ acc: onto'],
+['chapter 4*','','','ἐπι + acc','onto'],
+['chapter 4*','','','ἐπι + dat','on'],
+['chapter 4*','','','ἐπι + gen','on'],
+['chapter 4*','','','κατα','+ acc: according to'],
+['chapter 4*','','','κατα + acc','according to'],
+['chapter 4*','','','κατα + gen','against'],
+['chapter 4*','','','μετα','+ acc: after'],
+['chapter 4*','','','μετα + acc','after'],
+['chapter 4*','','','μετα + gen','with'],
+['chapter 4*','','','παρα','+ acc: motion alongside'],
+['chapter 4*','','','παρα + gen','from beside'],
+['chapter 4*','','','παρα + dat','beside'],
+['chapter 4*','','','παρα + acc','alongside'],
+['chapter 4*','','','περι','+ gen: concerning'],
+['chapter 4*','','','περι + gen','concerning'],
+['chapter 4*','','','περι + acc','around'],
+['chapter 4*','','','προς + acc','towards'],
+['chapter 4*','','','ὑπερ','+acc: above'],
+['chapter 4*','','','ὑπερ + acc','above'],
+['chapter 4*','','','ὑπερ + gen','on behalf of'],
+['chapter 4*','','','ὑπο','+ acc: under'],
+['chapter 4*','','','ὑπο + gen','by'],
+['chapter 4*','','','ὑπο + acc','under'],
+['chapter 4*','','','ἀπολυω','I set free'],
+['chapter 4*','','','ἐκβαλλω','I drive out'],
+['chapter 4*','','','παρακαλεω','I exhort'],
+['chapter 4*','','','περιπατεω','I walk about'],
+['chapter 4*','','','προσκυνεω + dat','I worship'],
+['chapter 4*','','','συναγω','I gather'],
+['chapter 4*','','','ὑπαγω','I depart'],
+['chapter 4*','','','πως','how?'],
+['chapter 4*','','','οὐ','not'],
+['chapter 4*','','','προσκυνεω','I worship'],
+['chapter 4','','','ἐνωπιον + gen','in front of'],
+['chapter 4','','','ἐξω + gen','outside'],
+['chapter 4','','','ἑως + gen','until'],
+['chapter 4','','','προ + gen','before'],
+['chapter 4','','','συν + dat','together with'],
+['chapter 4','','','ἀναβλεπω','I look up'],
+['chapter 4','','','ἐπικαλεω','I call upon'],
+['chapter 4','','','κατοικεω','I dwell'],
+['chapter 4','','','παραλαμβανω','I take'],
+['chapter 4','','','που','where(?)']];
+
+var ch5 =
+[['chapter 5*','','','ἀγαθος','good'],
+['chapter 5*','','','ἁγιος','holy'],
+['chapter 5*','','','ἑτερος','another'],
+['chapter 5*','','','ἰδιος','one\'s own'],
+['chapter 5*','','','Ἰουδαιος','Jewish'],
+['chapter 5*','','','καλος','beautiful'],
+['chapter 5*','','','μακαριος','blessed'],
+['chapter 5*','','','μονος','only'],
+['chapter 5*','','','νεκρος','dead'],
+['chapter 5*','','','ὁσος','as much'],
+['chapter 5*','','','πονηρος','evil'],
+['chapter 5*','','','τυφλος','blind'],
+['chapter 5*','','','μεγας','large'],
+['chapter 5*','','','πολυς','much'],
+['chapter 5*','','','εἰρηνη','peace'],
+['chapter 5*','','','κεφαλη','head'],
+['chapter 5*','','','συναγωγη','synagogue'],
+['chapter 5*','','','ἀλλὰ','but'],
+['chapter 5*','','','ὡς','as'],
+['chapter 5*','','','εἰμι','I am'],
+['chapter 5*','','','Ἱεροσολυμα','Ἰερουσαλημ'],
+['chapter 5*','','','αἰωνιος','eternal'],
+['chapter 5','','','ἀγαπητος','beloved'],
+['chapter 5','','','δικαιος','upright'],
+['chapter 5','','','ἑκαστος','each'],
+['chapter 5','','','κακος','bad'],
+['chapter 5','','','καινος','new'],
+['chapter 5','','','πιστος','faithful'],
+['chapter 5','','','Γαλιλαια','Galilee'],
+['chapter 5','','','εἰ','if'],
+['chapter 5','','','ἠ','or'],
+['chapter 5','','','καιρος','time']];
+
+var ch6 =
+[['chapter 6*','','','ἀνοιγω','I open'],
+['chapter 6*','','','βαπτιζω','I baptise'],
+['chapter 6*','','','γραφω','I write'],
+['chapter 6*','','','δοξαζω','I praise'],
+['chapter 6*','','','κηρυσσω','I proclaim'],
+['chapter 6*','','','κραζω','I cry out'],
+['chapter 6*','','','πεμπω','I send'],
+['chapter 6*','','','σωζω','I save'],
+['chapter 6*','','','αἰτεω','I ask for'],
+['chapter 6*','','','εὐλογεω','I speak well of'],
+['chapter 6*','','','εὐχαριστεω','I give thanks'],
+['chapter 6*','','','οἰκοδομεω','I build'],
+['chapter 6*','','','προσεχω + dat','I pay attention'],
+['chapter 6*','','','προσεχω','I pay attention'],
+['chapter 6*','','','ἐτι','still'],
+['chapter 6*','','','ἠδη','already'],
+['chapter 6*','','','νυν','now'],
+['chapter 6*','','','ὁτε','when'],
+['chapter 6*','','','παλιν','back'],
+['chapter 6*','','','ποτε','once (at some time)'],
+['chapter 6*','','','τοτε','then'],
+['chapter 6*','','','δυο','two'],
+['chapter 6*','','','Τιμοθεος','Timothy'],
+['chapter 6*','','','τοπος','place'],
+['chapter 6*','','','ἑξω','future of ἐχω'],
+['chapter 6*','','','εἰχον','imperfect of ἐχω'],
+['chapter 6','','','ἀποκαλυπτω','I reveal'],
+['chapter 6','','','διωκω','I persecute'],
+['chapter 6','','','πειθω','I convince'],
+['chapter 6','','','ὑπαρχω','I exist'],
+['chapter 6','','','ἀρτι','now'],
+['chapter 6','','','οὐκετι','no longer'],
+['chapter 6','','','οὐπω','not yet'],
+['chapter 6','','','παντοτε','always'],
+['chapter 6','','','σημερον','today']];
+
+var ch7 =
+[['chapter 7*','','','δικαιοσυνη','righteousness'],
+['chapter 7*','','','ἐντολη','commandment'],
+['chapter 7*','','','ἐξουσια','authority'],
+['chapter 7*','','','παραβολη','parable'],
+['chapter 7*','','','ἀποστολος','apostle'],
+['chapter 7*','','','θανατος','death'],
+['chapter 7*','','','ὀφθαλμος','eye'],
+['chapter 7*','','','Φαρισαιος','Pharisee'],
+['chapter 7*','','','θηριον','animal'],
+['chapter 7*','','','ἱματιον','garment'],
+['chapter 7*','','','προβατον','sheep'],
+['chapter 7*','','','μη','not'],
+['chapter 7*','','','μηδε','and not'],
+['chapter 7*','','','ἀκολουθεω + dat','I follow'],
+['chapter 7*','','','δοκεω','I think'],
+['chapter 7*','','','θελω','I wish'],
+['chapter 7*','','','θεωρεω','I look at'],
+['chapter 7*','','','μαρτυρεω','I bear witness'],
+['chapter 7*','','','μελλω','I am about'],
+['chapter 7*','','','μετανοεω','I repent'],
+['chapter 7*','','','δει','it is necessary'],
+['chapter 7*','','','ὀπισω + gen','behind'],
+['chapter 7','','','παρρησια','outspokenness'],
+['chapter 7','','','χαρα','joy'],
+['chapter 7','','','μνημειον','tomb'],
+['chapter 7','','','μηκετι','no longer'],
+['chapter 7','','','μητε','and not'],
+['chapter 7','','','ἀναγω','I lead up'],
+['chapter 7','','','δεω','I bind'],
+['chapter 7','','','ἐλεεω','I have mercy on'],
+['chapter 7','','','καταργεω','I make ineffective'],
+['chapter 7','','','ἐξεστι','it is permitted']];
+
+var ch8 =
+[['chapter 8*','','','ἐρχομαι','I come'],
+['chapter 8*','','','ἀπερχομαι','I depart'],
+['chapter 8*','','','εἰσερχομαι','I go in'],
+['chapter 8*','','','ἐξερχομαι','I go out'],
+['chapter 8*','','','προσερχομαι','I come to'],
+['chapter 8*','','','ἀρνεομαι','I refuse'],
+['chapter 8*','','','ἀρχομαι','I begin'],
+['chapter 8*','','','ἀσπαζομαι','I greet'],
+['chapter 8*','','','δεχομαι','I receive'],
+['chapter 8*','','','ἐργαζομαι','I work'],
+['chapter 8*','','','εὐαγγελιζομαι','I proclaim good news'],
+['chapter 8*','','','προσευχομαι','I pray'],
+['chapter 8*','','','ῥυομαι','I rescue'],
+['chapter 8*','','','Ἰωαννης',' Ἰωανης'],
+['chapter 8*','','','μαθητης','disciple'],
+['chapter 8*','','','προφητης','prophet'],
+['chapter 8*','','','στρατιωτης','soldier'],
+['chapter 8*','','','Ἰουδας','Judah'],
+['chapter 8*','','','Ἠλιας','Elijah'],
+['chapter 8*','','','ἐρημος','wilderness'],
+['chapter 8*','','','ὁδος','way'],
+['chapter 8','','','διερχομαι','I cross over'],
+['chapter 8','','','παρερχομαι','I go by'],
+['chapter 8','','','συνερχομαι','I come together'],
+['chapter 8','','','ἁπτομαι + gen','I touch'],
+['chapter 8','','','λογιζομαι','I calculate'],
+['chapter 8','','','προσκαλεομαι','I summon'],
+['chapter 8','','','Ἡρῳδης','Herod'],
+['chapter 8','','','ὑπηρετης','servant'],
+['chapter 8','','','Βαρναβας','Barnabas'],
+['chapter 8','','','Σατανας','Satan'],
+['chapter 8','','','Αἰγυπτος','Egypt']];
+
+
+var ch9 =
+[['chapter 9*','','','ἀλληλος','each other'],
+['chapter 9*','','','ἀλλος','other'],
+['chapter 9*','','','ἄλλα','neuter plural acc or nom of ἀλλος'],
+['chapter 9*','','','αὐτος','he'],
+['chapter 9*','','','ἑαυτος','himself'],
+['chapter 9*','','','ἐγω','I'],
+['chapter 9*','','','ἐκεινος','that'],
+['chapter 9*','','','ἡμεις','we'],
+['chapter 9*','','','κἀγω','and I'],
+['chapter 9*','','','ὁλος','whole'],
+['chapter 9*','','','οὑτος','this'],
+['chapter 9*','','','σεαυτος','yourself'],
+['chapter 9*','','','συ','you'],
+['chapter 9*','','','ὑμεις','you'],
+['chapter 9*','','','γαρ','for'],
+['chapter 9*','','','δε','but'],
+['chapter 9*','','','διο','therefore'],
+['chapter 9*','','','εἰτε','if'],
+['chapter 9*','','','εἰτε ... εἰτε','whether ... or'],
+['chapter 9*','','','μεν','on the one hand'],
+['chapter 9*','','','οὐν','therefore'],
+['chapter 9*','','','τε','and'],
+['chapter 9*','','','τε ... και','both ... and'],
+['chapter 9*','','','και','and'],
+['chapter 9*','','','ἀρνιον','lamb'],
+['chapter 9*','','','ποτηριον','cup'],
+['chapter 9','','','ἐμος','my'],
+['chapter 9','','','ποιος','of what kind?'],
+['chapter 9','','','ποσος','how much(?)'],
+['chapter 9','','','σος','your'],
+['chapter 9','','','τοιουτος','of such a kind'],
+['chapter 9','','','ἀρα','so'],
+['chapter 9','','','γε','indeed'],
+['chapter 9','','','διοτι','because'],
+['chapter 9','','','ἐπει','since'],
+['chapter 9','','','μηποτε','never'],
+['chapter 9','','','δενδρον','tree'],
+['chapter 9','','','μυστηριον','mystery']];
+
+var ch10 =
+[['chapter 10*','','','ἀληθεια','truth'],
+['chapter 10*','','','ἐκει','there (in that place)'],
+['chapter 10*','','','εὐθυς','immediately'],
+['chapter 10*','','','καθως','just as'],
+['chapter 10*','','','ὁμοιως','likewise'],
+['chapter 10*','','','ὁπου','where'],
+['chapter 10*','','','ὁς','who'],
+['chapter 10*','','','ὁτι','because'],
+['chapter 10*','','','οὐδε','and not'],
+['chapter 10*','','','οὐτε','neither'],
+['chapter 10*','','','οὑτως','in this manner'],
+['chapter 10*','','','οὐχι','not'],
+['chapter 10*','','','ὡδε','here'],
+['chapter 10*','','','ἐμπροσθεν + gen','in front of'],
+['chapter 10*','','','ἐμπροσθεν','in front of'],
+['chapter 10*','','','χωρις + gen','separate from'],
+['chapter 10*','','','χωρις','separate from'],
+['chapter 10*','','','Πιλατος','Pilate'],
+['chapter 10*','','','ἐγγιζω + dat','I approach'],
+['chapter 10*','','','ἐγγιζω','I approach'],
+['chapter 10*','','','θαυμαζω','I am amazed'],
+['chapter 10*','','','θεραπευω','I heal'],
+['chapter 10*','','','καθευδω','I sleep'],
+['chapter 10','','','ἐγγυς','near'],
+['chapter 10','','','ἐκειθεν','from there'],
+['chapter 10','','','καλως','appropriately'],
+['chapter 10','','','ναι','yes'],
+['chapter 10','','','ὁμοιος','similar'],
+['chapter 10','','','οὑ','where'],
+['chapter 10','','','οὐτε ... οὐτε','neither ... nor'],
+['chapter 10','','','πλην','however'],
+['chapter 10','','','ποθεν','from where(?)'],
+['chapter 10','','','ἑνεκα + gen','for the sake of'],
+['chapter 10','','','ἑνεκα','for the sake of'],
+['chapter 10','','','πέραν + gen','on the other side of'],
+['chapter 10','','','πέραν','on the other side of'],
+['chapter 10','','','ἡγεομαι','I lead']];
+
+var ch11 =
+[['chapter 11*','','','ἀποθνῃσκω','I die'],
+['chapter 11*','','','γινομαι','I become'],
+['chapter 11*','','','ἐσθιω','I eat'],
+['chapter 11*','','','εὑρισκω','I find'],
+['chapter 11*','','','ὁραω','I see'],
+['chapter 11*','','','πινω','I drink'],
+['chapter 11*','','','πιπτω','I fall'],
+['chapter 11*','','','φερω','I bear'],
+['chapter 11*','','','φευγω','I flee'],
+['chapter 11*','','','αἰρω','I take'],
+['chapter 11*','','','ἀποστελλω','I send'],
+['chapter 11*','','','ἐγειρω','I raise up'],
+['chapter 11*','','','κρινω','I judge'],
+['chapter 11*','','','μενω','I remain'],
+['chapter 11*','','','χαιρω','I rejoice'],
+['chapter 11*','','','ἀναβαινω','I go up'],
+['chapter 11*','','','καταβαινω','I go down'],
+['chapter 11*','','','γινωσκω','I know'],
+['chapter 11*','','','ἰδου','look!'],
+['chapter 11','','','ἁμαρτανω','I do wrong'],
+['chapter 11','','','παραγινομαι','I arrive'],
+['chapter 11','','','καταλειπω','I leave behind'],
+['chapter 11','','','μανθανω','I learn'],
+['chapter 11','','','πασχω','I suffer'],
+['chapter 11','','','προσφερω','I bring to'],
+['chapter 11','','','ἀπαγγελλω','I report'],
+['chapter 11','','','παραγγελλω + dat','I order'],
+['chapter 11','','','παραγγελλω','I order'],
+['chapter 11','','','ἀποκτεινω','I kill'],
+['chapter 11','','','ὀφειλω','I owe'],
+['chapter 11','','','σπειρω','I sow'],
+['chapter 11','','','ἀναγινωσκω','I read'],
+['chapter 11','','','ἐπιγινωσκω','I recognise']];
+
+var ch12 =
+[['chapter 12*','','','ἀνηρ',' ἀνδρος'],
+['chapter 12*','','','σωτηρ',' σωτηρος'],
+['chapter 12*','','','αἰων',' αἰωνος'],
+['chapter 12*','','','γυνη',' γυναικος'],
+['chapter 12*','','','ἐλπις',' ἐλπιδος'],
+['chapter 12*','','','πους',' ποδος'],
+['chapter 12*','','','σαρξ',' σαρκος'],
+['chapter 12*','','','χαρις',' χαριτος'],
+['chapter 12*','','','χειρ',' χειρος'],
+['chapter 12*','','','μητηρ',' μητρος'],
+['chapter 12*','','','πατηρ',' πατρος'],
+['chapter 12*','','','ὑδωρ',' ὑδατος'],
+['chapter 12*','','','φως',' φωτος'],
+['chapter 12*','','','αἱμα',' αἱματος'],
+['chapter 12*','','','θελημα',' θεληματος'],
+['chapter 12*','','','ὀνομα',' ὀνοματος'],
+['chapter 12*','','','πνευμα',' πνευματος'],
+['chapter 12*','','','σωμα',' σωματος'],
+['chapter 12*','','','πλειων','more'],
+['chapter 12*','','','τις','someone'],
+['chapter 12*','','','τίς','who?'],
+['chapter 12','','','ἀστηρ',' ἀστερος'],
+['chapter 12','','','ἀρχων',' ἀρχωντος'],
+['chapter 12','','','Σιμων',' Σιμωνος'],
+['chapter 12','','','νυξ',' νυκτος'],
+['chapter 12','','','θυγατηρ',' θυγατρος'],
+['chapter 12','','','πυρ',' πυρος'],
+['chapter 12','','','ῥημα',' ῥηματος'],
+['chapter 12','','','στομα',' στοματος'],
+['chapter 12','','','μειζων','larger'],
+['chapter 12','','','ὁστις','who'],
+['chapter 12','','','ὡσπερ','just as']];
+
+
+var ch13 =
+
+[['chapter 13*','','','ἐθνος',' ἐθνους'],
+['chapter 13*','','','ἐλεος',' ἐλεους'],
+['chapter 13*','','','ἐτος',' ἐτους'],
+['chapter 13*','','','μερος',' μερους'],
+['chapter 13*','','','ὀρος',' ὀρους'],
+['chapter 13*','','','τελος',' τελους'],
+['chapter 13*','','','ἀρχιερευς',' ἀρχιερεως'],
+['chapter 13*','','','βασιλευς',' βασιλεως'],
+['chapter 13*','','','γραμματευς',' γραμματεως'],
+['chapter 13*','','','δυναμις',' δυναμεως'],
+['chapter 13*','','','θλιψις',' θλιψεως'],
+['chapter 13*','','','κρισις',' κρισεως'],
+['chapter 13*','','','πιστις',' πιστεως'],
+['chapter 13*','','','πολις',' πολεως'],
+['chapter 13*','','','ἀληθης',' ἀληθες'],
+['chapter 13*','','','ἀσθενης',' ἀσθενες'],
+['chapter 13*','','','πας',' παςα'],
+['chapter 13*','','','εἱς',' μια'],
+['chapter 13*','','','οὐδεις','no one'],
+['chapter 13*','','','Μωϋσης',' Μωϋσην'],
+['chapter 13','','','μελος',' μελους'],
+['chapter 13','','','πληθος',' πληθους'],
+['chapter 13','','','σκευος',' σκευους'],
+['chapter 13','','','σκοτος',' σκοτους'],
+['chapter 13','','','ἱερευς',' ἱερεως'],
+['chapter 13','','','ἀναστασις',' ἀναστασεως'],
+['chapter 13','','','γνωσις',' γνωσεως'],
+['chapter 13','','','παρακλησις',' παρακλησεως'],
+['chapter 13','','','συνειδησις',' συνειδησεως'],
+['chapter 13','','','ἁπας','all'],
+['chapter 13','','','μηδεις','no one'],
+['chapter 13','','','νους',' νουν']];
+
+var ch14 =
+[['chapter 14*','','','ἁμαρτωλος','sinner'],
+['chapter 14*','','','διδασκαλος','teacher'],
+['chapter 14*','','','θρονος','throne'],
+['chapter 14*','','','λιθος','stone'],
+['chapter 14*','','','πρεσβυτερος','old person'],
+['chapter 14*','','','ἀμπελών',' ἀμπελῶνος'],
+['chapter 14*','','','ἀμπελών','vineyard'],
+['chapter 14*','','','ἀμπελῶνος','vineyard'],
+['chapter 14*','','','Καισαρ','Caesar'],
+['chapter 14*','','','κρίμα',' κρίματος'],
+['chapter 14*','','','κρίμα','judgement'],
+['chapter 14*','','','οὖς',' ὠτός'],
+['chapter 14*','','','οὖς','ear'],
+['chapter 14*','','','ὠτός','ear'],
+['chapter 14*','','','παῖς',' παιδός'],
+['chapter 14*','','','παῖς','child'],
+['chapter 14*','','','τό παιδιον','child'],
+['chapter 14*','','','σπέρματος','seed'],
+['chapter 14*','','','σπέρμα','seed'],
+['chapter 14*','','','σπέρμα',' σπέρματος'],
+['chapter 14*','','','πασχα','Passover'],
+['chapter 14*','','','διακονεω + dat','I serve'],
+['chapter 14*','','','διακονεω','I serve'],
+['chapter 14*','','','ἑτοιμαζω','I prepare'],
+['chapter 14*','','','κρατεω','I grasp'],
+['chapter 14*','','','μισεω','I hate'],
+['chapter 14*','','','πειραζω','I test'],
+['chapter 14*','','','πρασσω','I do'],
+['chapter 14*','','','ὑποτασσω','I subject'],
+['chapter 14*','','','φωνεω','I call'],
+['chapter 14','','','Ἰακωβος','James'],
+['chapter 14','','','εἰκών',' εἰκόνος'],
+['chapter 14','','','εἰκών','image'],
+['chapter 14','','','εἰκόνος','image'],
+['chapter 14','','','Ἑλλην','Greek'],
+['chapter 14','','','ἀγοραζω','I buy'],
+['chapter 14','','','βλασφημεω','I blaspheme'],
+['chapter 14','','','διαλογιζομαι','I consider'],
+['chapter 14','','','ἐλπιζω','I hope'],
+['chapter 14','','','προφητευω','I prophesy'],
+['chapter 14','','','σκανδαλιζω','I cause to sin'],
+['chapter 14','','','φυλασσω','I guard'],
+['chapter 14','','','χαριζομαι','I give freely']];
+
+var ch15=[
+['chapter 15*','','','καρπος','fruit'],
+['chapter 15*','','','ναος','sanctuary'],
+['chapter 15*','','','φοβος','fear'],
+['chapter 15*','','','χρονος','time'],
+['chapter 15*','','','ἀποκρινομαι + dat','I answer'],
+['chapter 15*','','','ἀποκρινομαι','I answer'],
+['chapter 15*','','','βουλομαι','I wish'],
+['chapter 15*','','','πορευομαι','I go'],
+['chapter 15*','','','φοβεομαι','I am afraid'],
+['chapter 15*','','','ἁγιαζω','I make holy'],
+['chapter 15*','','','ἀσθενεω','I am weak'],
+['chapter 15*','','','βασταζω','I take up'],
+['chapter 15*','','','γαμεω','I marry'],
+['chapter 15*','','','ἐνδυω','I dress'],
+['chapter 15*','','','ἐπιστρεφω','I turn'],
+['chapter 15*','','','ἰσχυω','I am strong'],
+['chapter 15*','','','κλαιω','I weep'],
+['chapter 15*','','','περισσευω','I exceed'],
+['chapter 15*','','','τελεω','I finish'],
+['chapter 15*','','','ὑποστρεφω','I turn back'],
+['chapter 15*','','','φαινω','I shine'],
+['chapter 15','','','διαβολος','the slanderer'],
+['chapter 15','','','Φιλιππος','Philip'],
+['chapter 15','','','ἐκπορευομαι','I go out'],
+['chapter 15','','','γνωριζω','I make known'],
+['chapter 15','','','δουλευω','I am a slave'],
+['chapter 15','','','ἐκχεω','I pour out'],
+['chapter 15','','','ἡκω','I have come'],
+['chapter 15','','','κελευω','I command'],
+['chapter 15','','','κωλυω','I hinder'],
+['chapter 15','','','λυπεω','I grieve'],
+['chapter 15','','','ὀμνυω','I swear'],
+['chapter 15','','','φρονεω','I ponder']];
+
+var ch16=[
+['chapter 16*','','','διδαχη','teaching (act and content)'],
+['chapter 16*','','','θυσια','offering'],
+['chapter 16*','','','κωμη','village'],
+['chapter 16*','','','μαχαιρα','sword'],
+['chapter 16*','','','περιτομη','circumcision'],
+['chapter 16*','','','προσευχη','prayer'],
+['chapter 16*','','','ὑπομονη','patience'],
+['chapter 16*','','','φυλη','tribe'],
+['chapter 16*','','','χηρα','widow'],
+['chapter 16*','','','χωρα','country'],
+['chapter 16*','','','τρεις','three'],
+['chapter 16*','','','τεσσαρες','four'],
+['chapter 16*','','','ἑπτα','seven'],
+['chapter 16*','','','δωδεκα','twelve'],
+['chapter 16*','','','πρωτος','first'],
+['chapter 16*','','','δευτερος','second'],
+['chapter 16*','','','τριτος','third'],
+['chapter 16*','','','οὐαι','woe'],
+['chapter 16','','','ἀκοη','fame'],
+['chapter 16','','','ἀσθενεια','weakness'],
+['chapter 16','','','ἑορτη','festival'],
+['chapter 16','','','ἐπιστολη','letter (correspondence)'],
+['chapter 16','','','νεφελη','cloud'],
+['chapter 16','','','παρουσια','presence'],
+['chapter 16','','','πορνεια','sexual immorality'],
+['chapter 16','','','πεντε','five'],
+['chapter 16','','','ἑξ','six'],
+['chapter 16','','','ὀκτω','eight'],
+['chapter 16','','','ἐννεα','nine'],
+['chapter 16','','','δεκα','ten'],
+['chapter 16','','','ἑκατον','one hundred'],
+['chapter 16','','','χιλιας','one thousand']];
+
+var ch17=[
+['chapter 17*','','','ἀν','conditional particle'],
+['chapter 17*','','','ἱνα + subj','in order that'],
+['chapter 17*','','','ἱνα','in order that'],
+['chapter 17*','','','ἐαν + subj','alternative for ἀν'],
+['chapter 17*','','','ἐαν','alternative for ἀν'],
+['chapter 17*','','','ἀγρος','field'],
+['chapter 17*','','','διακονος','servant'],
+['chapter 17*','','','ἐχθρος','enemy'],
+['chapter 17*','','','οἰνος','wine'],
+['chapter 17*','','','ἀναιρεω','I take away'],
+['chapter 17*','','','γενεα','family'],
+['chapter 17*','','','γλωσσα','tongue'],
+['chapter 17*','','','γραφη','writing'],
+['chapter 17*','','','ἐπαγγελια','promise'],
+['chapter 17*','','','μαρτυρια','testimony'],
+['chapter 17*','','','σοφια','wisdom'],
+['chapter 17*','','','σωτηρια','salvation'],
+['chapter 17*','','','φυλακη','watch (as in guards)'],
+['chapter 17*','','','πτωχος','poor'],
+['chapter 17','','','ἀχρι + gen','until'],
+['chapter 17','','','ὁπως + subj','in order that'],
+['chapter 17','','','ὁταν + subj','whenever'],
+['chapter 17','','','ἀχρι','until'],
+['chapter 17','','','ὁπως','in order that'],
+['chapter 17','','','ὁταν','whenever'],
+['chapter 17','','','ἀνεμος','wind'],
+['chapter 17','','','ἡλιος','sun'],
+['chapter 17','','','κατηγορεω','I accuse'],
+['chapter 17','','','ὁμολογεω','I promise'],
+['chapter 17','','','διαθηκη','covenant'],
+['chapter 17','','','διακονια','service'],
+['chapter 17','','','ἐπιθυμια','desire'],
+['chapter 17','','','θυρα','door'],
+['chapter 17','','','Ἰουδαια','Judea'],
+['chapter 17','','','ὀργη','anger'],
+['chapter 17','','','τιμη','price'],
+['chapter 17','','','χρεια','need']];
+
+var ch18=[
+['chapter 18*','','','δεξιος','right'],
+['chapter 18*','','','δυνατος','powerful'],
+['chapter 18*','','','ἐσχατος','last'],
+['chapter 18*','','','ἱκανος','sufficient'],
+['chapter 18*','','','λοιπος','remaining'],
+['chapter 18*','','','μεσος','middle'],
+['chapter 18*','','','ὀλιγος','small'],
+['chapter 18*','','','φιλος','loved'],
+['chapter 18*','','','μαρτυς',' μαρτυρος'],
+['chapter 18*','','','μισθος','pay'],
+['chapter 18*','','','σταυρος','cross'],
+['chapter 18*','','','καθιζω','I cause to sit down'],
+['chapter 18*','','','δυναμαι','I can'],
+['chapter 18*','','','καθημαι','I sit'],
+['chapter 18*','','','οἰδα','I know'],
+['chapter 18*','','','ὡστε + infinitive','with the result that'],
+['chapter 18*','','','ὡστε','with the result that'],
+['chapter 18*','','','ἀδικεω','I do wrong'],
+['chapter 18*','','','καθαρος','clean'],
+['chapter 18*','','','ἀκαθαρτος','unclean'],
+['chapter 18*','','','μαρτυς','witness'],
+['chapter 18*','','','μαρτυρος','witness'],
+['chapter 18','','','ἀξιος','worthy'],
+['chapter 18','','','ἐλευθερος','free'],
+['chapter 18','','','ἰσχυρος','strong'],
+['chapter 18','','','λευκος','white'],
+['chapter 18','','','νεος','new'],
+['chapter 18','','','πλουσιος','rich'],
+['chapter 18','','','πνευματικος','spiritual'],
+['chapter 18','','','αὐξανω','I grow'],
+['chapter 18','','','καθαριζω','I make clean'],
+['chapter 18','','','κειμαι','I lie'],
+['chapter 18','','','παρειμι','I am present'],
+['chapter 18','','','ἀδικια','wrongdoing'],
+['chapter 18','','','ἀπιστος','unbelieving']];
+
+var ch19=[
+['chapter 19* (no μι verbs)','','','ἀγαπαω','I love'],
+['chapter 19* (no μι verbs)','','','γενναω','I bear'],
+['chapter 19* (no μι verbs)','','','ἐρωταω','I ask'],
+['chapter 19* (no μι verbs)','','','ζαω','I live'],
+['chapter 19* (no μι verbs)','','','πλαναω','I deceive'],
+['chapter 19* (no μι verbs)','','','τιμαω','I honour'],
+['chapter 19* (no μι verbs)','','','πληροω','I fulfil'],
+['chapter 19* (no μι verbs)','','','σταυροω','I crucify'],
+['chapter 19* (no μι verbs)','','','φανεροω','I reveal'],
+['chapter 19 (no μι verbs)','','','διψαω','I thirst'],
+['chapter 19 (no μι verbs)','','','ἐπερωταω','I ask'],
+['chapter 19 (no μι verbs)','','','ἰαομαι','I heal'],
+['chapter 19 (no μι verbs)','','','κοπιαω','I labour'],
+['chapter 19 (no μι verbs)','','','νικαω','I overcome'],
+['chapter 19 (no μι verbs)','','','πειναω','I hunger'],
+['chapter 19 (no μι verbs)','','','ἐπιτιμαω + dat','I rebuke'],
+['chapter 19 (no μι verbs)','','','δικαιοω','I justify'],
+['chapter 19 (no μι verbs)','','','τελειοω','I accomplish'],
+['chapter 19 (no μι verbs)','','','ἐπιτιμαω','I rebuke']];
+
+
+var ch20=[
+['chapter 20*','','','ἀληθως','truly'],
+['chapter 20*','','','ἐλαχιστος','smallest'],
+['chapter 20*','','','κρεισσων','better'],
+['chapter 20*','','','μαλλον','more'],
+['chapter 20*','','','μικρον','a little'],
+['chapter 20*','','','μικρος','small'],
+['chapter 20*','','','ζῳον','living thing'],
+['chapter 20*','','','θυσιαστηριον','altar'],
+['chapter 20*','','','καυχαομαι','I boast'],
+['chapter 20*','','','μιμνῳσκομαι + gen','I remember'],
+['chapter 20*','','','μιμνῳσκομαι','I remember'],
+['chapter 20','','','εὐ','well'],
+['chapter 20','','','μαλιστα','most of all'],
+['chapter 20','','','χειρων','worse'],
+['chapter 20','','','ποιμην',' ποιμηνος'],
+['chapter 20','','','θεαομαι','I see'],
+['chapter 20','','','νιπτω','I wash'],
+['chapter 20','','','ποιμην','shepherd'],
+['chapter 20','','','ποιμηνος','shepherd'],
+['chapter 20','','','μειζων','greater'],
+['chapter 20','','','πλειων','more'],
+['chapter 20','','','μικροτερος','smaller'],
+['chapter 20','','','πολλα','greatly']];
+
+
+
+var chCases=[
+['Article','none','','o','singular Nom. masculine'],
+['Article','none','','h','singular Nom. feminine'],
+['Article','none','','to','singular Nom./Acc. neuter'],
+['Article','none','','ton','singular Acc. masculine'],
+['Article','none','','thn','singular Acc. feminine'],
+['Article','none','','to','singular Nom./Acc. neuter'],
+['Article','none','','tou','singular Gen. masculine/neuter'],
+['Article','none','','thV','singular Gen. feminine'],
+['Article','none','','tou','singular Gen. masculine/neuter'],
+['Article','none','','tw','singular Dat. masculine/neuter'],
+['Article','none','','th','singular Dat. feminine'],
+['Article','none','','tw','singular Dat. masculine/neuter'],
+
+['Article','none','','oi','plural Nom. masculine'],
+['Article','none','','ai','plural Nom. feminine'],
+['Article','none','','ta','plural Nom./Acc. neuter'],
+['Article','none','','touV','plural Acc. masculine'],
+['Article','none','','taV','plural Acc. feminine'],
+['Article','none','','ta','plural Nom./Acc. neuter'],
+['Article','none','','twn','plural Gen. masculine/feminine/neuter'],
+['Article','none','','twn','plural Gen. masculine/feminine/neuter'],
+['Article','none','','twn','plural Gen. masculine/feminine/neuter'],
+['Article','none','','toiV','plural Dat. masculine/neuter'],
+['Article','none','','taiV','plural Dat. feminine'],
+['Article','none','','toiV','plural Dat. masculine/neuter']
+
+];
+
+var chIt=[
+['It','none','','autoV','he - singular Nom. masculine'],
+['It','none','','auth','she - singular Nom. feminine'],
+['It','none','','auto','it - singular Nom./Acc. neuter'],
+['It','none','','auton','him - singular Acc. masculine'],
+['It','none','','authn','her - singular Acc. feminine'],
+['It','none','','auto','it - singular Nom./Acc. neuter'],
+['It','none','','autou','his, of him - singular Gen. masculine/neuter'],
+['It','none','','authV','hers, of her - singular Gen. feminine'],
+['It','none','','autou','its, of it - singular Gen. masculine/neuter'],
+['It','none','','autw','to him - singular Dat. masculine/neuter'],
+['It','none','','auth','to her - singular Dat. feminine'],
+['It','none','','autw','to it - singular Dat. masculine/neuter'],
+
+['It','none','','auoi','they - plural Nom. masculine'],
+['It','none','','autai','they - plural Nom. feminine'],
+['It','none','','auta','they - plural Nom./Acc. neuter'],
+['It','none','','autouV','them - plural Acc. masculine'],
+['It','none','','autaV','them - plural Acc. feminine'],
+['It','none','','auta','them - plural Nom./Acc. neuter'],
+['It','none','','autwn','their, of them - plural Gen. masculine/feminine/neuter'],
+['It','none','','autwn','their, of them - plural Gen. masculine/feminine/neuter'],
+['It','none','','autwn','their, of them - plural Gen. masculine/feminine/neuter'],
+['It','none','','autoiV','to them - plural Dat. masculine/neuter'],
+['It','none','','autaiV','to them - plural Dat. feminine'],
+['It','none','','autoiV','to them - plural Dat. masculine/neuter']
+
+];
+
+var chPrefixSuffix=[
+['Prefix-Suffix','none','','a | an','prefix - negative/anti'],
+['Prefix-Suffix','none','','azw','verb - to do (e.g. <i>ize</i>)'],
+['Prefix-Suffix','none','','ainw','verb - to cause (e.g. <i>en / em</i> <i>em</i>power)'],
+['Prefix-Suffix','none','','akoV','adjective - pertaining to (e.g. <i>-ac</i> cardi<i>ac</i>)'],
+['Prefix-Suffix','none','','aloV','adjective - like / of (e.g. <i>-al</i> magic<i>al</i>)'],
+['Prefix-Suffix','none','','amfi','prefix - around: (e.g. <i>amphi-</i> amphitheater)'],
+['Prefix-Suffix','none','','ana','prefix - up / again / back / intensifier'],
+['Prefix-Suffix','none','','anti','prefix - against: (e.g. <i>anti-</i> antidote)'],
+['Prefix-Suffix','none','','anw','verb - gain / increase / getting'],
+['Prefix-Suffix','none','','apo | ap af','prefix - from / back / again / intensifier'],
+['Prefix-Suffix','none','','dia | di','prefix - completion / intensifier / distribution / division '],
+['Prefix-Suffix','none','','dus','prefix - bad / hard'],
+['Prefix-Suffix','none','','eia','noun - abstract'],
+['Prefix-Suffix','none','','eion','noun - place'],
+['Prefix-Suffix','none','','eis','prefix - into / to'],
+['Prefix-Suffix','none','','ek | ex','prefix - from / intensifier'],
+['Prefix-Suffix','none','','en | em / eg / el','prefix - in; into'],
+['Prefix-Suffix','none','','epi | ep / ef','prefix - on / upon / intensifier (e.g. <i>epi</i>dermis) '],
+['Prefix-Suffix','none','','eu','prefix - well / good / full '],
+['Prefix-Suffix','none','','euV','noun - profession / position / doer '],
+['Prefix-Suffix','none','','euw','verb - to be / to do '],
+['Prefix-Suffix','none','','ew','verb - to be / to do '],
+
+['Prefix-Suffix','none','','h','noun - the most common feminine noun ending '],
+['Prefix-Suffix','none','','h','adverb - manner / location '],
+['Prefix-Suffix','none','','hmi','prefix - half (e.g. <i>hemi-</i>)'],
+
+['Prefix-Suffix','none','','wV','adverb - manner (e.g. <i>ly</i> | slowly)']
+
+];
+
+var alpha_utf8_map=[
+['A','&Alpha;'],['B','&Beta;'],['G','&Gamma;'],['D','&Delta;'],['E','&Epsilon;'],['Z','&Zeta;'],['H','&Eta;'],['Q','&Theta;'],['I','&Iota;'],
+['K','&Kappa;'],['L','&Lambda;'],['M','&Mu;'],['N','&Nu;'],['X','&Xi;'],['O','&Omicron;'],['P','&Pi;'],['R','&Rho;'],['S','&Sigma;'],['T','&Tau;'],
+['U','&Upsilon;'],['F','&Phi;'],['C','&Chi;'],['Y','&Psi;'],['W','&Omega;'],
+['a','&alpha;'],['b','&beta;'],['g','&gamma;'],['d','&delta;'],['e','&epsilon;'],['z','&zeta;'],['h','&eta;'],['q','&theta;'],['i','&iota;'],
+['k','&kappa;'],['l','&lambda;'],['m','&mu;'],['n','&nu;'],['x','&xi;'],['o','&omicron;'],['p','&pi;'],['r','&rho;'],
+['s','&sigma;'],['V','&sigmaf;'],['t','&tau;'],['u','&upsilon;'],['f','&phi;'],['c','&chi;'],
+['y','&psi;'],['w','&omega;'], [' ','&nbsp;'], ['-','-'], ['=','&#8125;'], ['+', '&#701;'], ['|', '|'], ['/', '/']];
+
+var cards=[ch1, ch2, ch3, ch4, ch5, ch6,ch7,ch8,ch9,ch10,ch11,ch12,
+	ch13,ch14,ch15, ch16,ch17,ch18,ch19,ch20];
+
+String.prototype.toArray = function() {
+return this.split('');
+}
+
+
+function playSound(soundfile) {
+ document.getElementById(soundfile).innerHTML=
+ "<embed src=\"./sounds/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+
+function playSoundMain(soundfile) {
+ document.getElementById("dummy").innerHTML=
+ "<embed src=\"./sounds/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+
+
+function teknia2greek( teknia )
+{
+	return (  teknia );
+}
+
+var chapterRand;
+var cardRand;
+var toggle=0;
+var toggleList=0;
+var c;
+
+function wordCount( from, to )
+{
+
+	var f=Number(from);
+	var t=Number(to);
+
+	var count=0;
+
+	for( i=f; i <= t; i++ )
+	{
+		count += cards[i].length;
+	}
+
+	return count;
+}
+
+
+function showAnswer()
+{
+
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	//alert(chF[4].text);
+
+	if( toggle == 1 )
+	{
+		document.getElementById('myTable').rows[0].cells[3].innerHTML = c[cardRand][4];
+		var b = document.getElementById('myButton');
+		b.value='- Next -';
+		toggle=0;
+	}
+	else
+	{
+		chapterRand = Number(chF.value)+Math.floor( Math.random()*(1+Number(chT.value-chF.value)));
+		c = cards[chapterRand];
+
+		cardRand=Math.floor(Math.random()*c.length);
+
+		var x = document.getElementById('myTable').rows[0].cells;
+		//x[2].innerHTML = '<a href="#" onclick="playSoundMain(\''+ c[cardRand][2] +'\');"><img src="./speaker.png"></img></a><font size=14 class=flashcard>' + teknia2greek(c[cardRand][3]) + '</font>';
+		x[2].innerHTML = '<font size=14 class=flashcard>' + teknia2greek(c[cardRand][3]) + '</font>';
+		x[3].innerHTML = '';
+		document.getElementById('myButton').value='Answer';
+
+		d.getElementById('myTable').rows[1].cells[2].innerHTML = chF[chapterRand].text;
+
+		toggle=1;
+	}
+}
+
+function showList()
+{
+
+
+	if( toggleList == 1 )
+	{
+		document.getElementById('myTable').rows[2].cells[0].innerHTML = '';
+		var b = document.getElementById('myListButton');
+		b.value='List';
+		toggleList=0;
+	}
+	else
+	{
+
+		d=document;
+		//para=d.getElementById('para');
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+
+		if( Number(wordCount( chF.value, chT.value )) <= 100 )
+		{
+			var tableList;
+			var x = document.getElementById('myTable').rows[2].cells;
+			//x[0].innerHTML = '<table>';
+			tableList = '<table width="100%">';
+			var l, ch;
+			var colorToggle=0;
+
+			//alert( chF.value + '  ' + chT.value );
+
+			for( var ch = Number(chF.value); ch <= Number(chT.value); ch++ )
+			{
+				//alert( ch );
+				for( word=0; word < cards[ch].length; word++, colorToggle++ )
+				{
+					var tdStyle = 'padding: 0; border-width: 0;';
+					var color;
+					if( colorToggle%2 == 0)
+						color = '#f4c4c4;';
+					else
+						color = '#ffffff;';				
+					var style;
+					style = '"cell-padding: 0; width: 100%; font-family : Arial, Tahoma, \'Times New Roman\', Verdana; background-color: '+color+' padding: 0; border-width: 0;"';
+
+
+					//tableList += '<tr style='+ style +'><td style="font-size: 24; '+tdStyle+'">' + teknia2greek(cards[ch][word][3]) + '</td><td style="'+tdStyle+'">&nbsp;&nbsp;&nbsp;<a href="#" onclick="playSound(\''+ cards[ch][word][2] +'\');"><img src="./speaker.png"><img></a>&nbsp;&nbsp;&nbsp;</td><td style="'+tdStyle+'">'+ cards[ch][word][4] +'</td><td id="' + cards[ch][word][2] + '" ></td></tr>';
+					
+					tableList += '<tr style='+ style +'><td style="font-size: 24; '+tdStyle+'">' + teknia2greek(cards[ch][word][3]) + '</td><td style="'+tdStyle+'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="'+tdStyle+'">'+ cards[ch][word][4] +'</td><td id="' + cards[ch][word][2] + '" ></td></tr>';
+
+				}
+			}
+			tableList += '</table>';
+			x[0].innerHTML += tableList;
+			document.getElementById('myListButton').value='Hide List';
+			toggleList=1;
+		}
+		else
+		{
+			alert('You must select lists totaling less than 100 words');
+		}
+	}
+}
+
+function checkSelectionsF(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chT.value = chF.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';
+
+	setCookie('chapterFrom', chF.value, 365 );
+	setCookie('chapterTo', chT.value, 365 );
+
+	toggle=0;
+	showAnswer();
+
+}
+
+
+function checkSelectionsT(event)
+{
+	d=document;
+	chF=d.getElementById('chFrom');
+	chT=d.getElementById('chTo');
+
+	if( Number(chF.value) > Number(chT.value) )
+	{
+			chF.value = chT.value;
+	}
+
+	document.getElementById('myTable').rows[1].cells[1].innerHTML = wordCount(chF.value, chT.value) + ' words';;
+
+	setCookie('chapterFrom', chF.value, 365 );
+	setCookie('chapterTo', chT.value, 365 );
+
+	toggle=0;
+	showAnswer();
+
+}
+
+
+function getCookie(c_name)
+{
+	if (document.cookie.length>0)
+  	{
+  		c_start=document.cookie.indexOf(c_name + "=");
+  		if (c_start!=-1)
+    		{
+    			c_start=c_start + c_name.length+1;
+    			c_end=document.cookie.indexOf(";",c_start);
+    			if (c_end==-1) c_end=document.cookie.length;
+    			return unescape(document.cookie.substring(c_start,c_end));
+    		}
+  	}
+	return "";
+}
+
+function setCookie(c_name,value,expiredays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate()+expiredays);
+	document.cookie=c_name+ "=" +escape(value)+
+	((expiredays==null) ? "" : ";expires="+exdate.toUTCString());
+}
+
+function checkCookies()
+{
+	chapterFrom=getCookie('chapterFrom');
+	if (chapterFrom!=null && chapterFrom!="")
+  	{
+ 		d=document;
+		chF=d.getElementById('chFrom');
+		chT=d.getElementById('chTo');
+		chF.value=chapterFrom;
+		chapterTo=getCookie('chapterTo');
+		
+		if(chapterTo!=null && chapterTo!="")
+		{
+			chT.value=chapterTo;	
+		}
+  	}
+}
+
+
+</script>
+
+		<table class="outer" width="100%">
+			<tr id="dummy"></tr>
+			<tr>
+				<td class="inner" align="center">			
+					<table class="innermost" width="100%">
+						<tr>
+							<td class="innermost" align="left">
+<table id="myTable" class="greek_list">
+<tr><td><img src="./busysteve_logo_small.jpg"></img></td>
+    <td width="140" align=top><form><input type="button" id="myButton" onClick="showAnswer();" value="Answer"></input>
+    			<input type="button" id="myListButton" onClick="showList();" value="List"></input>
+<select id="chFrom" onChange="checkSelectionsF();">
+<option value="0" selected="yes">Chapter 01</option>
+<option value="1">Chapter 02</option>
+<option value="2">Chapter 03</option>
+<option value="3">Chapter 04</option>
+<option value="4">Chapter 05</option>
+<option value="5">Chapter 06</option>
+<option value="6">Chapter 07</option>
+<option value="7">Chapter 08</option>
+<option value="8">Chapter 09</option>
+<option value="9">Chapter 10</option>
+<option value="10">Chapter 11</option>
+<option value="11">Chapter 12</option>
+<option value="12">Chapter 13</option>
+<option value="13">Chapter 14</option>
+<option value="14">Chapter 15</option>
+<option value="15">Chapter 16</option>
+<option value="16">Chapter 17</option>
+<option value="17">Chapter 18</option>
+<option value="18">Chapter 19</option>
+<option value="19">Chapter 20</option>
+        </select>
+
+<select id="chTo" onChange="checkSelectionsT();">
+<option value="0">Chapter 01</option>
+<option value="1">Chapter 02</option>
+<option value="2">Chapter 03</option>
+<option value="3">Chapter 04</option>
+<option value="4">Chapter 05</option>
+<option value="5">Chapter 06</option>
+<option value="6">Chapter 07</option>
+<option value="7">Chapter 08</option>
+<option value="8">Chapter 09</option>
+<option value="9">Chapter 10</option>
+<option value="10">Chapter 11</option>
+<option value="11">Chapter 12</option>
+<option value="12">Chapter 13</option>
+<option value="13">Chapter 14</option>
+<option value="14">Chapter 15</option>
+<option value="15">Chapter 16</option>
+<option value="16">Chapter 17</option>
+<option value="17">Chapter 18</option>
+<option value="18">Chapter 19</option>
+<option value="19" selected="yes">Chapter 20</option>
+        </select>
+
+
+
+        </form>
+    </td>
+    <td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="4" style="width: 100%; "></td></tr>
+</table>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
+
