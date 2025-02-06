@@ -1260,7 +1260,7 @@ function toggleBG()
 	else
 	{
 		g_background = 0;
-		document.getElementById('myTable').style.background="#f0dca0 url('../paper_background.png')";
+		document.getElementById('myTable').style.background="#f0dca0 url('./paper_background.png')";
 	}
 
 	setCookie('background', g_background, 365 );
