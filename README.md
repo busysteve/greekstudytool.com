@@ -5,7 +5,7 @@ http://greekstudytool.com
 
 or
 
-View this web site [here](https://raw.githack.com/busysteve/greekstudytool.com/main/index.html).
+View the web site in this repo [here](https://raw.githack.com/busysteve/greekstudytool.com/main/index.html).
 
 
  
