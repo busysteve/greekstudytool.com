@@ -1438,7 +1438,7 @@ function display(val)
 
 		if( g_background == 0 )
 		{
-			document.getElementById('myTable').style.background="#f0dca0 url('../paper_background.png')";
+			document.getElementById('myTable').style.background="#f0dca0 url('./paper_background.png')";
 		}
 		else
 		{
